@@ -1,0 +1,786 @@
+{
+ "autoname": "naming_series:",
+ "creation": "2020-04-14 13:00:48.404805",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_1",
+  "title",
+  "series",
+  "supplier",
+  "get_items_from_open_material_requests",
+  "supplier_name",
+  "company",
+  "column_break_8",
+  "date",
+  "reqd_by_date",
+  "order_confirmation_no",
+  "order_confirmation_date",
+  "amended_from",
+  "drop_ship_section",
+  "customer",
+  "customer_name",
+  "column_break_17",
+  "customer_contact",
+  "customer_contact1",
+  "customer_mobile_no",
+  "customer_contact_email",
+  "address_and_contact_section",
+  "select_supplier_address",
+  "contact_person",
+  "address",
+  "contact",
+  "mobile_no",
+  "contact_email",
+  "column_break_29",
+  "select_shipping_address",
+  "shipping_address",
+  "currency_and_price_list_section",
+  "currency",
+  "exchange_rate",
+  "column_break_35",
+  "price_list",
+  "price_list_currency",
+  "price_list_exchange_rate",
+  "ignore_pricing_rule",
+  "section_break_40",
+  "set_target_warehouse",
+  "column_break_42",
+  "supply_raw_materials",
+  "supplier_warehouse",
+  "section_break_45",
+  "scan_barcode",
+  "items",
+  "pricing_rules_section",
+  "purchase_order_pricing_rule",
+  "raw_materials_supplied_section",
+  "supplied_items",
+  "section_break_52",
+  "total_quantity",
+  "total_company_currency",
+  "net_total_company_currency",
+  "column_break_56",
+  "total",
+  "net_total",
+  "total_net_weight",
+  "section_break_60",
+  "tax_category",
+  "column_break_62",
+  "shipping_rule",
+  "section_break_64",
+  "purchase_taxes_and_charges_template",
+  "taxes",
+  "tax_breakup_section",
+  "taxes_and_charges_calculation",
+  "section_break_69",
+  "taxes_and_charges_added_company_currency",
+  "taxes_and_charges_deducted_company_currency",
+  "total_taxes_and_charges_company_currency",
+  "column_break_73",
+  "taxes_and_charges_added",
+  "taxes_and_charges_deducted",
+  "total_taxes_and_charges",
+  "additional_discount_section",
+  "apply_additional_discount_on",
+  "additional_discount_amount_company_currency",
+  "column_break_80",
+  "additional_discount_percentage",
+  "additional_discount_amount",
+  "section_break_83",
+  "grand_total_company_currency",
+  "rounding_adjustment_company_currency",
+  "in_words_company_currency",
+  "rounded_total_company_currency",
+  "column_break_88",
+  "grand_total",
+  "rounding_adjustment",
+  "rounded_total",
+  "disable_rounded_total",
+  "in_words",
+  "advance_paid",
+  "payment_terms_section",
+  "payment_terms_template",
+  "payment_schedule",
+  "terms_and_conditions_section",
+  "terms",
+  "terms_and_conditions",
+  "more_information_section",
+  "status",
+  "ref_sq",
+  "party_account_currency",
+  "inter_company_order_reference",
+  "column_break_106",
+  "received",
+  "billed",
+  "printing_settings_section",
+  "letter_head",
+  "print_heading",
+  "column_break_112",
+  "group_same_items",
+  "print_language",
+  "subscription_section_section",
+  "from_date",
+  "to_date",
+  "column_break_118",
+  "auto_repeat",
+  "update_auto_repeat_reference"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_1",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "label": "Title"
+  },
+  {
+   "fieldname": "series",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Series",
+   "options": "PUR-ORD-.YYYY.-",
+   "reqd": 1
+  },
+  {
+   "fieldname": "supplier",
+   "fieldtype": "Link",
+   "label": "Supplier",
+   "options": "Supplier"
+  },
+  {
+   "fieldname": "get_items_from_open_material_requests",
+   "fieldtype": "Button",
+   "label": "Get Items from Open Material Requests"
+  },
+  {
+   "fieldname": "supplier_name",
+   "fieldtype": "Data",
+   "label": "Supplier Name"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Data",
+   "label": "Date"
+  },
+  {
+   "fieldname": "reqd_by_date",
+   "fieldtype": "Data",
+   "label": "Reqd By Date"
+  },
+  {
+   "fieldname": "order_confirmation_no",
+   "fieldtype": "Data",
+   "label": "Order Confirmation No"
+  },
+  {
+   "fieldname": "order_confirmation_date",
+   "fieldtype": "Data",
+   "label": "Order Confirmation Date"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "options": "Purchase Order"
+  },
+  {
+   "fieldname": "drop_ship_section",
+   "fieldtype": "Section Break",
+   "label": "Drop Ship"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "label": "Customer Name"
+  },
+  {
+   "fieldname": "column_break_17",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "customer_contact",
+   "fieldtype": "Link",
+   "label": "Customer Contact",
+   "options": "Contact"
+  },
+  {
+   "fieldname": "customer_contact1",
+   "fieldtype": "Small Text",
+   "label": "Customer Contact1"
+  },
+  {
+   "fieldname": "customer_mobile_no",
+   "fieldtype": "Small Text",
+   "label": "Customer Mobile No"
+  },
+  {
+   "fieldname": "customer_contact_email",
+   "fieldtype": "Code",
+   "label": "Customer Contact Email",
+   "options": "Email"
+  },
+  {
+   "fieldname": "address_and_contact_section",
+   "fieldtype": "Section Break",
+   "label": "Address and Contact"
+  },
+  {
+   "fieldname": "select_supplier_address",
+   "fieldtype": "Link",
+   "label": "Select Supplier Address",
+   "options": "Address"
+  },
+  {
+   "fieldname": "contact_person",
+   "fieldtype": "Link",
+   "label": "Contact Person",
+   "options": "Contact"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Small Text",
+   "label": "Address"
+  },
+  {
+   "fieldname": "contact",
+   "fieldtype": "Small Text",
+   "label": "Contact"
+  },
+  {
+   "fieldname": "mobile_no",
+   "fieldtype": "Small Text",
+   "label": "Mobile No"
+  },
+  {
+   "fieldname": "contact_email",
+   "fieldtype": "Small Text",
+   "label": "Contact Email"
+  },
+  {
+   "fieldname": "column_break_29",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "select_shipping_address",
+   "fieldtype": "Link",
+   "label": "Select Shipping Address",
+   "options": "Address"
+  },
+  {
+   "fieldname": "shipping_address",
+   "fieldtype": "Small Text",
+   "label": "Shipping Address"
+  },
+  {
+   "fieldname": "currency_and_price_list_section",
+   "fieldtype": "Section Break",
+   "label": "Currency and Price List"
+  },
+  {
+   "fieldname": "currency",
+   "fieldtype": "Link",
+   "label": "Currency",
+   "options": "Currency"
+  },
+  {
+   "fieldname": "exchange_rate",
+   "fieldtype": "Float",
+   "label": "Exchange Rate"
+  },
+  {
+   "fieldname": "column_break_35",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "price_list",
+   "fieldtype": "Link",
+   "label": "Price List",
+   "options": "Price List"
+  },
+  {
+   "fieldname": "price_list_currency",
+   "fieldtype": "Link",
+   "label": "Price List Currency",
+   "options": "Currency"
+  },
+  {
+   "fieldname": "price_list_exchange_rate",
+   "fieldtype": "Float",
+   "label": "Price List Exchange Rate"
+  },
+  {
+   "default": "0",
+   "fieldname": "ignore_pricing_rule",
+   "fieldtype": "Check",
+   "label": "Ignore Pricing Rule"
+  },
+  {
+   "fieldname": "section_break_40",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "set_target_warehouse",
+   "fieldtype": "Link",
+   "label": "Set Target Warehouse",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "column_break_42",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "supply_raw_materials",
+   "fieldtype": "Select",
+   "label": "Supply Raw Materials",
+   "options": "No\nYes"
+  },
+  {
+   "fieldname": "supplier_warehouse",
+   "fieldtype": "Link",
+   "label": "Supplier Warehouse",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "section_break_45",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "scan_barcode",
+   "fieldtype": "Data",
+   "label": "Scan Barcode"
+  },
+  {
+   "fieldname": "items",
+   "fieldtype": "Table",
+   "label": "Items",
+   "options": "Purchase Order Item"
+  },
+  {
+   "fieldname": "pricing_rules_section",
+   "fieldtype": "Section Break",
+   "label": "Pricing Rules"
+  },
+  {
+   "fieldname": "purchase_order_pricing_rule",
+   "fieldtype": "Table",
+   "label": "Purchase Order Pricing Rule",
+   "options": "Pricing Rule Detail"
+  },
+  {
+   "fieldname": "raw_materials_supplied_section",
+   "fieldtype": "Section Break",
+   "label": "Raw Materials Supplied"
+  },
+  {
+   "fieldname": "supplied_items",
+   "fieldtype": "Table",
+   "label": "Supplied Items",
+   "options": "Purchase Order Item Supplied"
+  },
+  {
+   "fieldname": "section_break_52",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "total_quantity",
+   "fieldtype": "Float",
+   "label": "Total Quantity"
+  },
+  {
+   "fieldname": "total_company_currency",
+   "fieldtype": "Currency",
+   "label": "Total (Company Currency)",
+   "options": "Company:company:default_currency"
+  },
+  {
+   "fieldname": "net_total_company_currency",
+   "fieldtype": "Currency",
+   "label": "Net Total (Company Currency)",
+   "options": "Company:company:default_currency"
+  },
+  {
+   "fieldname": "column_break_56",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total",
+   "fieldtype": "Currency",
+   "label": "Total",
+   "options": "currency"
+  },
+  {
+   "fieldname": "net_total",
+   "fieldtype": "Currency",
+   "label": "Net Total",
+   "options": "currency"
+  },
+  {
+   "fieldname": "total_net_weight",
+   "fieldtype": "Float",
+   "label": "Total Net Weight"
+  },
+  {
+   "fieldname": "section_break_60",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "tax_category",
+   "fieldtype": "Link",
+   "label": "Tax Category",
+   "options": "Tax Category"
+  },
+  {
+   "fieldname": "column_break_62",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "shipping_rule",
+   "fieldtype": "Link",
+   "label": "Shipping Rule",
+   "options": "Shipping Rule"
+  },
+  {
+   "fieldname": "section_break_64",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "purchase_taxes_and_charges_template",
+   "fieldtype": "Link",
+   "label": "Purchase Taxes and Charges Template",
+   "options": "Purchase Taxes and Charges Template"
+  },
+  {
+   "fieldname": "taxes",
+   "fieldtype": "Table",
+   "label": "Purchase Taxes and Charges",
+   "options": "Purchase Taxes and Charges"
+  },
+  {
+   "fieldname": "tax_breakup_section",
+   "fieldtype": "Section Break",
+   "label": "Tax Breakup"
+  },
+  {
+   "fieldname": "taxes_and_charges_calculation",
+   "fieldtype": "Text",
+   "label": "Taxes and Charges Calculation"
+  },
+  {
+   "fieldname": "section_break_69",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "taxes_and_charges_added_company_currency",
+   "fieldtype": "Currency",
+   "label": "Taxes and Charges Added (Company Currency)",
+   "options": "Company:company:default_currency"
+  },
+  {
+   "fieldname": "taxes_and_charges_deducted_company_currency",
+   "fieldtype": "Currency",
+   "label": "Taxes and Charges Deducted (Company Currency)",
+   "options": "Company:company:default_currency"
+  },
+  {
+   "fieldname": "total_taxes_and_charges_company_currency",
+   "fieldtype": "Currency",
+   "label": "Total Taxes and Charges (Company Currency)",
+   "options": "Company:company:default_currency"
+  },
+  {
+   "fieldname": "column_break_73",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "taxes_and_charges_added",
+   "fieldtype": "Currency",
+   "label": "Taxes and Charges Added",
+   "options": "currency"
+  },
+  {
+   "fieldname": "taxes_and_charges_deducted",
+   "fieldtype": "Currency",
+   "label": "Taxes and Charges Deducted",
+   "options": "currency"
+  },
+  {
+   "fieldname": "total_taxes_and_charges",
+   "fieldtype": "Currency",
+   "label": "Total Taxes and Charges",
+   "options": "currency"
+  },
+  {
+   "fieldname": "additional_discount_section",
+   "fieldtype": "Section Break",
+   "label": "Additional Discount"
+  },
+  {
+   "fieldname": "apply_additional_discount_on",
+   "fieldtype": "Select",
+   "label": "Apply Additional Discount On",
+   "options": "\nGrand Total\nNet Total"
+  },
+  {
+   "fieldname": "additional_discount_amount_company_currency",
+   "fieldtype": "Currency",
+   "label": "Additional Discount Amount (Company Currency)",
+   "options": "Company:company:default_currency"
+  },
+  {
+   "fieldname": "column_break_80",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "additional_discount_percentage",
+   "fieldtype": "Float",
+   "label": "Additional Discount Percentage"
+  },
+  {
+   "fieldname": "additional_discount_amount",
+   "fieldtype": "Currency",
+   "label": "Additional Discount Amount",
+   "options": "currency"
+  },
+  {
+   "fieldname": "section_break_83",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "grand_total_company_currency",
+   "fieldtype": "Currency",
+   "label": "Grand Total (Company Currency)",
+   "options": "Company:company:default_currency"
+  },
+  {
+   "fieldname": "rounding_adjustment_company_currency",
+   "fieldtype": "Currency",
+   "label": "Rounding Adjustment (Company Currency)",
+   "options": "Company:company:default_currency"
+  },
+  {
+   "fieldname": "in_words_company_currency",
+   "fieldtype": "Data",
+   "label": "In Words (Company Currency)"
+  },
+  {
+   "fieldname": "rounded_total_company_currency",
+   "fieldtype": "Currency",
+   "label": "Rounded Total (Company Currency)",
+   "options": "Company:company:default_currency"
+  },
+  {
+   "fieldname": "column_break_88",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "grand_total",
+   "fieldtype": "Currency",
+   "label": "Grand Total"
+  },
+  {
+   "fieldname": "rounding_adjustment",
+   "fieldtype": "Currency",
+   "label": "Rounding Adjustment"
+  },
+  {
+   "fieldname": "rounded_total",
+   "fieldtype": "Currency",
+   "label": "Rounded Total"
+  },
+  {
+   "default": "0",
+   "fieldname": "disable_rounded_total",
+   "fieldtype": "Check",
+   "label": "Disable Rounded Total"
+  },
+  {
+   "fieldname": "in_words",
+   "fieldtype": "Data",
+   "label": "In Words"
+  },
+  {
+   "fieldname": "advance_paid",
+   "fieldtype": "Currency",
+   "label": "Advance Paid"
+  },
+  {
+   "fieldname": "payment_terms_section",
+   "fieldtype": "Section Break",
+   "label": "Payment Terms"
+  },
+  {
+   "fieldname": "payment_terms_template",
+   "fieldtype": "Link",
+   "label": "Payment Terms Template",
+   "options": "Payment Terms Template"
+  },
+  {
+   "fieldname": "payment_schedule",
+   "fieldtype": "Table",
+   "label": "Payment Schedule",
+   "options": "Payment Schedule"
+  },
+  {
+   "fieldname": "terms_and_conditions_section",
+   "fieldtype": "Section Break",
+   "label": "Terms and Conditions"
+  },
+  {
+   "fieldname": "terms",
+   "fieldtype": "Link",
+   "label": "Terms",
+   "options": "Terms and Conditions"
+  },
+  {
+   "fieldname": "terms_and_conditions",
+   "fieldtype": "Text Editor",
+   "label": "Terms and Conditions"
+  },
+  {
+   "fieldname": "more_information_section",
+   "fieldtype": "Section Break",
+   "label": "More Information"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Draft\nOn Hold\nTo Receive and Bill\nTo Bill\nTo Receive\nCompleted\nCancelled\nClosed\nDelivered"
+  },
+  {
+   "fieldname": "ref_sq",
+   "fieldtype": "Data",
+   "label": "Ref SQ"
+  },
+  {
+   "fieldname": "party_account_currency",
+   "fieldtype": "Link",
+   "label": "Party Account Currency",
+   "options": "Currency"
+  },
+  {
+   "fieldname": "inter_company_order_reference",
+   "fieldtype": "Link",
+   "label": "Inter Company Order Reference",
+   "options": "Sales Order"
+  },
+  {
+   "fieldname": "column_break_106",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "received",
+   "fieldtype": "Percent",
+   "label": "% Received"
+  },
+  {
+   "fieldname": "billed",
+   "fieldtype": "Percent",
+   "label": "% Billed"
+  },
+  {
+   "fieldname": "printing_settings_section",
+   "fieldtype": "Section Break",
+   "label": "Printing Settings"
+  },
+  {
+   "fieldname": "letter_head",
+   "fieldtype": "Link",
+   "label": "Letter Head",
+   "options": "Letter Head"
+  },
+  {
+   "fieldname": "print_heading",
+   "fieldtype": "Link",
+   "label": "Print Heading",
+   "options": "Print Heading"
+  },
+  {
+   "fieldname": "column_break_112",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "group_same_items",
+   "fieldtype": "Check",
+   "label": "Group same items"
+  },
+  {
+   "fieldname": "print_language",
+   "fieldtype": "Data",
+   "label": "Print Language"
+  },
+  {
+   "fieldname": "subscription_section_section",
+   "fieldtype": "Section Break",
+   "label": "Subscription Section"
+  },
+  {
+   "fieldname": "from_date",
+   "fieldtype": "Data",
+   "label": "From Date"
+  },
+  {
+   "fieldname": "to_date",
+   "fieldtype": "Data",
+   "label": "To Date"
+  },
+  {
+   "fieldname": "column_break_118",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "auto_repeat",
+   "fieldtype": "Link",
+   "label": "Auto Repeat",
+   "options": "Auto Repeat"
+  },
+  {
+   "fieldname": "update_auto_repeat_reference",
+   "fieldtype": "Button",
+   "label": "Update Auto Repeat Reference"
+  }
+ ],
+ "modified": "2020-04-14 14:17:22.304319",
+ "modified_by": "Administrator",
+ "module": "RecruitPRO",
+ "name": "Purchase Order",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

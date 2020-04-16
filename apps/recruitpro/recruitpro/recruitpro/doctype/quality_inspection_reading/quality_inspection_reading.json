@@ -1,0 +1,113 @@
+{
+ "creation": "2020-04-13 15:37:14.291337",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "parameter",
+  "value",
+  "reading_1",
+  "reading_2",
+  "reading_3",
+  "reading_4",
+  "reading_5",
+  "reading_6",
+  "reading_7",
+  "reading_8",
+  "reading_9",
+  "reading_10",
+  "status"
+ ],
+ "fields": [
+  {
+   "fieldname": "parameter",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Parameter"
+  },
+  {
+   "fieldname": "reading_1",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Reading 1"
+  },
+  {
+   "fieldname": "reading_2",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Reading 2"
+  },
+  {
+   "fieldname": "reading_3",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Reading 3"
+  },
+  {
+   "fieldname": "reading_4",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Reading 4"
+  },
+  {
+   "fieldname": "reading_5",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Reading 5"
+  },
+  {
+   "fieldname": "reading_6",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Reading 6"
+  },
+  {
+   "fieldname": "reading_7",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Reading 7"
+  },
+  {
+   "fieldname": "reading_8",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Reading 8"
+  },
+  {
+   "fieldname": "reading_9",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Reading 9"
+  },
+  {
+   "fieldname": "reading_10",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Reading 10"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Accepted\nRejected"
+  },
+  {
+   "fieldname": "value",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Acceptance Criteria"
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-04-13 15:38:50.802605",
+ "modified_by": "Administrator",
+ "module": "RecruitPRO",
+ "name": "Quality Inspection Reading",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

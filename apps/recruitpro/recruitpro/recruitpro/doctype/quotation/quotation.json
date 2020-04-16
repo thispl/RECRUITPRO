@@ -1,0 +1,70 @@
+{
+ "autoname": "naming_series:",
+ "creation": "2020-04-14 10:15:26.052243",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_1",
+  "title",
+  "naming_series",
+  "quotation_to",
+  "party"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_1",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "label": "Title"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Series",
+   "options": "SAL-QTN-.YYYY.-",
+   "reqd": 1
+  },
+  {
+   "fieldname": "quotation_to",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Quotation To",
+   "options": "DocType",
+   "reqd": 1
+  },
+  {
+   "fieldname": "party",
+   "fieldtype": "Dynamic Link",
+   "label": "Party",
+   "options": "quotation_to"
+  }
+ ],
+ "modified": "2020-04-14 10:15:26.052243",
+ "modified_by": "Administrator",
+ "module": "RecruitPRO",
+ "name": "Quotation",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

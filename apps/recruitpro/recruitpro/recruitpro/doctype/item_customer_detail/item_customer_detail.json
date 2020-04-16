@@ -1,0 +1,45 @@
+{
+ "creation": "2020-04-11 17:57:22.622261",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "customer_name",
+  "customer_group",
+  "ref_code"
+ ],
+ "fields": [
+  {
+   "fieldname": "customer_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Customer Name",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "customer_group",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Customer Group",
+   "options": "Customer Group"
+  },
+  {
+   "fieldname": "ref_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Ref Code",
+   "reqd": 1
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-04-11 17:57:52.469628",
+ "modified_by": "Administrator",
+ "module": "RecruitPRO",
+ "name": "Item Customer Detail",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

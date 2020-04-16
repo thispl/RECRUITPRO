@@ -1,0 +1,585 @@
+{
+ "creation": "2020-04-09 10:10:24.217155",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "item_code",
+  "customers_item_code",
+  "ensure_delivery_based_on_produced_serial_no",
+  "column_break_4",
+  "delivery_date",
+  "item_name",
+  "description_section",
+  "description",
+  "item_group",
+  "brand_name",
+  "image_section",
+  "image",
+  "image_view",
+  "quantity_and_rate_section",
+  "qty",
+  "stock_uom",
+  "column_break_17",
+  "uom",
+  "uom_conversion_factor",
+  "qty_as_per_stock_uom",
+  "section_break_21",
+  "price_list_rate",
+  "price_list_rate_company_currency",
+  "discount_and_margin_section",
+  "margin_type",
+  "margin_rate_or_amount",
+  "rate_with_margin",
+  "column_break_28",
+  "discount_on_price_list_rate_with_margin",
+  "discount_amount",
+  "rate_with_margin_company_currency",
+  "section_break_32",
+  "rate",
+  "amount",
+  "item_tax_template",
+  "column_break_36",
+  "basic_rate_company_currency",
+  "amount_company_currency",
+  "pricing_rules",
+  "is_free_item",
+  "section_break_41",
+  "net_rate",
+  "net_amount",
+  "column_break_44",
+  "net_rate_company_currency",
+  "net_amount_company_currency",
+  "billed_amt",
+  "valuation_rate",
+  "gross_profit",
+  "drop_ship_section",
+  "supplier_delivers_to_customer",
+  "supplier",
+  "item_weight_details_section",
+  "weight_per_unit",
+  "total_weight",
+  "column_break_56",
+  "weight_uom",
+  "warehouse_and_reference_section",
+  "delivery_warehouse",
+  "customer_warehouse_optional",
+  "quotation",
+  "column_break_62",
+  "blanket_order",
+  "blanket_order_rate",
+  "planning_section",
+  "projected_qty",
+  "actual_qty",
+  "ordered_qty",
+  "planned_quantity",
+  "column_break_70",
+  "work_order_qty",
+  "delivered_qty",
+  "produced_quantity",
+  "returned_qty",
+  "shopping_cart_section",
+  "additional_notes",
+  "section_break_77",
+  "page_break",
+  "item_tax_rate",
+  "sales_order_date"
+ ],
+ "fields": [
+  {
+   "fieldname": "item_code",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Item Code",
+   "options": "Item",
+   "reqd": 1
+  },
+  {
+   "fieldname": "customers_item_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Customer's Item Code"
+  },
+  {
+   "default": "0",
+   "fieldname": "ensure_delivery_based_on_produced_serial_no",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Ensure Delivery Based on Produced Serial No"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "delivery_date",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Delivery Date"
+  },
+  {
+   "fieldname": "item_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Item Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "description_section",
+   "fieldtype": "Section Break",
+   "label": "Description"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text Editor",
+   "in_list_view": 1,
+   "label": "Description",
+   "reqd": 1
+  },
+  {
+   "fieldname": "item_group",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Item Group",
+   "options": "Item Group"
+  },
+  {
+   "fieldname": "brand_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Brand Name",
+   "options": "Brand"
+  },
+  {
+   "fieldname": "image_section",
+   "fieldtype": "Section Break",
+   "label": "Image"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach",
+   "in_list_view": 1,
+   "label": "Image"
+  },
+  {
+   "fieldname": "image_view",
+   "fieldtype": "Image",
+   "label": "Image View",
+   "options": "image"
+  },
+  {
+   "fieldname": "quantity_and_rate_section",
+   "fieldtype": "Section Break",
+   "label": "Quantity and Rate"
+  },
+  {
+   "fieldname": "qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Quantity"
+  },
+  {
+   "fieldname": "stock_uom",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Stock UOM",
+   "options": "UOM"
+  },
+  {
+   "fieldname": "column_break_17",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "uom",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "UOM",
+   "options": "UOM",
+   "reqd": 1
+  },
+  {
+   "fieldname": "uom_conversion_factor",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "UOM Conversion Factor",
+   "reqd": 1
+  },
+  {
+   "fieldname": "qty_as_per_stock_uom",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Qty as per Stock UOM"
+  },
+  {
+   "fieldname": "section_break_21",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "price_list_rate",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Price List Rate",
+   "options": "Currency"
+  },
+  {
+   "fieldname": "price_list_rate_company_currency",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Price List Rate (Company Currency)",
+   "options": "Company:company:default_currency"
+  },
+  {
+   "fieldname": "discount_and_margin_section",
+   "fieldtype": "Section Break",
+   "label": "Discount and Margin"
+  },
+  {
+   "fieldname": "margin_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Margin Type",
+   "options": "\nPercentage\nAmount"
+  },
+  {
+   "fieldname": "margin_rate_or_amount",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Margin Rate or Amount"
+  },
+  {
+   "fieldname": "rate_with_margin",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Rate With Margin"
+  },
+  {
+   "fieldname": "column_break_28",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "discount_on_price_list_rate_with_margin",
+   "fieldtype": "Percent",
+   "in_list_view": 1,
+   "label": "Discount(%)on Price List Rate with Margin"
+  },
+  {
+   "fieldname": "discount_amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Discount Amount",
+   "options": "Company:company:default_currency"
+  },
+  {
+   "fieldname": "rate_with_margin_company_currency",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Rate With Margin (Company Currency)",
+   "options": "Company:company:default_currency"
+  },
+  {
+   "fieldname": "section_break_32",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "rate",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Rate",
+   "options": "currency"
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Amount",
+   "options": "currency"
+  },
+  {
+   "fieldname": "item_tax_template",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Item Tax Template",
+   "options": "Item Tax Template"
+  },
+  {
+   "fieldname": "column_break_36",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "basic_rate_company_currency",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Basic Rate (Company Currency)",
+   "options": "Company:company:default_currency"
+  },
+  {
+   "fieldname": "amount_company_currency",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Amount (Company Currency)",
+   "options": "Company:company:default_currency"
+  },
+  {
+   "fieldname": "pricing_rules",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Pricing Rules"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_free_item",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Is Free Item"
+  },
+  {
+   "fieldname": "section_break_41",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "net_rate",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Net Rate",
+   "options": "currency"
+  },
+  {
+   "fieldname": "net_amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Net Amount",
+   "options": "currency"
+  },
+  {
+   "fieldname": "column_break_44",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "net_rate_company_currency",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Net Rate (Company Currency)",
+   "options": "Company:company:default_currency"
+  },
+  {
+   "fieldname": "net_amount_company_currency",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Net Amount (Company Currency)",
+   "options": "Company:company:default_currency"
+  },
+  {
+   "fieldname": "billed_amt",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Billed Amt",
+   "options": "currency"
+  },
+  {
+   "fieldname": "valuation_rate",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Valuation Rate",
+   "options": "Company:company:default_currency"
+  },
+  {
+   "fieldname": "gross_profit",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Gross Profit",
+   "options": "Company:company:default_currency"
+  },
+  {
+   "fieldname": "drop_ship_section",
+   "fieldtype": "Section Break",
+   "label": "Drop Ship"
+  },
+  {
+   "default": "0",
+   "fieldname": "supplier_delivers_to_customer",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Supplier delivers to Customer"
+  },
+  {
+   "fieldname": "supplier",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Supplier",
+   "options": "Supplier"
+  },
+  {
+   "fieldname": "item_weight_details_section",
+   "fieldtype": "Section Break",
+   "label": "Item Weight Details"
+  },
+  {
+   "fieldname": "weight_per_unit",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Weight Per Unit"
+  },
+  {
+   "fieldname": "total_weight",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Total Weight"
+  },
+  {
+   "fieldname": "column_break_56",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "weight_uom",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Weight UOM",
+   "options": "UOM"
+  },
+  {
+   "fieldname": "warehouse_and_reference_section",
+   "fieldtype": "Section Break",
+   "label": "Warehouse and Reference"
+  },
+  {
+   "fieldname": "delivery_warehouse",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Delivery Warehouse",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "customer_warehouse_optional",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Customer Warehouse (Optional)",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "quotation",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Quotation",
+   "options": "Quotation"
+  },
+  {
+   "fieldname": "column_break_62",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "blanket_order",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Blanket Order",
+   "options": "Blanket Order"
+  },
+  {
+   "fieldname": "blanket_order_rate",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Blanket Order Rate"
+  },
+  {
+   "fieldname": "planning_section",
+   "fieldtype": "Section Break",
+   "label": "Planning"
+  },
+  {
+   "fieldname": "projected_qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Projected Qty"
+  },
+  {
+   "fieldname": "actual_qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Actual Qty"
+  },
+  {
+   "fieldname": "ordered_qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Ordered Qty"
+  },
+  {
+   "fieldname": "planned_quantity",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Planned Quantity"
+  },
+  {
+   "fieldname": "column_break_70",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "work_order_qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Work Order Qty"
+  },
+  {
+   "fieldname": "delivered_qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Delivered Qty"
+  },
+  {
+   "fieldname": "produced_quantity",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Produced Quantity"
+  },
+  {
+   "fieldname": "returned_qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Returned Qty"
+  },
+  {
+   "fieldname": "shopping_cart_section",
+   "fieldtype": "Section Break",
+   "label": "Shopping Cart"
+  },
+  {
+   "fieldname": "additional_notes",
+   "fieldtype": "Text",
+   "in_list_view": 1,
+   "label": "Additional Notes"
+  },
+  {
+   "fieldname": "section_break_77",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "page_break",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Page Break"
+  },
+  {
+   "fieldname": "item_tax_rate",
+   "fieldtype": "Code",
+   "in_list_view": 1,
+   "label": "Item Tax Rate"
+  },
+  {
+   "fieldname": "sales_order_date",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Sales Order Date"
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-04-14 12:55:01.056388",
+ "modified_by": "Administrator",
+ "module": "RecruitPRO",
+ "name": "Sales Order Item",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

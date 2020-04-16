@@ -1,0 +1,37 @@
+{
+ "creation": "2020-04-11 12:48:03.064180",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "field_in_bank_transaction",
+  "column_in_bank_file"
+ ],
+ "fields": [
+  {
+   "fieldname": "field_in_bank_transaction",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Field in Bank Transaction",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_in_bank_file",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Column in Bank File",
+   "reqd": 1
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-04-11 12:48:25.599964",
+ "modified_by": "Administrator",
+ "module": "RecruitPRO",
+ "name": "Bank Transaction Mapping",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

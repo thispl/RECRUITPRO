@@ -1,0 +1,369 @@
+{
+ "creation": "2020-04-14 13:13:34.336026",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "item_code",
+  "supplier_part_number",
+  "item_name",
+  "column_break_4",
+  "reqd_by_date",
+  "expected_delivery_date",
+  "description_section",
+  "description",
+  "column_break_9",
+  "image",
+  "image_view",
+  "manufacture_section",
+  "manufacturer",
+  "column_break_14",
+  "manufacturer_part_number",
+  "quantity_and_rate_section",
+  "quantity",
+  "stock_uom",
+  "column_break_19",
+  "uom",
+  "uom_conversion_factor",
+  "section_break_22",
+  "price_list_rate",
+  "discount_on_price_list_rate_",
+  "discount_amount",
+  "column_break_26",
+  "last_purchase_rate",
+  "price_list_rate_company_currency",
+  "section_break_29",
+  "rate",
+  "amount",
+  "item_tax_template",
+  "column_break_32",
+  "rate_company_currency",
+  "amount_company_currency",
+  "pricing_rules",
+  "is_free_item",
+  "is_fixed_asset",
+  "section_break_39",
+  "net_rate",
+  "net_amount",
+  "column_break_42",
+  "net_rate_company_currency",
+  "net_amount_company_currency",
+  "billed_amt",
+  "item_weight_details_section",
+  "weight_per_unit",
+  "total_weight",
+  "column_break_49",
+  "weight_uom",
+  "warehouse_and_reference_section",
+  "warehouse",
+  "to_be_delivered_to_customer",
+  "project",
+  "material_request"
+ ],
+ "fields": [
+  {
+   "fieldname": "item_code",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Item Code",
+   "options": "Item",
+   "reqd": 1
+  },
+  {
+   "fieldname": "supplier_part_number",
+   "fieldtype": "Data",
+   "label": "Supplier Part Number"
+  },
+  {
+   "fieldname": "item_name",
+   "fieldtype": "Data",
+   "label": "Item Name"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "reqd_by_date",
+   "fieldtype": "Data",
+   "label": "Reqd By Date"
+  },
+  {
+   "fieldname": "expected_delivery_date",
+   "fieldtype": "Data",
+   "label": "Expected Delivery Date"
+  },
+  {
+   "fieldname": "description_section",
+   "fieldtype": "Section Break",
+   "label": "Description"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text Editor",
+   "label": "Description"
+  },
+  {
+   "fieldname": "column_break_9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach",
+   "label": "Image"
+  },
+  {
+   "fieldname": "image_view",
+   "fieldtype": "Image",
+   "label": "Image View",
+   "options": "Image"
+  },
+  {
+   "fieldname": "manufacture_section",
+   "fieldtype": "Section Break",
+   "label": "Manufacture"
+  },
+  {
+   "fieldname": "manufacturer",
+   "fieldtype": "Link",
+   "label": "Manufacturer",
+   "options": "Manufacturer"
+  },
+  {
+   "fieldname": "column_break_14",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "manufacturer_part_number",
+   "fieldtype": "Data",
+   "label": "Manufacturer Part Number"
+  },
+  {
+   "fieldname": "quantity_and_rate_section",
+   "fieldtype": "Section Break",
+   "label": "Quantity and Rate"
+  },
+  {
+   "fieldname": "quantity",
+   "fieldtype": "Float",
+   "label": "Quantity"
+  },
+  {
+   "fieldname": "stock_uom",
+   "fieldtype": "Link",
+   "label": "Stock UOM",
+   "options": "UOM"
+  },
+  {
+   "fieldname": "column_break_19",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "uom",
+   "fieldtype": "Link",
+   "label": "UOM",
+   "options": "UOM"
+  },
+  {
+   "fieldname": "uom_conversion_factor",
+   "fieldtype": "Float",
+   "label": "UOM Conversion Factor"
+  },
+  {
+   "fieldname": "section_break_22",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "price_list_rate",
+   "fieldtype": "Currency",
+   "label": "Price List Rate",
+   "options": "Currency"
+  },
+  {
+   "fieldname": "discount_on_price_list_rate_",
+   "fieldtype": "Percent",
+   "label": "Discount on Price List Rate (%)"
+  },
+  {
+   "fieldname": "discount_amount",
+   "fieldtype": "Currency",
+   "label": "Discount Amount"
+  },
+  {
+   "fieldname": "column_break_26",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "last_purchase_rate",
+   "fieldtype": "Currency",
+   "label": "Last Purchase Rate",
+   "options": "Currency"
+  },
+  {
+   "fieldname": "price_list_rate_company_currency",
+   "fieldtype": "Currency",
+   "label": "Price List Rate (Company Currency)",
+   "options": "Company:company:default_currency"
+  },
+  {
+   "fieldname": "section_break_29",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "rate",
+   "fieldtype": "Currency",
+   "label": "Rate",
+   "options": "Currency"
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Currency",
+   "label": "Amount",
+   "options": "Currency"
+  },
+  {
+   "fieldname": "column_break_32",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "rate_company_currency",
+   "fieldtype": "Currency",
+   "label": "Rate (Company Currency)",
+   "options": "Company:company:default_currency",
+   "reqd": 1
+  },
+  {
+   "fieldname": "amount_company_currency",
+   "fieldtype": "Currency",
+   "label": "Amount (Company Currency)",
+   "options": "Company:company:default_currency",
+   "reqd": 1
+  },
+  {
+   "fieldname": "pricing_rules",
+   "fieldtype": "Small Text",
+   "label": "Pricing Rules"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_free_item",
+   "fieldtype": "Check",
+   "label": "Is Free Item"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_fixed_asset",
+   "fieldtype": "Check",
+   "label": "Is Fixed Asset"
+  },
+  {
+   "fieldname": "item_tax_template",
+   "fieldtype": "Link",
+   "label": "Item Tax Template",
+   "options": "Item Tax Template"
+  },
+  {
+   "fieldname": "section_break_39",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "net_rate",
+   "fieldtype": "Currency",
+   "label": "Net Rate",
+   "options": "currency"
+  },
+  {
+   "fieldname": "net_amount",
+   "fieldtype": "Currency",
+   "label": "Net Amount",
+   "options": "currency"
+  },
+  {
+   "fieldname": "column_break_42",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "net_rate_company_currency",
+   "fieldtype": "Currency",
+   "label": "Net Rate (Company Currency)",
+   "options": "Company:company:default_currency"
+  },
+  {
+   "fieldname": "net_amount_company_currency",
+   "fieldtype": "Currency",
+   "label": "Net Amount (Company Currency)",
+   "options": "Company:company:default_currency"
+  },
+  {
+   "fieldname": "billed_amt",
+   "fieldtype": "Currency",
+   "label": "Billed Amt",
+   "options": "currency"
+  },
+  {
+   "fieldname": "item_weight_details_section",
+   "fieldtype": "Section Break",
+   "label": "Item Weight Details"
+  },
+  {
+   "fieldname": "weight_per_unit",
+   "fieldtype": "Float",
+   "label": "Weight Per Unit"
+  },
+  {
+   "fieldname": "total_weight",
+   "fieldtype": "Float",
+   "label": "Total Weight"
+  },
+  {
+   "fieldname": "column_break_49",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "weight_uom",
+   "fieldtype": "Link",
+   "label": "Weight UOM",
+   "options": "UOM"
+  },
+  {
+   "fieldname": "warehouse_and_reference_section",
+   "fieldtype": "Section Break",
+   "label": "Warehouse and Reference"
+  },
+  {
+   "fieldname": "warehouse",
+   "fieldtype": "Link",
+   "label": "Warehouse",
+   "options": "Warehouse"
+  },
+  {
+   "default": "0",
+   "fieldname": "to_be_delivered_to_customer",
+   "fieldtype": "Check",
+   "label": "To be delivered to customer"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "Project"
+  },
+  {
+   "fieldname": "material_request",
+   "fieldtype": "Link",
+   "label": "Material Request",
+   "options": "Material Request"
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-04-14 14:39:03.320145",
+ "modified_by": "Administrator",
+ "module": "RecruitPRO",
+ "name": "Purchase Order Item",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

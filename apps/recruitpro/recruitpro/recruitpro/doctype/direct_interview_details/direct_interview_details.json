@@ -1,0 +1,35 @@
+{
+ "creation": "2020-04-08 09:54:41.805201",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "date",
+  "location"
+ ],
+ "fields": [
+  {
+   "fieldname": "date",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Date"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Location"
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-04-08 09:54:52.465253",
+ "modified_by": "Administrator",
+ "module": "RecruitPRO",
+ "name": "Direct Interview Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

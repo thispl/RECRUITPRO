@@ -1,0 +1,435 @@
+{
+ "autoname": "field:project_name",
+ "creation": "2020-04-08 09:10:13.855951",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "project_name",
+  "status",
+  "project_manager",
+  "documentation_incharge",
+  "column_break_5",
+  "operation_status",
+  "account_manager",
+  "timeline",
+  "expected_start_date",
+  "column_break_10",
+  "expected_end_date",
+  "customer_details_section",
+  "customer",
+  "territory",
+  "service",
+  "column_break_16",
+  "sales_order",
+  "payment_terms",
+  "users_section",
+  "users",
+  "interview_details_section",
+  "mode_of_interview",
+  "column_break_23",
+  "date_and_location",
+  "estimation_section",
+  "estimated_project_value",
+  "column_break_27",
+  "estimated_cost",
+  "column_break_29",
+  "expected_month",
+  "column_break_31",
+  "year",
+  "remarks_section",
+  "remarks",
+  "additional_benefits_section",
+  "working_hours",
+  "free_food",
+  "free_local_travel",
+  "free_accommodation",
+  "column_break_40",
+  "contract_period_in_years",
+  "ot",
+  "free_joining_ticket",
+  "leave_policy_applicable",
+  "section_break_45",
+  "job_des",
+  "column_break_47",
+  "tvac",
+  "column_break_49",
+  "tsp",
+  "column_break_51",
+  "tfp",
+  "column_break_53",
+  "tsl",
+  "column_break_55",
+  "tpsl",
+  "kick_off_meeting_section",
+  "kick_off_status",
+  "attendees",
+  "send_invite",
+  "column_break_61",
+  "kick_off",
+  "minutes_remarks",
+  "section_break_64",
+  "sa_allocation"
+ ],
+ "fields": [
+  {
+   "fieldname": "project_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Project Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_standard_filter": 1,
+   "label": "Status",
+   "options": "\nOpen\nOverdue\nHold\nDnD\nCompleted\nCancelled",
+   "reqd": 1
+  },
+  {
+   "fieldname": "project_manager",
+   "fieldtype": "Link",
+   "label": "Project Manager",
+   "options": "User"
+  },
+  {
+   "fieldname": "documentation_incharge",
+   "fieldtype": "Link",
+   "label": "Documentation Incharge",
+   "options": "User"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "operation_status",
+   "fieldtype": "Select",
+   "label": "Operation Status",
+   "options": "\nPending\nAcknowledged\nConfirmed\nDeclined\nSourcing\nDnD"
+  },
+  {
+   "fieldname": "account_manager",
+   "fieldtype": "Data",
+   "label": "Account Manager"
+  },
+  {
+   "fieldname": "timeline",
+   "fieldtype": "Section Break",
+   "label": "Timeline"
+  },
+  {
+   "fieldname": "expected_start_date",
+   "fieldtype": "Data",
+   "label": "Expected Start Date"
+  },
+  {
+   "fieldname": "column_break_10",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "expected_end_date",
+   "fieldtype": "Data",
+   "label": "Expected End Date"
+  },
+  {
+   "fieldname": "customer_details_section",
+   "fieldtype": "Section Break",
+   "label": "Customer Details"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Data",
+   "label": "Customer"
+  },
+  {
+   "fieldname": "territory",
+   "fieldtype": "Data",
+   "label": "Territory"
+  },
+  {
+   "fieldname": "service",
+   "fieldtype": "Link",
+   "label": "Service",
+   "options": "Services"
+  },
+  {
+   "fieldname": "column_break_16",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sales_order",
+   "fieldtype": "Link",
+   "label": "Sales Order",
+   "options": "Sales Order"
+  },
+  {
+   "fieldname": "payment_terms",
+   "fieldtype": "Small Text",
+   "label": "Payment Terms"
+  },
+  {
+   "fieldname": "users_section",
+   "fieldtype": "Section Break",
+   "label": "Users"
+  },
+  {
+   "description": "Project will be accessible on the website to these users",
+   "fieldname": "users",
+   "fieldtype": "Link",
+   "label": "Users",
+   "options": "Project User"
+  },
+  {
+   "fieldname": "interview_details_section",
+   "fieldtype": "Section Break",
+   "label": "Interview Details"
+  },
+  {
+   "fieldname": "mode_of_interview",
+   "fieldtype": "Select",
+   "label": "Mode of Interview",
+   "options": "\nDirect\nCV Selection\nWire Selection"
+  },
+  {
+   "fieldname": "column_break_23",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date_and_location",
+   "fieldtype": "Table",
+   "label": "Date and Location",
+   "options": "Direct Interview Details"
+  },
+  {
+   "fieldname": "estimation_section",
+   "fieldtype": "Section Break",
+   "label": "Estimation"
+  },
+  {
+   "fieldname": "estimated_project_value",
+   "fieldtype": "Currency",
+   "label": "Estimated Project Value"
+  },
+  {
+   "fieldname": "column_break_27",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "estimated_cost",
+   "fieldtype": "Currency",
+   "label": "Estimated Cost"
+  },
+  {
+   "fieldname": "column_break_29",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "expected_month",
+   "fieldtype": "Select",
+   "label": "Expected Month",
+   "options": "\nApril\nMay\nJune\nJuly\nAugust\nSeptember\nOctober\nNovember\nDecember\nJanuary\nFebruary\nMarch"
+  },
+  {
+   "fieldname": "column_break_31",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "year",
+   "fieldtype": "Link",
+   "label": "Year",
+   "options": "Fiscal Year"
+  },
+  {
+   "fieldname": "remarks_section",
+   "fieldtype": "Section Break",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "additional_benefits_section",
+   "fieldtype": "Section Break",
+   "label": "Additional Benefits"
+  },
+  {
+   "fieldname": "working_hours",
+   "fieldtype": "Data",
+   "label": "Working Hours"
+  },
+  {
+   "default": "0",
+   "fieldname": "free_food",
+   "fieldtype": "Check",
+   "label": "Free Food"
+  },
+  {
+   "default": "0",
+   "fieldname": "free_local_travel",
+   "fieldtype": "Check",
+   "label": "Free Local Travel"
+  },
+  {
+   "default": "0",
+   "fieldname": "free_accommodation",
+   "fieldtype": "Check",
+   "label": "Free Accommodation"
+  },
+  {
+   "fieldname": "column_break_40",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "contract_period_in_years",
+   "fieldtype": "Select",
+   "label": "Contract Period (In Years)",
+   "options": "\n01\n02\n03\n04\n05\n06\n07\n08\n09\n10"
+  },
+  {
+   "default": "0",
+   "fieldname": "ot",
+   "fieldtype": "Check",
+   "label": "OT"
+  },
+  {
+   "default": "0",
+   "fieldname": "free_joining_ticket",
+   "fieldtype": "Check",
+   "label": "Free Joining Ticket"
+  },
+  {
+   "default": "0",
+   "fieldname": "leave_policy_applicable",
+   "fieldtype": "Check",
+   "label": "Leave Policy Applicable"
+  },
+  {
+   "fieldname": "section_break_45",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_47",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "tvac",
+   "fieldtype": "Int",
+   "label": "#T_VAC"
+  },
+  {
+   "fieldname": "column_break_49",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "tsp",
+   "fieldtype": "Int",
+   "label": "#T_SP"
+  },
+  {
+   "fieldname": "column_break_51",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "tfp",
+   "fieldtype": "Int",
+   "label": "#T_FP"
+  },
+  {
+   "fieldname": "column_break_53",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "tsl",
+   "fieldtype": "Int",
+   "label": "#T_SL"
+  },
+  {
+   "fieldname": "column_break_55",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "tpsl",
+   "fieldtype": "Int",
+   "label": "#T_PSL"
+  },
+  {
+   "fieldname": "kick_off_meeting_section",
+   "fieldtype": "Section Break",
+   "label": "Kick Off Meeting"
+  },
+  {
+   "fieldname": "kick_off_status",
+   "fieldtype": "Select",
+   "label": "Kick Off Status",
+   "options": "\nPending\nOPS Initiated\nHold\nDeclined"
+  },
+  {
+   "fieldname": "attendees",
+   "fieldtype": "Table",
+   "label": "Attendees",
+   "options": "Kick Off Meeting"
+  },
+  {
+   "fieldname": "send_invite",
+   "fieldtype": "Button",
+   "label": "Send Invite"
+  },
+  {
+   "fieldname": "column_break_61",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "kick_off",
+   "fieldtype": "Data",
+   "label": "Kick Off - Date"
+  },
+  {
+   "fieldname": "minutes_remarks",
+   "fieldtype": "Small Text",
+   "label": "Minutes & Remarks"
+  },
+  {
+   "fieldname": "section_break_64",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "sa_allocation",
+   "fieldtype": "Table",
+   "label": "SA Allocation",
+   "options": "SA Allocation"
+  },
+  {
+   "fieldname": "job_des",
+   "fieldtype": "Int",
+   "label": "Job Description"
+  }
+ ],
+ "modified": "2020-04-11 12:24:49.285643",
+ "modified_by": "Administrator",
+ "module": "RecruitPRO",
+ "name": "Project",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

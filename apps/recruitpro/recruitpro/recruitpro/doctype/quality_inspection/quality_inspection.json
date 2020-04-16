@@ -1,0 +1,201 @@
+{
+ "autoname": "naming_series:",
+ "creation": "2020-04-13 14:59:45.608513",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "report_date",
+  "column_break_3",
+  "inspection_type",
+  "reference_type",
+  "reference_name",
+  "section_break_7",
+  "item_code",
+  "item_serial_no",
+  "batch_no",
+  "sample_size",
+  "column_break_11",
+  "item_name",
+  "description",
+  "status",
+  "section_break_14",
+  "inspected_by",
+  "verified_by",
+  "bom_no",
+  "column_break_18",
+  "remarks",
+  "amended_from",
+  "section_break_23",
+  "quality_inspection_template",
+  "readings"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Series",
+   "options": "MAT-QA-.YYYY.-",
+   "reqd": 1
+  },
+  {
+   "fieldname": "report_date",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Report Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "inspection_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Inspection Type",
+   "options": "\nIncoming\nOutgoing\nIn Process",
+   "reqd": 1
+  },
+  {
+   "fieldname": "reference_type",
+   "fieldtype": "Select",
+   "label": "Reference Type",
+   "options": "\nPurchase Receipt\nPurchase Invoice\nDelivery Note\nSales Invoice\nStock Entry"
+  },
+  {
+   "fieldname": "reference_name",
+   "fieldtype": "Dynamic Link",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Reference Name",
+   "options": "reference_type"
+  },
+  {
+   "fieldname": "section_break_7",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "item_code",
+   "fieldtype": "Link",
+   "label": "Item Code",
+   "options": "Item",
+   "reqd": 1
+  },
+  {
+   "fieldname": "item_serial_no",
+   "fieldtype": "Link",
+   "label": "Item Serial No",
+   "options": "Serial No"
+  },
+  {
+   "fieldname": "sample_size",
+   "fieldtype": "Float",
+   "label": "Sample Size"
+  },
+  {
+   "fieldname": "column_break_11",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "item_name",
+   "fieldtype": "Data",
+   "label": "Item Name"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "section_break_14",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "inspected_by",
+   "fieldtype": "Link",
+   "label": "Inspected By",
+   "options": "User"
+  },
+  {
+   "fieldname": "verified_by",
+   "fieldtype": "Data",
+   "label": "Verified By"
+  },
+  {
+   "fieldname": "bom_no",
+   "fieldtype": "Link",
+   "label": "BOM No",
+   "options": "BOM"
+  },
+  {
+   "fieldname": "column_break_18",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "batch_no",
+   "fieldtype": "Link",
+   "label": "Batch No",
+   "options": "Batch"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "\nAccepted\nRejected"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "options": "Quality Inspection"
+  },
+  {
+   "fieldname": "section_break_23",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "quality_inspection_template",
+   "fieldtype": "Link",
+   "label": "Quality Inspection Template",
+   "options": "Quality Inspection Template"
+  },
+  {
+   "fieldname": "readings",
+   "fieldtype": "Table",
+   "label": "Readings",
+   "options": "Quality Inspection Reading"
+  }
+ ],
+ "modified": "2020-04-13 15:39:18.855762",
+ "modified_by": "Administrator",
+ "module": "RecruitPRO",
+ "name": "Quality Inspection",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

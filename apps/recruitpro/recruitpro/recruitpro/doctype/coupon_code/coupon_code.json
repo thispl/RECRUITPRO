@@ -1,0 +1,126 @@
+{
+ "autoname": "field:coupon_name",
+ "creation": "2020-04-09 11:53:48.703252",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "coupon_name",
+  "coupon_type",
+  "customer",
+  "column_break_4",
+  "coupon_code",
+  "pricing_rule",
+  "validity_and_usage_section",
+  "valid_from",
+  "valid_upto",
+  "maximum_use",
+  "used",
+  "column_break_12",
+  "coupon_description",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "coupon_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Coupon Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "coupon_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Coupon Type",
+   "options": "Promotional\nGift Card",
+   "reqd": 1
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "coupon_code",
+   "fieldtype": "Data",
+   "label": "Coupon Code"
+  },
+  {
+   "fieldname": "pricing_rule",
+   "fieldtype": "Link",
+   "label": "Pricing Rule",
+   "options": "Pricing Rule",
+   "reqd": 1
+  },
+  {
+   "fieldname": "validity_and_usage_section",
+   "fieldtype": "Section Break",
+   "label": "Validity and Usage"
+  },
+  {
+   "fieldname": "valid_from",
+   "fieldtype": "Data",
+   "label": "Valid From"
+  },
+  {
+   "fieldname": "valid_upto",
+   "fieldtype": "Data",
+   "label": "Valid Upto"
+  },
+  {
+   "fieldname": "maximum_use",
+   "fieldtype": "Int",
+   "label": "Maximum Use"
+  },
+  {
+   "fieldname": "used",
+   "fieldtype": "Int",
+   "label": "Used"
+  },
+  {
+   "fieldname": "column_break_12",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "coupon_description",
+   "fieldtype": "Data",
+   "label": "Coupon Description"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "options": "Coupon Code"
+  }
+ ],
+ "modified": "2020-04-10 14:23:54.862450",
+ "modified_by": "Administrator",
+ "module": "RecruitPRO",
+ "name": "Coupon Code",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

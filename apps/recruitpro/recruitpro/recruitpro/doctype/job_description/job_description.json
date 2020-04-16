@@ -1,0 +1,427 @@
+{
+ "autoname": "J.####",
+ "creation": "2020-04-08 10:28:21.780956",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "subject",
+  "customer",
+  "project",
+  "territory",
+  "column_break_5",
+  "status",
+  "operation_status",
+  "project_manager",
+  "account_manager",
+  "timeline_section",
+  "expected_start_date",
+  "column_break_12",
+  "expected_end_date",
+  "section_break_14",
+  "work_plan",
+  "count_report_section",
+  "vac",
+  "column_break_18",
+  "prop",
+  "column_break_20",
+  "sp",
+  "column_break_22",
+  "fp",
+  "column_break_24",
+  "sl",
+  "column_break_26",
+  "psl",
+  "details_section",
+  "job_description",
+  "requirement_details_section",
+  "qualification",
+  "total_experience",
+  "column_break_33",
+  "specialization",
+  "passport_category",
+  "column_break_36",
+  "minimum_experience",
+  "salary_type",
+  "column_break_39",
+  "maximum_experience",
+  "maximum",
+  "column_break_42",
+  "indian_experience",
+  "minimum",
+  "column_break_45",
+  "gcc_experience",
+  "allowancesbenefits_section",
+  "food_allowance",
+  "accomodation_allowance",
+  "working_days_hrs",
+  "leave_policy",
+  "contract_period_probation",
+  "overtime",
+  "payment_terms",
+  "column_break_55",
+  "travel_allowance",
+  "other_allowance",
+  "joining_ticket",
+  "visa_type",
+  "mode_of_interview",
+  "nationality",
+  "interview_details",
+  "candidates_details_section",
+  "table_64",
+  "section_break_65",
+  "sa_allocated"
+ ],
+ "fields": [
+  {
+   "fieldname": "subject",
+   "fieldtype": "Data",
+   "label": "Subject"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "Project"
+  },
+  {
+   "fieldname": "territory",
+   "fieldtype": "Link",
+   "label": "Territory",
+   "options": "Territory"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "\nOpen\nWorking\nPending Review\nOverdue\nCompleted\nCancelled"
+  },
+  {
+   "fieldname": "operation_status",
+   "fieldtype": "Select",
+   "label": "Operation Status",
+   "options": "\nPending\nAcknowledged\nConfirmed\nDeclined\nSourcing\nDnD\nHold\nCompleted\nCancelled"
+  },
+  {
+   "fieldname": "project_manager",
+   "fieldtype": "Data",
+   "label": "Project Manager"
+  },
+  {
+   "fieldname": "account_manager",
+   "fieldtype": "Data",
+   "label": "Account Manager"
+  },
+  {
+   "fieldname": "timeline_section",
+   "fieldtype": "Section Break",
+   "label": "Timeline"
+  },
+  {
+   "fieldname": "expected_start_date",
+   "fieldtype": "Data",
+   "label": "Expected Start Date"
+  },
+  {
+   "fieldname": "column_break_12",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "expected_end_date",
+   "fieldtype": "Data",
+   "label": "Expected End Date"
+  },
+  {
+   "fieldname": "section_break_14",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "work_plan",
+   "fieldtype": "Table",
+   "label": "Work Plan",
+   "options": "Work Plan"
+  },
+  {
+   "fieldname": "count_report_section",
+   "fieldtype": "Section Break",
+   "label": "Count Report"
+  },
+  {
+   "fieldname": "vac",
+   "fieldtype": "Int",
+   "label": "#VAC"
+  },
+  {
+   "fieldname": "column_break_18",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "prop",
+   "fieldtype": "Int",
+   "label": "#PROP"
+  },
+  {
+   "fieldname": "column_break_20",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sp",
+   "fieldtype": "Int",
+   "label": "#SP"
+  },
+  {
+   "fieldname": "column_break_22",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "fp",
+   "fieldtype": "Int",
+   "label": "#FP"
+  },
+  {
+   "fieldname": "column_break_24",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sl",
+   "fieldtype": "Data",
+   "label": "#SL"
+  },
+  {
+   "fieldname": "column_break_26",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "psl",
+   "fieldtype": "Int",
+   "label": "#PSL"
+  },
+  {
+   "fieldname": "details_section",
+   "fieldtype": "Section Break",
+   "label": "Details"
+  },
+  {
+   "fieldname": "job_description",
+   "fieldtype": "Text Editor",
+   "label": "Job Description"
+  },
+  {
+   "fieldname": "requirement_details_section",
+   "fieldtype": "Section Break",
+   "label": "Requirement Details"
+  },
+  {
+   "fieldname": "qualification",
+   "fieldtype": "Data",
+   "label": "Qualification"
+  },
+  {
+   "fieldname": "total_experience",
+   "fieldtype": "Int",
+   "label": "Total Experience"
+  },
+  {
+   "fieldname": "column_break_33",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "specialization",
+   "fieldtype": "Link",
+   "label": "Specialization",
+   "options": "Specialization"
+  },
+  {
+   "fieldname": "passport_category",
+   "fieldtype": "Select",
+   "label": "Passport Category",
+   "options": "\nECR\nECNR\nECR/ECNR"
+  },
+  {
+   "fieldname": "column_break_36",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "minimum_experience",
+   "fieldtype": "Data",
+   "label": "Minimum Experience"
+  },
+  {
+   "fieldname": "salary_type",
+   "fieldtype": "Select",
+   "label": "Salary Type",
+   "options": "\nFixed\nRange\nNegotiable"
+  },
+  {
+   "fieldname": "column_break_39",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "maximum_experience",
+   "fieldtype": "Data",
+   "label": "Maximum Experience"
+  },
+  {
+   "fieldname": "maximum",
+   "fieldtype": "Data",
+   "label": "Maximum"
+  },
+  {
+   "fieldname": "column_break_42",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "indian_experience",
+   "fieldtype": "Data",
+   "label": "Indian Experience"
+  },
+  {
+   "fieldname": "column_break_45",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "gcc_experience",
+   "fieldtype": "Data",
+   "label": "GCC Experience"
+  },
+  {
+   "fieldname": "minimum",
+   "fieldtype": "Data",
+   "label": "Minimum"
+  },
+  {
+   "fieldname": "allowancesbenefits_section",
+   "fieldtype": "Section Break",
+   "label": "ALLOWANCES/Benefits"
+  },
+  {
+   "fieldname": "food_allowance",
+   "fieldtype": "Data",
+   "label": "Food Allowance"
+  },
+  {
+   "fieldname": "accomodation_allowance",
+   "fieldtype": "Data",
+   "label": "Accomodation Allowance"
+  },
+  {
+   "fieldname": "working_days_hrs",
+   "fieldtype": "Data",
+   "label": "Working Days HRS"
+  },
+  {
+   "fieldname": "leave_policy",
+   "fieldtype": "Data",
+   "label": "Leave Policy"
+  },
+  {
+   "fieldname": "contract_period_probation",
+   "fieldtype": "Data",
+   "label": "Contract Period Probation"
+  },
+  {
+   "fieldname": "overtime",
+   "fieldtype": "Data",
+   "label": "Overtime"
+  },
+  {
+   "fieldname": "payment_terms",
+   "fieldtype": "Small Text",
+   "label": "Payment Terms"
+  },
+  {
+   "fieldname": "column_break_55",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "travel_allowance",
+   "fieldtype": "Data",
+   "label": "Travel Allowance"
+  },
+  {
+   "fieldname": "other_allowance",
+   "fieldtype": "Data",
+   "label": "Other Allowance"
+  },
+  {
+   "fieldname": "joining_ticket",
+   "fieldtype": "Data",
+   "label": "Joining Ticket"
+  },
+  {
+   "fieldname": "visa_type",
+   "fieldtype": "Data",
+   "label": "Visa Type"
+  },
+  {
+   "fieldname": "mode_of_interview",
+   "fieldtype": "Data",
+   "label": "Mode of Interview"
+  },
+  {
+   "fieldname": "nationality",
+   "fieldtype": "Data",
+   "label": "Nationality"
+  },
+  {
+   "fieldname": "interview_details",
+   "fieldtype": "Table",
+   "label": "Interview Details",
+   "options": "Direct Interview Details",
+   "read_only": 1
+  },
+  {
+   "fieldname": "candidates_details_section",
+   "fieldtype": "Section Break",
+   "label": "Candidates Details"
+  },
+  {
+   "fieldname": "table_64",
+   "fieldtype": "Table",
+   "options": "Job Description Candidate"
+  },
+  {
+   "fieldname": "section_break_65",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "sa_allocated",
+   "fieldtype": "Table",
+   "label": "SA Allocated",
+   "options": "SA Allocated"
+  }
+ ],
+ "modified": "2020-04-08 11:21:43.424306",
+ "modified_by": "Administrator",
+ "module": "RecruitPRO",
+ "name": "Job Description",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -1,0 +1,89 @@
+{
+ "creation": "2020-04-08 11:15:49.135393",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "candidate_id",
+  "given_name",
+  "mobile",
+  "column_break_4",
+  "candidate_status",
+  "current_location",
+  "address_line_1",
+  "executive_details_section",
+  "candidate_owne",
+  "sa_name"
+ ],
+ "fields": [
+  {
+   "fieldname": "candidate_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Candidate ID"
+  },
+  {
+   "fieldname": "given_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Given Name"
+  },
+  {
+   "fieldname": "mobile",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Mobile"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "candidate_status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Candidate Status",
+   "options": "\nIDB\nSourced\nSubmitted\nShortlisted\nLinedup\nInterviewed\nProposed PSL\nDo Not Disturb"
+  },
+  {
+   "fieldname": "current_location",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Current Location"
+  },
+  {
+   "fieldname": "address_line_1",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Address Line 1"
+  },
+  {
+   "fieldname": "executive_details_section",
+   "fieldtype": "Section Break",
+   "label": "Executive Details"
+  },
+  {
+   "fieldname": "candidate_owne",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Candidate Owne"
+  },
+  {
+   "fieldname": "sa_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "SA Name"
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-04-08 11:16:58.548802",
+ "modified_by": "Administrator",
+ "module": "RecruitPRO",
+ "name": "Job Description Candidate",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

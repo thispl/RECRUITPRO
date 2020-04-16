@@ -1,0 +1,45 @@
+{
+ "creation": "2020-04-14 11:02:09.693814",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "from_value",
+  "to_value",
+  "shipping_amount"
+ ],
+ "fields": [
+  {
+   "fieldname": "from_value",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "From Value",
+   "reqd": 1
+  },
+  {
+   "fieldname": "to_value",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "To Value"
+  },
+  {
+   "fieldname": "shipping_amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Shipping Amount",
+   "options": "Company:company:default_currency",
+   "reqd": 1
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-04-14 11:02:26.111660",
+ "modified_by": "Administrator",
+ "module": "RecruitPRO",
+ "name": "Shipping Rule Condition",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

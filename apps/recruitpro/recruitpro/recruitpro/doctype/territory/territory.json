@@ -1,0 +1,82 @@
+{
+ "autoname": "field:territory_name",
+ "creation": "2020-04-07 20:12:27.017142",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "territory_name",
+  "parent_territory",
+  "is_group",
+  "column_break_4",
+  "territory_manager",
+  "territory_targets_section",
+  "targets"
+ ],
+ "fields": [
+  {
+   "fieldname": "territory_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Territory Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "parent_territory",
+   "fieldtype": "Link",
+   "label": "Parent Territory",
+   "options": "Territory"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_group",
+   "fieldtype": "Check",
+   "label": "Is Group"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "territory_manager",
+   "fieldtype": "Link",
+   "label": "Territory Manager",
+   "options": "Sales Person"
+  },
+  {
+   "fieldname": "territory_targets_section",
+   "fieldtype": "Section Break",
+   "label": "Territory Targets"
+  },
+  {
+   "fieldname": "targets",
+   "fieldtype": "Table",
+   "label": "Targets",
+   "options": "Target Detail"
+  }
+ ],
+ "modified": "2020-04-11 12:21:18.883063",
+ "modified_by": "Administrator",
+ "module": "RecruitPRO",
+ "name": "Territory",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

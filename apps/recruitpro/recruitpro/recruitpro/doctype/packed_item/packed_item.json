@@ -1,0 +1,175 @@
+{
+ "creation": "2020-04-13 16:05:01.335233",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "parent_item",
+  "item_code",
+  "item_name",
+  "column_break_4",
+  "description",
+  "section_break_6",
+  "from_warehouse",
+  "to_warehouse_optional",
+  "column_break_9",
+  "qty",
+  "section_break_11",
+  "serial_no",
+  "column_break_13",
+  "batch_no",
+  "actual_batch_quantity",
+  "section_break_16",
+  "actual_qty",
+  "projected_qty",
+  "column_break_19",
+  "uom",
+  "page_break",
+  "prevdoc_doctype",
+  "parent_detail_docname"
+ ],
+ "fields": [
+  {
+   "fieldname": "parent_item",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Parent Item",
+   "options": "Item"
+  },
+  {
+   "fieldname": "item_code",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Item Code",
+   "options": "Item"
+  },
+  {
+   "fieldname": "item_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Item Name"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text Editor",
+   "in_list_view": 1,
+   "label": "Description"
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "from_warehouse",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "From Warehouse",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "to_warehouse_optional",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "To Warehouse (Optional)",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "column_break_9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Qty"
+  },
+  {
+   "fieldname": "section_break_11",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "serial_no",
+   "fieldtype": "Text",
+   "in_list_view": 1,
+   "label": "Serial No"
+  },
+  {
+   "fieldname": "column_break_13",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "batch_no",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Batch No",
+   "options": "Batch"
+  },
+  {
+   "fieldname": "actual_batch_quantity",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Actual Batch Quantity"
+  },
+  {
+   "fieldname": "section_break_16",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "actual_qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Actual Qty"
+  },
+  {
+   "fieldname": "projected_qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Projected Qty"
+  },
+  {
+   "fieldname": "column_break_19",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "uom",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "UOM",
+   "options": "UOM"
+  },
+  {
+   "default": "0",
+   "fieldname": "page_break",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Page Break"
+  },
+  {
+   "fieldname": "prevdoc_doctype",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Prevdoc DocType"
+  },
+  {
+   "fieldname": "parent_detail_docname",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Parent Detail docname"
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-04-13 16:06:34.651679",
+ "modified_by": "Administrator",
+ "module": "RecruitPRO",
+ "name": "Packed Item",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

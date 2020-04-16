@@ -1,0 +1,79 @@
+{
+ "creation": "2020-04-14 11:29:42.304120",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "supplier_group_name",
+  "parent_supplier_group",
+  "is_group",
+  "credit_limit_section",
+  "default_payment_terms_template",
+  "default_payable_account_section",
+  "accounts"
+ ],
+ "fields": [
+  {
+   "fieldname": "supplier_group_name",
+   "fieldtype": "Data",
+   "label": "Supplier Group Name"
+  },
+  {
+   "fieldname": "parent_supplier_group",
+   "fieldtype": "Link",
+   "label": "Parent Supplier Group",
+   "options": "Supplier Group"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_group",
+   "fieldtype": "Check",
+   "label": "Is Group"
+  },
+  {
+   "fieldname": "credit_limit_section",
+   "fieldtype": "Section Break",
+   "label": "Credit Limit"
+  },
+  {
+   "fieldname": "default_payment_terms_template",
+   "fieldtype": "Link",
+   "label": "Default Payment Terms Template",
+   "options": "Payment Terms Template"
+  },
+  {
+   "fieldname": "default_payable_account_section",
+   "fieldtype": "Section Break",
+   "label": "Default Payable Account"
+  },
+  {
+   "fieldname": "accounts",
+   "fieldtype": "Table",
+   "label": "Accounts",
+   "options": "Party Account"
+  }
+ ],
+ "modified": "2020-04-14 11:29:42.304120",
+ "modified_by": "Administrator",
+ "module": "RecruitPRO",
+ "name": "Supplier Group",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

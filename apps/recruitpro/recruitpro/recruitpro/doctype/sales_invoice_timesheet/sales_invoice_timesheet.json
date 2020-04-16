@@ -1,0 +1,46 @@
+{
+ "creation": "2020-04-13 16:20:37.881361",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "time_sheet",
+  "billing_hours",
+  "billing_amount",
+  "timesheet_detail"
+ ],
+ "fields": [
+  {
+   "fieldname": "time_sheet",
+   "fieldtype": "Link",
+   "label": "Time Sheet",
+   "options": "Timesheet"
+  },
+  {
+   "fieldname": "billing_hours",
+   "fieldtype": "Float",
+   "label": "Billing Hours"
+  },
+  {
+   "fieldname": "billing_amount",
+   "fieldtype": "Currency",
+   "label": "Billing Amount"
+  },
+  {
+   "fieldname": "timesheet_detail",
+   "fieldtype": "Data",
+   "label": "Timesheet Detail"
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-04-13 16:20:37.881361",
+ "modified_by": "Administrator",
+ "module": "RecruitPRO",
+ "name": "Sales Invoice Timesheet",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

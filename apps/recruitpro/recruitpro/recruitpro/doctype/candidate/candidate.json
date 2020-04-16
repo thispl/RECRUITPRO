@@ -1,0 +1,644 @@
+{
+ "autoname": "C.####",
+ "creation": "2020-04-08 11:26:51.978495",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "project",
+  "customer",
+  "job_description",
+  "column_break_4",
+  "territory",
+  "interview_location",
+  "pending_for",
+  "candidate_summary_section",
+  "given_name",
+  "current_location",
+  "nationality",
+  "india_experience",
+  "gcc_experience",
+  "column_break_14",
+  "total_experience",
+  "position",
+  "mobile__whatsapp",
+  "alternate_number",
+  "passport_details_section",
+  "applied",
+  "ecr_status",
+  "dob",
+  "column_break_23",
+  "passport_no",
+  "place_of_issue",
+  "boarding_point",
+  "column_break_27",
+  "issued_date",
+  "expiry_date",
+  "contact_details_section",
+  "landline",
+  "alternate_mobile",
+  "skype_id",
+  "column_break_34",
+  "alternate_landline",
+  "alternate_email",
+  "alternate_skype_id",
+  "original_documents_holded_section",
+  "original_documents_holded",
+  "section_break_40",
+  "candidate_owner",
+  "candidate_attachment_section",
+  "irf",
+  "column_break_44",
+  "passport",
+  "sa_details_section",
+  "sa_agent",
+  "column_break_48",
+  "sa__name",
+  "sa_contact_no",
+  "personal_details_section",
+  "date_of_birth",
+  "age",
+  "gender",
+  "married",
+  "email",
+  "computer_proficiency",
+  "column_break_58",
+  "sur_name",
+  "religion",
+  "languages_known",
+  "english_proficiency",
+  "experience_army",
+  "license_section",
+  "india",
+  "gcc",
+  "master_territory",
+  "license_status",
+  "column_break_69",
+  "date_of_issue",
+  "date_of_expiry",
+  "education_details_section",
+  "education",
+  "ctc_details_section",
+  "notice_period",
+  "ctc_mentioned_in",
+  "column_break_77",
+  "current_ctc",
+  "column_break_79",
+  "expected_ctc",
+  "column_break_81",
+  "currency_type",
+  "experience_details_section",
+  "experience",
+  "present_address_section",
+  "address_line_1",
+  "city",
+  "state",
+  "permanent_address_same_as_above",
+  "data_90",
+  "address_line_2",
+  "district",
+  "permanent_address_section",
+  "address_line_3",
+  "city1",
+  "state1",
+  "column_break_97",
+  "address_line_4",
+  "district1"
+ ],
+ "fields": [
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "Project"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "job_description",
+   "fieldtype": "Link",
+   "label": "Job Description",
+   "options": "Job Description"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "territory",
+   "fieldtype": "Read Only",
+   "label": "Territory"
+  },
+  {
+   "fieldname": "interview_location",
+   "fieldtype": "Link",
+   "label": "Interview Location",
+   "options": "District"
+  },
+  {
+   "fieldname": "pending_for",
+   "fieldtype": "Select",
+   "label": "Candidate Status",
+   "options": "IDB\nSourced\nSubmitted\nShortlisted\nLinedup\nInterviewed\nProposed PSL"
+  },
+  {
+   "fieldname": "candidate_summary_section",
+   "fieldtype": "Section Break",
+   "label": "Candidate Summary"
+  },
+  {
+   "fieldname": "given_name",
+   "fieldtype": "Data",
+   "label": "Given Name / Surname"
+  },
+  {
+   "fieldname": "current_location",
+   "fieldtype": "Link",
+   "label": "Current Location",
+   "options": "District"
+  },
+  {
+   "fieldname": "nationality",
+   "fieldtype": "Link",
+   "label": "Nationality",
+   "options": "Country"
+  },
+  {
+   "fieldname": "india_experience",
+   "fieldtype": "Data",
+   "label": "India Experience"
+  },
+  {
+   "fieldname": "gcc_experience",
+   "fieldtype": "Data",
+   "label": "GCC Experience"
+  },
+  {
+   "fieldname": "column_break_14",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_experience",
+   "fieldtype": "Data",
+   "label": "Total Experience"
+  },
+  {
+   "fieldname": "position",
+   "fieldtype": "Data",
+   "label": "Position"
+  },
+  {
+   "fieldname": "mobile__whatsapp",
+   "fieldtype": "Data",
+   "label": "Mobile / Whatsapp"
+  },
+  {
+   "fieldname": "alternate_number",
+   "fieldtype": "Data",
+   "label": "Alternate Number"
+  },
+  {
+   "fieldname": "passport_details_section",
+   "fieldtype": "Section Break",
+   "label": "Passport Details"
+  },
+  {
+   "default": "0",
+   "fieldname": "applied",
+   "fieldtype": "Check",
+   "label": "Applied"
+  },
+  {
+   "fieldname": "ecr_status",
+   "fieldtype": "Select",
+   "label": "ECR Status",
+   "options": "\nECR\nECNR"
+  },
+  {
+   "fieldname": "date_of_birth",
+   "fieldtype": "Data",
+   "label": "Date of Birth"
+  },
+  {
+   "fieldname": "column_break_23",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "passport_no",
+   "fieldtype": "Data",
+   "label": "Passport No"
+  },
+  {
+   "fieldname": "place_of_issue",
+   "fieldtype": "Link",
+   "label": "Place of Issue",
+   "options": "District"
+  },
+  {
+   "fieldname": "boarding_point",
+   "fieldtype": "Data",
+   "label": "Boarding Point"
+  },
+  {
+   "fieldname": "column_break_27",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "issued_date",
+   "fieldtype": "Data",
+   "label": "Issued Date"
+  },
+  {
+   "fieldname": "expiry_date",
+   "fieldtype": "Data",
+   "label": "Expiry Date"
+  },
+  {
+   "fieldname": "contact_details_section",
+   "fieldtype": "Section Break",
+   "label": "Contact Details"
+  },
+  {
+   "fieldname": "landline",
+   "fieldtype": "Data",
+   "label": "Landline "
+  },
+  {
+   "fieldname": "alternate_mobile",
+   "fieldtype": "Data",
+   "label": "Alternate Mobile"
+  },
+  {
+   "fieldname": "skype_id",
+   "fieldtype": "Data",
+   "label": "Skype ID"
+  },
+  {
+   "fieldname": "column_break_34",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "alternate_landline",
+   "fieldtype": "Data",
+   "label": "Alternate Landline"
+  },
+  {
+   "fieldname": "alternate_email",
+   "fieldtype": "Data",
+   "label": "Alternate Email"
+  },
+  {
+   "fieldname": "alternate_skype_id",
+   "fieldtype": "Data",
+   "label": "Alternate Skype ID"
+  },
+  {
+   "fieldname": "original_documents_holded_section",
+   "fieldtype": "Section Break",
+   "label": "Original Documents Holded"
+  },
+  {
+   "fieldname": "original_documents_holded",
+   "fieldtype": "Table",
+   "label": "Original Documents Holded",
+   "options": "Original Documents"
+  },
+  {
+   "fieldname": "section_break_40",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "candidate_owner",
+   "fieldtype": "Link",
+   "label": "Candidate Owner",
+   "options": "User"
+  },
+  {
+   "fieldname": "candidate_attachment_section",
+   "fieldtype": "Section Break",
+   "label": "Candidate Attachment"
+  },
+  {
+   "fieldname": "irf",
+   "fieldtype": "Attach",
+   "label": "IRF ,CV & Client Forms"
+  },
+  {
+   "fieldname": "column_break_44",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "passport",
+   "fieldtype": "Attach",
+   "label": "Passport"
+  },
+  {
+   "fieldname": "sa_details_section",
+   "fieldtype": "Section Break",
+   "label": "SA Details"
+  },
+  {
+   "fieldname": "sa_agent",
+   "fieldtype": "Data",
+   "label": "SA Agent"
+  },
+  {
+   "fieldname": "column_break_48",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sa__name",
+   "fieldtype": "Data",
+   "label": "SA  Name"
+  },
+  {
+   "fieldname": "sa_contact_no",
+   "fieldtype": "Data",
+   "label": "SA Contact No"
+  },
+  {
+   "fieldname": "dob",
+   "fieldtype": "Data",
+   "label": "Date of Birth"
+  },
+  {
+   "fieldname": "personal_details_section",
+   "fieldtype": "Section Break",
+   "label": "Personal Details"
+  },
+  {
+   "fieldname": "age",
+   "fieldtype": "Data",
+   "label": "Age"
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Select",
+   "label": "Gender",
+   "options": "\nMale\nFemale\nPrefer Not to Say"
+  },
+  {
+   "default": "0",
+   "fieldname": "married",
+   "fieldtype": "Check",
+   "label": "Married?"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "computer_proficiency",
+   "fieldtype": "Select",
+   "label": "Computer Proficiency",
+   "options": "\nExcellent\nGood\nAverage\nBelow Average\nPoor"
+  },
+  {
+   "fieldname": "column_break_58",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sur_name",
+   "fieldtype": "Data",
+   "label": "Sur Name"
+  },
+  {
+   "fieldname": "religion",
+   "fieldtype": "Link",
+   "label": "Religion",
+   "options": "Religion"
+  },
+  {
+   "fieldname": "languages_known",
+   "fieldtype": "Table",
+   "label": "Languages Known",
+   "options": "Languages Known"
+  },
+  {
+   "fieldname": "english_proficiency",
+   "fieldtype": "Select",
+   "label": "English Proficiency",
+   "options": "\nExcellent\nGood\nAverage\nBelow Average\nPoor"
+  },
+  {
+   "fieldname": "experience",
+   "fieldtype": "Table",
+   "label": "Experience",
+   "options": "Experience Details"
+  },
+  {
+   "fieldname": "license_section",
+   "fieldtype": "Section Break",
+   "label": "License"
+  },
+  {
+   "default": "0",
+   "fieldname": "india",
+   "fieldtype": "Check",
+   "label": "India"
+  },
+  {
+   "default": "0",
+   "fieldname": "gcc",
+   "fieldtype": "Check",
+   "label": "GCC"
+  },
+  {
+   "fieldname": "master_territory",
+   "fieldtype": "Link",
+   "label": "Territory",
+   "options": "Territory"
+  },
+  {
+   "fieldname": "license_status",
+   "fieldtype": "Select",
+   "label": "License Status",
+   "options": "\nNO License\nValid\nExpired"
+  },
+  {
+   "fieldname": "column_break_69",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:in_list([\"Expired\",\"Valid\"], doc.license_status)",
+   "fieldname": "date_of_issue",
+   "fieldtype": "Data",
+   "label": "Date of Issue"
+  },
+  {
+   "depends_on": "eval:in_list([\"Expired\",\"Valid\"], doc.license_status)",
+   "fieldname": "date_of_expiry",
+   "fieldtype": "Data",
+   "label": "Date of Expiry"
+  },
+  {
+   "fieldname": "education_details_section",
+   "fieldtype": "Section Break",
+   "label": "Education Details"
+  },
+  {
+   "fieldname": "education",
+   "fieldtype": "Table",
+   "label": "Education",
+   "options": "Education Details"
+  },
+  {
+   "fieldname": "ctc_details_section",
+   "fieldtype": "Section Break",
+   "label": "CTC Details"
+  },
+  {
+   "fieldname": "notice_period",
+   "fieldtype": "Data",
+   "label": "Notice Period"
+  },
+  {
+   "fieldname": "ctc_mentioned_in",
+   "fieldtype": "Select",
+   "label": "CTC Mentioned in",
+   "options": "\nMonthly\nYearly"
+  },
+  {
+   "fieldname": "column_break_77",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "current_ctc",
+   "fieldtype": "Currency",
+   "label": "Current CTC"
+  },
+  {
+   "fieldname": "column_break_79",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "expected_ctc",
+   "fieldtype": "Currency",
+   "label": "Expected CTC"
+  },
+  {
+   "fieldname": "column_break_81",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "currency_type",
+   "fieldtype": "Link",
+   "label": "Currency Type",
+   "options": "Currency"
+  },
+  {
+   "fieldname": "experience_army",
+   "fieldtype": "Data",
+   "label": "Experience "
+  },
+  {
+   "fieldname": "experience_details_section",
+   "fieldtype": "Section Break",
+   "label": "Experience Details"
+  },
+  {
+   "fieldname": "present_address_section",
+   "fieldtype": "Section Break",
+   "label": "Present Address"
+  },
+  {
+   "fieldname": "address_line_1",
+   "fieldtype": "Data",
+   "label": "Address Line 1"
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "label": "City"
+  },
+  {
+   "fieldname": "state",
+   "fieldtype": "Data",
+   "label": "State"
+  },
+  {
+   "default": "0",
+   "fieldname": "permanent_address_same_as_above",
+   "fieldtype": "Check",
+   "label": "Permanent Address Same as Above"
+  },
+  {
+   "fieldname": "data_90",
+   "fieldtype": "Data"
+  },
+  {
+   "fieldname": "address_line_2",
+   "fieldtype": "Data",
+   "label": "Address Line 2"
+  },
+  {
+   "fieldname": "district",
+   "fieldtype": "Link",
+   "label": "District",
+   "options": "District"
+  },
+  {
+   "fieldname": "permanent_address_section",
+   "fieldtype": "Section Break",
+   "label": "Permanent Address"
+  },
+  {
+   "fieldname": "address_line_3",
+   "fieldtype": "Data",
+   "label": "Address Line 1"
+  },
+  {
+   "fieldname": "city1",
+   "fieldtype": "Data",
+   "label": "City"
+  },
+  {
+   "fieldname": "column_break_97",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "address_line_4",
+   "fieldtype": "Data",
+   "label": "Address Line 2"
+  },
+  {
+   "fieldname": "district1",
+   "fieldtype": "Link",
+   "label": "District",
+   "options": "District"
+  },
+  {
+   "fieldname": "state1",
+   "fieldtype": "Data",
+   "label": "State"
+  }
+ ],
+ "modified": "2020-04-08 20:07:28.123857",
+ "modified_by": "Administrator",
+ "module": "RecruitPRO",
+ "name": "Candidate",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

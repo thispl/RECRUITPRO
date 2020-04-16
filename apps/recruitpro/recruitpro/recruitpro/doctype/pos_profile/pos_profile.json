@@ -1,0 +1,358 @@
+{
+ "autoname": "Prompt",
+ "creation": "2020-04-13 12:17:09.832691",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "disabled",
+  "section_break_2",
+  "naming_series",
+  "customer",
+  "company",
+  "country",
+  "warehouse",
+  "campaign",
+  "company_address",
+  "column_break_10",
+  "update_stock",
+  "ignore_pricing_rule",
+  "allow_delete",
+  "allow_user_to_edit_rate",
+  "allow_user_to_edit_discount",
+  "allow_print_before_pay",
+  "display_items_in_stock",
+  "applicable_for_users_section",
+  "applicable_for_users",
+  "mode_of_payment_section",
+  "sales_invoice_payment",
+  "section_break_22",
+  "item_groups",
+  "column_break_24",
+  "customer_groups",
+  "print_settings_section",
+  "print_format_for_online",
+  "letter_head",
+  "column_break_29",
+  "terms_and_conditions",
+  "print_heading",
+  "offline_pos_settings_section",
+  "territory",
+  "column_break_34",
+  "print_format",
+  "customer_group",
+  "accounting_section",
+  "price_list",
+  "currency",
+  "write_off_account",
+  "write_off_cost_center",
+  "account_for_change_amount",
+  "column_break_43",
+  "income_account",
+  "expense_account",
+  "taxes_and_charges",
+  "apply_discount_on",
+  "accounting_dimensions_section",
+  "cost_center"
+ ],
+ "fields": [
+  {
+   "default": "0",
+   "fieldname": "disabled",
+   "fieldtype": "Check",
+   "label": "Disabled"
+  },
+  {
+   "fieldname": "section_break_2",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "country",
+   "fieldtype": "Read Only",
+   "label": "Country"
+  },
+  {
+   "fieldname": "warehouse",
+   "fieldtype": "Link",
+   "label": "Warehouse",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "campaign",
+   "fieldtype": "Link",
+   "label": "Campaign",
+   "options": "Campaign"
+  },
+  {
+   "fieldname": "company_address",
+   "fieldtype": "Link",
+   "label": "Company Address",
+   "options": "Address"
+  },
+  {
+   "fieldname": "column_break_10",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "update_stock",
+   "fieldtype": "Check",
+   "label": "Update Stock"
+  },
+  {
+   "default": "0",
+   "fieldname": "ignore_pricing_rule",
+   "fieldtype": "Check",
+   "label": "Ignore Pricing Rule"
+  },
+  {
+   "default": "0",
+   "fieldname": "allow_delete",
+   "fieldtype": "Check",
+   "label": "Allow Delete"
+  },
+  {
+   "default": "0",
+   "fieldname": "allow_user_to_edit_rate",
+   "fieldtype": "Check",
+   "label": "Allow user to edit Rate"
+  },
+  {
+   "default": "0",
+   "fieldname": "allow_user_to_edit_discount",
+   "fieldtype": "Check",
+   "label": "Allow user to edit Discount"
+  },
+  {
+   "default": "0",
+   "fieldname": "allow_print_before_pay",
+   "fieldtype": "Check",
+   "label": "Allow Print Before Pay"
+  },
+  {
+   "default": "0",
+   "fieldname": "display_items_in_stock",
+   "fieldtype": "Check",
+   "label": "Display Items In Stock"
+  },
+  {
+   "fieldname": "applicable_for_users_section",
+   "fieldtype": "Section Break",
+   "label": "Applicable for Users"
+  },
+  {
+   "fieldname": "applicable_for_users",
+   "fieldtype": "Table",
+   "label": "Applicable for Users",
+   "options": "POS Profile User"
+  },
+  {
+   "fieldname": "mode_of_payment_section",
+   "fieldtype": "Section Break",
+   "label": "Mode of Payment"
+  },
+  {
+   "fieldname": "sales_invoice_payment",
+   "fieldtype": "Table",
+   "label": "Sales Invoice Payment",
+   "options": "Sales Invoice Payment"
+  },
+  {
+   "fieldname": "section_break_22",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "item_groups",
+   "fieldtype": "Table",
+   "label": "Item Groups",
+   "options": "POS Item Group"
+  },
+  {
+   "fieldname": "column_break_24",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "customer_groups",
+   "fieldtype": "Table",
+   "label": "Customer Groups",
+   "options": "POS Customer Group"
+  },
+  {
+   "fieldname": "print_settings_section",
+   "fieldtype": "Section Break",
+   "label": "Print Settings"
+  },
+  {
+   "fieldname": "print_format_for_online",
+   "fieldtype": "Link",
+   "label": "Print Format for Online",
+   "options": "Print Format"
+  },
+  {
+   "fieldname": "letter_head",
+   "fieldtype": "Link",
+   "label": "Letter Head",
+   "options": "Letter Head"
+  },
+  {
+   "fieldname": "column_break_29",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "terms_and_conditions",
+   "fieldtype": "Link",
+   "label": "Terms and Conditions",
+   "options": "Terms and Conditions"
+  },
+  {
+   "fieldname": "print_heading",
+   "fieldtype": "Link",
+   "label": "Print Heading",
+   "options": "Print Heading"
+  },
+  {
+   "fieldname": "offline_pos_settings_section",
+   "fieldtype": "Section Break",
+   "label": "Offline POS Settings"
+  },
+  {
+   "fieldname": "territory",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Territory",
+   "options": "Territory",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_34",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "print_format",
+   "fieldtype": "Link",
+   "label": "Print Format",
+   "options": "Print Format"
+  },
+  {
+   "fieldname": "customer_group",
+   "fieldtype": "Link",
+   "label": "Customer Group",
+   "options": "Customer Group"
+  },
+  {
+   "fieldname": "accounting_section",
+   "fieldtype": "Section Break",
+   "label": "Accounting"
+  },
+  {
+   "fieldname": "price_list",
+   "fieldtype": "Link",
+   "label": "Price List",
+   "options": "Price List"
+  },
+  {
+   "fieldname": "currency",
+   "fieldtype": "Link",
+   "label": "Currency",
+   "options": "Currency"
+  },
+  {
+   "fieldname": "write_off_account",
+   "fieldtype": "Link",
+   "label": "Write Off Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "write_off_cost_center",
+   "fieldtype": "Link",
+   "label": "Write Off Cost Center",
+   "options": "Cost Center"
+  },
+  {
+   "fieldname": "account_for_change_amount",
+   "fieldtype": "Link",
+   "label": "Account for Change Amount",
+   "options": "Account"
+  },
+  {
+   "fieldname": "column_break_43",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "income_account",
+   "fieldtype": "Link",
+   "label": "Income Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "expense_account",
+   "fieldtype": "Link",
+   "label": "Expense Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "taxes_and_charges",
+   "fieldtype": "Link",
+   "label": "Taxes and Charges",
+   "options": "Sales Taxes and Charges Template"
+  },
+  {
+   "default": "Grand Total",
+   "fieldname": "apply_discount_on",
+   "fieldtype": "Select",
+   "label": "Apply Discount On",
+   "options": "Grand Total\nNet Total"
+  },
+  {
+   "fieldname": "accounting_dimensions_section",
+   "fieldtype": "Section Break",
+   "label": "Accounting Dimensions"
+  },
+  {
+   "fieldname": "cost_center",
+   "fieldtype": "Link",
+   "label": "Cost Center",
+   "options": "Cost Center"
+  }
+ ],
+ "modified": "2020-04-13 12:59:06.736276",
+ "modified_by": "Administrator",
+ "module": "RecruitPRO",
+ "name": "POS Profile",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

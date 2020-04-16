@@ -1,0 +1,158 @@
+{
+ "creation": "2020-04-14 12:18:40.690977",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "disable",
+  "column_break_2",
+  "rule_description",
+  "section_break_4",
+  "min_qty",
+  "max_qty",
+  "column_break_7",
+  "min_amount",
+  "max_amount",
+  "free_item_section",
+  "same_item",
+  "item_code",
+  "qty",
+  "column_break_14",
+  "uom",
+  "rate",
+  "section_break_17",
+  "warehouse",
+  "threshold_for_suggestion",
+  "column_break_20",
+  "priority",
+  "apply_multiple_pricing_rules"
+ ],
+ "fields": [
+  {
+   "fieldname": "disable",
+   "fieldtype": "Data",
+   "label": "Disable"
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "rule_description",
+   "fieldtype": "Small Text",
+   "label": "Rule Description"
+  },
+  {
+   "fieldname": "section_break_4",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "min_qty",
+   "fieldtype": "Float",
+   "label": "Min Qty"
+  },
+  {
+   "fieldname": "max_qty",
+   "fieldtype": "Float",
+   "label": "Max Qty"
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "min_amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Min Amount"
+  },
+  {
+   "fieldname": "max_amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Max Amount"
+  },
+  {
+   "fieldname": "free_item_section",
+   "fieldtype": "Section Break",
+   "label": "Free Item"
+  },
+  {
+   "default": "0",
+   "fieldname": "same_item",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Same Item"
+  },
+  {
+   "fieldname": "item_code",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Item Code",
+   "options": "Item"
+  },
+  {
+   "fieldname": "qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Qty"
+  },
+  {
+   "fieldname": "column_break_14",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "uom",
+   "fieldtype": "Link",
+   "label": "UOM",
+   "options": "UOM"
+  },
+  {
+   "fieldname": "rate",
+   "fieldtype": "Currency",
+   "label": "Rate"
+  },
+  {
+   "fieldname": "section_break_17",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "warehouse",
+   "fieldtype": "Link",
+   "label": "Warehouse",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "threshold_for_suggestion",
+   "fieldtype": "Percent",
+   "label": "Threshold for Suggestion"
+  },
+  {
+   "fieldname": "column_break_20",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "priority",
+   "fieldtype": "Select",
+   "label": "Priority",
+   "options": "\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20"
+  },
+  {
+   "default": "0",
+   "fieldname": "apply_multiple_pricing_rules",
+   "fieldtype": "Check",
+   "label": "Apply Multiple Pricing Rules"
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-04-14 12:19:55.211199",
+ "modified_by": "Administrator",
+ "module": "RecruitPRO",
+ "name": "Promotional Scheme Product Discount",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

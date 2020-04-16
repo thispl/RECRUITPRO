@@ -1,0 +1,37 @@
+{
+ "creation": "2020-04-11 17:36:14.673793",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "attribute_value",
+  "abbreviation"
+ ],
+ "fields": [
+  {
+   "fieldname": "attribute_value",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Attribute Value",
+   "reqd": 1
+  },
+  {
+   "fieldname": "abbreviation",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Abbreviation",
+   "reqd": 1
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-04-11 17:36:14.673793",
+ "modified_by": "Administrator",
+ "module": "RecruitPRO",
+ "name": "Item Attribute Value",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

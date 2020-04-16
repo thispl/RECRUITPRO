@@ -1,0 +1,83 @@
+{
+ "creation": "2020-04-08 20:00:02.919271",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "organization",
+  "role",
+  "work_summary",
+  "column_break_4",
+  "currently_working",
+  "from_date",
+  "to_date",
+  "reason_for_leaving",
+  "notice_period"
+ ],
+ "fields": [
+  {
+   "fieldname": "organization",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Organization"
+  },
+  {
+   "fieldname": "role",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Role"
+  },
+  {
+   "fieldname": "work_summary",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Work Summary"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "currently_working",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Currently Working"
+  },
+  {
+   "fieldname": "from_date",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "From Date"
+  },
+  {
+   "fieldname": "to_date",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "To Date"
+  },
+  {
+   "fieldname": "reason_for_leaving",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Reason for Leaving"
+  },
+  {
+   "fieldname": "notice_period",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Notice Period (In Days"
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-04-08 20:00:54.613960",
+ "modified_by": "Administrator",
+ "module": "RecruitPRO",
+ "name": "Experience Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

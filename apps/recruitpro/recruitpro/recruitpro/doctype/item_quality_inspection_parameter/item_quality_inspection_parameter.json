@@ -1,0 +1,36 @@
+{
+ "creation": "2020-04-11 18:05:27.831321",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "parameter",
+  "acceptance_criteria"
+ ],
+ "fields": [
+  {
+   "fieldname": "parameter",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Parameter",
+   "reqd": 1
+  },
+  {
+   "fieldname": "acceptance_criteria",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Acceptance Criteria"
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-04-11 18:05:36.340168",
+ "modified_by": "Administrator",
+ "module": "RecruitPRO",
+ "name": "Item Quality Inspection Parameter",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

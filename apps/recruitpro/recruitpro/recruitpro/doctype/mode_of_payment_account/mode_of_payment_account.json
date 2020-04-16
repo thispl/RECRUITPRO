@@ -1,0 +1,37 @@
+{
+ "creation": "2020-04-07 22:01:07.408431",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "company",
+  "default_account"
+ ],
+ "fields": [
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "default_account",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Default Account",
+   "options": "Account"
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-04-07 22:03:19.784284",
+ "modified_by": "Administrator",
+ "module": "RecruitPRO",
+ "name": "Mode of Payment Account",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

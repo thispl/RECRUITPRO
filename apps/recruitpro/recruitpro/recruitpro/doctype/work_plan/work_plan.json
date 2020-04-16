@@ -1,0 +1,68 @@
+{
+ "creation": "2020-04-08 10:41:08.059132",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "work_on",
+  "work_by",
+  "employee_name",
+  "column_break_4",
+  "cv_planed",
+  "cv_achived",
+  "strike_rate"
+ ],
+ "fields": [
+  {
+   "fieldname": "work_on",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Work On"
+  },
+  {
+   "fieldname": "work_by",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Work By"
+  },
+  {
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Employee Name"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cv_planed",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "#CV Planed"
+  },
+  {
+   "fieldname": "cv_achived",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "#CV - Achived"
+  },
+  {
+   "fieldname": "strike_rate",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Strike Rate"
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-04-08 10:42:00.567122",
+ "modified_by": "Administrator",
+ "module": "RecruitPRO",
+ "name": "Work Plan",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

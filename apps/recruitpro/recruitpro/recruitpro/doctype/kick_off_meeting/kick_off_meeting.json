@@ -1,0 +1,61 @@
+{
+ "creation": "2020-04-08 10:15:11.772406",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "employee_code",
+  "employee_name",
+  "column_break_3",
+  "department",
+  "designation",
+  "email_id"
+ ],
+ "fields": [
+  {
+   "fieldname": "employee_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Employee Code"
+  },
+  {
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Employee Name"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Department"
+  },
+  {
+   "fieldname": "designation",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Designation"
+  },
+  {
+   "fieldname": "email_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Email Id"
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-04-08 10:15:38.347868",
+ "modified_by": "Administrator",
+ "module": "RecruitPRO",
+ "name": "Kick Off Meeting",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -1,0 +1,47 @@
+{
+ "creation": "2020-04-13 11:38:56.254975",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "project_allocated",
+  "cv_shared",
+  "column_break_3",
+  "psl"
+ ],
+ "fields": [
+  {
+   "fieldname": "project_allocated",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Project Allocated"
+  },
+  {
+   "fieldname": "cv_shared",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "CV Shared"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "psl",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "PSL"
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-04-13 11:39:10.666819",
+ "modified_by": "Administrator",
+ "module": "RecruitPRO",
+ "name": "Project Allocated",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

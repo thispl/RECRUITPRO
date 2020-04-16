@@ -1,0 +1,521 @@
+{
+ "autoname": "field:title",
+ "creation": "2020-04-10 14:22:13.761795",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_1",
+  "title",
+  "disable",
+  "apply_on",
+  "price_or_product_discount",
+  "warehouse",
+  "column_break_7",
+  "apply_rule_on_item_code",
+  "apply_rule_on_item_group",
+  "apply_rule_on_brand",
+  "mixed_conditions",
+  "is_cumulative",
+  "coupon_code_based",
+  "discount_on_other_item_section",
+  "apply_rule_on_other",
+  "column_break_16",
+  "item_code",
+  "item_group",
+  "brand",
+  "party_information_section",
+  "selling",
+  "buying",
+  "column_break_23",
+  "applicable_for",
+  "customer",
+  "customer_group",
+  "territory",
+  "sales_partner",
+  "campaign",
+  "supplier",
+  "supplier_group",
+  "quantity_and_amount_section",
+  "min_qty",
+  "max_qty",
+  "column_break_35",
+  "min_amt",
+  "max_amt",
+  "period_settings_section",
+  "valid_from",
+  "valid_upto",
+  "column_break_41",
+  "company",
+  "currency",
+  "margin_section",
+  "margin_type",
+  "column_break_46",
+  "margin_rate_or_amount",
+  "price_discount_scheme_section",
+  "rate_or_discount",
+  "apply_discount_on",
+  "column_break_51",
+  "rate",
+  "discount_amount",
+  "discount_percentage",
+  "for_price_list",
+  "product_discount_scheme_section",
+  "same_item",
+  "free_item",
+  "qty",
+  "column_break_60",
+  "uom",
+  "free_item_rate",
+  "advanced_settings_section",
+  "threshold_for_suggestion",
+  "priority",
+  "column_break_66",
+  "apply_multiple_pricing_rules",
+  "apply_discount_on_rate",
+  "validate_applied_rule",
+  "rule_description",
+  "section_break_71",
+  "pricing_rule_help",
+  "reference_section",
+  "promotional_scheme_id",
+  "promotional_scheme"
+ ],
+ "fields": [
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "label": "Title",
+   "unique": 1
+  },
+  {
+   "fieldname": "section_break_1",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "disable",
+   "fieldtype": "Check",
+   "label": "Disable"
+  },
+  {
+   "default": "Item Code",
+   "fieldname": "apply_on",
+   "fieldtype": "Select",
+   "label": "Apply On",
+   "options": "\nItem Code\nItem Group\nBrand\nTransaction"
+  },
+  {
+   "fieldname": "price_or_product_discount",
+   "fieldtype": "Select",
+   "label": "Price or Product Discount",
+   "options": "Price\nProduct"
+  },
+  {
+   "fieldname": "warehouse",
+   "fieldtype": "Link",
+   "label": "Warehouse",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "apply_rule_on_item_code",
+   "fieldtype": "Table",
+   "label": "Apply Rule On Item Code",
+   "options": "Pricing Rule Item Code"
+  },
+  {
+   "fieldname": "apply_rule_on_item_group",
+   "fieldtype": "Table",
+   "label": "Apply Rule On Item Group",
+   "options": "Pricing Rule Item Group"
+  },
+  {
+   "fieldname": "apply_rule_on_brand",
+   "fieldtype": "Table",
+   "label": "Apply Rule On Brand",
+   "options": "Pricing Rule Brand"
+  },
+  {
+   "default": "0",
+   "fieldname": "mixed_conditions",
+   "fieldtype": "Check",
+   "label": "Mixed Conditions"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_cumulative",
+   "fieldtype": "Check",
+   "label": "Is Cumulative"
+  },
+  {
+   "default": "0",
+   "fieldname": "coupon_code_based",
+   "fieldtype": "Check",
+   "label": "Coupon Code Based"
+  },
+  {
+   "fieldname": "discount_on_other_item_section",
+   "fieldtype": "Section Break",
+   "label": "Discount on Other Item"
+  },
+  {
+   "fieldname": "apply_rule_on_other",
+   "fieldtype": "Select",
+   "label": "Apply Rule On Other",
+   "options": "\nItem Code\nItem Group\nBrand"
+  },
+  {
+   "fieldname": "column_break_16",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "item_code",
+   "fieldtype": "Link",
+   "label": "Item Code",
+   "options": "Item"
+  },
+  {
+   "fieldname": "item_group",
+   "fieldtype": "Link",
+   "label": "Item Group",
+   "options": "Item Group"
+  },
+  {
+   "fieldname": "brand",
+   "fieldtype": "Link",
+   "label": "Brand",
+   "options": "Brand"
+  },
+  {
+   "fieldname": "party_information_section",
+   "fieldtype": "Section Break",
+   "label": "Party Information"
+  },
+  {
+   "default": "0",
+   "fieldname": "selling",
+   "fieldtype": "Check",
+   "label": "Selling"
+  },
+  {
+   "default": "0",
+   "fieldname": "buying",
+   "fieldtype": "Check",
+   "label": "Buying"
+  },
+  {
+   "fieldname": "column_break_23",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "applicable_for",
+   "fieldtype": "Select",
+   "label": "Applicable For",
+   "options": "\nCustomer\nCustomer Group\nTerritory\nSales Partner\nCampaign\nSupplier\nSupplier Group"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "customer_group",
+   "fieldtype": "Link",
+   "label": "Customer Group",
+   "options": "Customer Group"
+  },
+  {
+   "fieldname": "territory",
+   "fieldtype": "Link",
+   "label": "Territory",
+   "options": "Territory"
+  },
+  {
+   "fieldname": "sales_partner",
+   "fieldtype": "Link",
+   "label": "Sales Partner",
+   "options": "Sales Partner"
+  },
+  {
+   "fieldname": "campaign",
+   "fieldtype": "Link",
+   "label": "Campaign",
+   "options": "Campaign"
+  },
+  {
+   "fieldname": "supplier",
+   "fieldtype": "Link",
+   "label": "Supplier",
+   "options": "Supplier"
+  },
+  {
+   "fieldname": "supplier_group",
+   "fieldtype": "Link",
+   "label": "Supplier Group",
+   "options": "Supplier Group"
+  },
+  {
+   "fieldname": "quantity_and_amount_section",
+   "fieldtype": "Section Break",
+   "label": "Quantity and Amount"
+  },
+  {
+   "fieldname": "min_qty",
+   "fieldtype": "Float",
+   "label": "Min Qty"
+  },
+  {
+   "fieldname": "max_qty",
+   "fieldtype": "Float",
+   "label": "Max Qty"
+  },
+  {
+   "fieldname": "column_break_35",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "min_amt",
+   "fieldtype": "Currency",
+   "label": "Min Amt",
+   "options": "currency"
+  },
+  {
+   "fieldname": "max_amt",
+   "fieldtype": "Currency",
+   "label": "Max Amt",
+   "options": "currency"
+  },
+  {
+   "fieldname": "period_settings_section",
+   "fieldtype": "Section Break",
+   "label": "Period Settings"
+  },
+  {
+   "fieldname": "valid_from",
+   "fieldtype": "Data",
+   "label": "Valid From"
+  },
+  {
+   "fieldname": "valid_upto",
+   "fieldtype": "Data",
+   "label": "Valid Upto"
+  },
+  {
+   "fieldname": "column_break_41",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "currency",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Currency",
+   "options": "Currency",
+   "reqd": 1
+  },
+  {
+   "fieldname": "margin_section",
+   "fieldtype": "Section Break",
+   "label": "Margin"
+  },
+  {
+   "default": "Percentage",
+   "fieldname": "margin_type",
+   "fieldtype": "Select",
+   "label": "Margin Type",
+   "options": "Percentage\nAmount"
+  },
+  {
+   "fieldname": "column_break_46",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "margin_rate_or_amount",
+   "fieldtype": "Float",
+   "label": "Margin Rate or Amount"
+  },
+  {
+   "fieldname": "price_discount_scheme_section",
+   "fieldtype": "Section Break",
+   "label": "Price Discount Scheme"
+  },
+  {
+   "default": "Discount Percentage",
+   "fieldname": "rate_or_discount",
+   "fieldtype": "Select",
+   "label": "Rate or Discount",
+   "options": "Rate\nDiscount Percentage\nDiscount Amount"
+  },
+  {
+   "default": "Grand Total",
+   "fieldname": "apply_discount_on",
+   "fieldtype": "Select",
+   "label": "Apply Discount On",
+   "options": "Grand Total\nNet Total"
+  },
+  {
+   "fieldname": "column_break_51",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "rate",
+   "fieldtype": "Data",
+   "label": "Rate"
+  },
+  {
+   "fieldname": "discount_amount",
+   "fieldtype": "Currency",
+   "label": "Discount Amount",
+   "options": "Currency"
+  },
+  {
+   "fieldname": "discount_percentage",
+   "fieldtype": "Float",
+   "label": "Discount Percentage"
+  },
+  {
+   "fieldname": "for_price_list",
+   "fieldtype": "Link",
+   "label": "For Price List",
+   "options": "Price List"
+  },
+  {
+   "fieldname": "product_discount_scheme_section",
+   "fieldtype": "Section Break",
+   "label": "Product Discount Scheme"
+  },
+  {
+   "default": "0",
+   "fieldname": "same_item",
+   "fieldtype": "Check",
+   "label": "Same Item"
+  },
+  {
+   "fieldname": "free_item",
+   "fieldtype": "Link",
+   "label": "Free Item",
+   "options": "Item"
+  },
+  {
+   "fieldname": "qty",
+   "fieldtype": "Float",
+   "label": "Qty"
+  },
+  {
+   "fieldname": "column_break_60",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "uom",
+   "fieldtype": "Link",
+   "label": "UOM",
+   "options": "UOM"
+  },
+  {
+   "fieldname": "free_item_rate",
+   "fieldtype": "Currency",
+   "label": "Rate"
+  },
+  {
+   "fieldname": "advanced_settings_section",
+   "fieldtype": "Section Break",
+   "label": "Advanced Settings"
+  },
+  {
+   "fieldname": "threshold_for_suggestion",
+   "fieldtype": "Percent",
+   "label": "Threshold for Suggestion"
+  },
+  {
+   "fieldname": "priority",
+   "fieldtype": "Select",
+   "label": "Priority",
+   "options": "\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20"
+  },
+  {
+   "fieldname": "column_break_66",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "apply_multiple_pricing_rules",
+   "fieldtype": "Check",
+   "label": "Apply Multiple Pricing Rules"
+  },
+  {
+   "default": "0",
+   "fieldname": "apply_discount_on_rate",
+   "fieldtype": "Check",
+   "label": "Apply Discount on Rate"
+  },
+  {
+   "default": "0",
+   "fieldname": "validate_applied_rule",
+   "fieldtype": "Check",
+   "label": "Validate Applied Rule"
+  },
+  {
+   "fieldname": "rule_description",
+   "fieldtype": "Small Text",
+   "label": "Rule Description"
+  },
+  {
+   "fieldname": "section_break_71",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "pricing_rule_help",
+   "fieldtype": "HTML",
+   "label": "Pricing Rule Help"
+  },
+  {
+   "fieldname": "reference_section",
+   "fieldtype": "Section Break",
+   "label": "Reference"
+  },
+  {
+   "fieldname": "promotional_scheme_id",
+   "fieldtype": "Data",
+   "label": "Promotional Scheme Id"
+  },
+  {
+   "fieldname": "promotional_scheme",
+   "fieldtype": "Link",
+   "label": "Promotional Scheme",
+   "options": "Promotional Scheme"
+  }
+ ],
+ "modified": "2020-04-14 12:20:43.464911",
+ "modified_by": "Administrator",
+ "module": "RecruitPRO",
+ "name": "Pricing Rule",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

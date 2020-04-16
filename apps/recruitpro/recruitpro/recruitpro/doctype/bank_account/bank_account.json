@@ -1,0 +1,207 @@
+{
+ "autoname": "A.####",
+ "creation": "2020-04-07 21:11:10.828245",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "account_name",
+  "company_account",
+  "bank",
+  "account_type",
+  "account_subtype",
+  "column_break_6",
+  "is_the_default_account",
+  "is_company_account",
+  "company",
+  "party_details",
+  "party_type",
+  "column_break_12",
+  "party",
+  "account_details",
+  "iban",
+  "column_break_16",
+  "bank_account_no",
+  "branch_code",
+  "swift_number",
+  "address_and_contact_section",
+  "address_html",
+  "website",
+  "column_break_23",
+  "contact_html",
+  "integration_details",
+  "last_integration_date",
+  "column_break_27",
+  "mask"
+ ],
+ "fields": [
+  {
+   "fieldname": "account_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Account Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "company_account",
+   "fieldtype": "Int",
+   "label": "Company Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "bank",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Bank",
+   "options": "Bank",
+   "reqd": 1
+  },
+  {
+   "fieldname": "account_type",
+   "fieldtype": "Data",
+   "label": "Account Type"
+  },
+  {
+   "fieldname": "account_subtype",
+   "fieldtype": "Link",
+   "label": "Account Subtype",
+   "options": "Account Subtype"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_the_default_account",
+   "fieldtype": "Check",
+   "label": "Is the Default Account"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_company_account",
+   "fieldtype": "Check",
+   "label": "Is Company Account"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "party_details",
+   "fieldtype": "Data",
+   "label": "Party Details"
+  },
+  {
+   "fieldname": "party_type",
+   "fieldtype": "Data",
+   "label": "Party Type"
+  },
+  {
+   "fieldname": "column_break_12",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "party",
+   "fieldtype": "Data",
+   "label": "Party"
+  },
+  {
+   "fieldname": "account_details",
+   "fieldtype": "Section Break",
+   "label": "Account Details"
+  },
+  {
+   "fieldname": "iban",
+   "fieldtype": "Data",
+   "label": "IBAN"
+  },
+  {
+   "fieldname": "column_break_16",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "bank_account_no",
+   "fieldtype": "Data",
+   "label": "Bank Account No"
+  },
+  {
+   "fieldname": "branch_code",
+   "fieldtype": "Data",
+   "label": "Branch Code"
+  },
+  {
+   "fieldname": "swift_number",
+   "fieldtype": "Data",
+   "label": "SWIFT number"
+  },
+  {
+   "fieldname": "address_and_contact_section",
+   "fieldtype": "Section Break",
+   "label": "Address and Contact"
+  },
+  {
+   "fieldname": "address_html",
+   "fieldtype": "HTML",
+   "label": "Address HTML"
+  },
+  {
+   "fieldname": "website",
+   "fieldtype": "Data",
+   "label": "Website"
+  },
+  {
+   "fieldname": "column_break_23",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "contact_html",
+   "fieldtype": "HTML",
+   "label": "Contact HTML"
+  },
+  {
+   "fieldname": "integration_details",
+   "fieldtype": "Data",
+   "label": "Integration Details"
+  },
+  {
+   "fieldname": "last_integration_date",
+   "fieldtype": "Data",
+   "label": "Last Integration Date"
+  },
+  {
+   "fieldname": "column_break_27",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "mask",
+   "fieldtype": "Data",
+   "label": "Mask"
+  }
+ ],
+ "modified": "2020-04-11 12:56:19.031784",
+ "modified_by": "Administrator",
+ "module": "RecruitPRO",
+ "name": "Bank Account",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

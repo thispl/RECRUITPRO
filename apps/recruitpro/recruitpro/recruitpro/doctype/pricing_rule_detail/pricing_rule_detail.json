@@ -1,0 +1,64 @@
+{
+ "creation": "2020-04-13 15:54:56.583429",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "pricing_rule",
+  "item_code",
+  "margin_type",
+  "rate_or_discount",
+  "child_docname",
+  "rule_applied"
+ ],
+ "fields": [
+  {
+   "fieldname": "pricing_rule",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Pricing Rule",
+   "options": "Pricing Rule"
+  },
+  {
+   "fieldname": "item_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Item Code"
+  },
+  {
+   "fieldname": "margin_type",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Margin Type"
+  },
+  {
+   "fieldname": "rate_or_discount",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Rate or Discount"
+  },
+  {
+   "fieldname": "child_docname",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Child Docname"
+  },
+  {
+   "fieldname": "rule_applied",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Rule Applied"
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-04-13 15:55:38.771759",
+ "modified_by": "Administrator",
+ "module": "RecruitPRO",
+ "name": "Pricing Rule Detail",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

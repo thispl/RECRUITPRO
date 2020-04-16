@@ -1,0 +1,35 @@
+{
+ "creation": "2020-04-11 12:06:34.126237",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "label",
+  "description"
+ ],
+ "fields": [
+  {
+   "fieldname": "label",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Label"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text Editor",
+   "in_list_view": 1,
+   "label": "Description"
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-04-11 12:07:11.983966",
+ "modified_by": "Administrator",
+ "module": "RecruitPRO",
+ "name": "Item Website Specification",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

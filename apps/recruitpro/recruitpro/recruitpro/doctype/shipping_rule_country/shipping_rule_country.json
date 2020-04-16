@@ -1,0 +1,30 @@
+{
+ "creation": "2020-04-14 11:03:15.853353",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "country"
+ ],
+ "fields": [
+  {
+   "fieldname": "country",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Country",
+   "options": "Country",
+   "reqd": 1
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-04-14 11:03:30.627289",
+ "modified_by": "Administrator",
+ "module": "RecruitPRO",
+ "name": "Shipping Rule Country",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -1,0 +1,282 @@
+{
+ "autoname": "SA.####",
+ "creation": "2020-04-13 11:35:36.693633",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "sub_agent_is_an_organization",
+  "column_break_2",
+  "pvtltdcompany",
+  "column_break_4",
+  "proprietary_company",
+  "section_break_6",
+  "organization_name",
+  "person_name",
+  "mobile",
+  "alternate_mobile_number",
+  "column_break_11",
+  "sa_owner",
+  "sa_status",
+  "email_id",
+  "alternate_email_id",
+  "sa_address_details_section",
+  "addresswith_landmark",
+  "city",
+  "column_break_19",
+  "country",
+  "state",
+  "district",
+  "pin_code",
+  "sa_credentials_section",
+  "sa_photo",
+  "aadhar",
+  "owns_ttc",
+  "owns_ttc1",
+  "column_break_29",
+  "cin_number",
+  "gst_number",
+  "pan_number",
+  "column_break_33",
+  "cin",
+  "gst",
+  "pan",
+  "project_allocated_section",
+  "project_allocated"
+ ],
+ "fields": [
+  {
+   "default": "0",
+   "fieldname": "sub_agent_is_an_organization",
+   "fieldtype": "Check",
+   "label": "Sub Agent is an Organization"
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "depends_on": "sub_agent_is_an_organization",
+   "fieldname": "pvtltdcompany",
+   "fieldtype": "Check",
+   "label": "Pvt.Ltd.Company"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "depends_on": "sub_agent_is_an_organization",
+   "fieldname": "proprietary_company",
+   "fieldtype": "Check",
+   "label": "Proprietary Company"
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "depends_on": "sub_agent_is_an_organization",
+   "fieldname": "organization_name",
+   "fieldtype": "Data",
+   "label": "Organization Name"
+  },
+  {
+   "fieldname": "person_name",
+   "fieldtype": "Data",
+   "label": "Person Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "mobile",
+   "fieldtype": "Data",
+   "label": "Mobile",
+   "reqd": 1
+  },
+  {
+   "fieldname": "alternate_mobile_number",
+   "fieldtype": "Data",
+   "label": "Alternate Mobile Number"
+  },
+  {
+   "fieldname": "column_break_11",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sa_owner",
+   "fieldtype": "Link",
+   "label": "SA Owner",
+   "options": "User",
+   "reqd": 1
+  },
+  {
+   "fieldname": "sa_status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "SA Status",
+   "options": "\nLead\nContact\nResponding\nActive\nReliable\nDo Not Contact",
+   "reqd": 1
+  },
+  {
+   "fieldname": "email_id",
+   "fieldtype": "Data",
+   "label": "Email ID",
+   "reqd": 1
+  },
+  {
+   "fieldname": "alternate_email_id",
+   "fieldtype": "Data",
+   "label": "Alternate Email ID"
+  },
+  {
+   "fieldname": "sa_address_details_section",
+   "fieldtype": "Section Break",
+   "label": "SA Address Details"
+  },
+  {
+   "fieldname": "addresswith_landmark",
+   "fieldtype": "Small Text",
+   "label": "Address(with landmark)"
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "label": "City"
+  },
+  {
+   "fieldname": "column_break_19",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "country",
+   "fieldtype": "Link",
+   "label": "Country",
+   "options": "Country"
+  },
+  {
+   "fieldname": "state",
+   "fieldtype": "Link",
+   "label": "State",
+   "options": "State"
+  },
+  {
+   "fieldname": "district",
+   "fieldtype": "Link",
+   "label": "District",
+   "options": "District"
+  },
+  {
+   "fieldname": "pin_code",
+   "fieldtype": "Data",
+   "label": "Pin Code"
+  },
+  {
+   "fieldname": "sa_credentials_section",
+   "fieldtype": "Section Break",
+   "label": "SA Credentials"
+  },
+  {
+   "fieldname": "sa_photo",
+   "fieldtype": "Attach Image",
+   "label": "SA Photo"
+  },
+  {
+   "fieldname": "aadhar",
+   "fieldtype": "Attach",
+   "label": "Aadhar"
+  },
+  {
+   "default": "0",
+   "fieldname": "owns_ttc",
+   "fieldtype": "Check",
+   "label": "Owns TTC"
+  },
+  {
+   "depends_on": "owns_ttc",
+   "fieldname": "owns_ttc1",
+   "fieldtype": "Attach Image",
+   "label": "OWNS TTC"
+  },
+  {
+   "fieldname": "column_break_29",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "sub_agent_is_an_organization",
+   "fieldname": "cin_number",
+   "fieldtype": "Data",
+   "label": "CIN Number"
+  },
+  {
+   "depends_on": "sub_agent_is_an_organization",
+   "fieldname": "gst_number",
+   "fieldtype": "Data",
+   "label": "GST Number"
+  },
+  {
+   "depends_on": "sub_agent_is_an_organization",
+   "fieldname": "pan_number",
+   "fieldtype": "Data",
+   "label": "PAN Number"
+  },
+  {
+   "fieldname": "column_break_33",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "sub_agent_is_an_organization",
+   "fieldname": "cin",
+   "fieldtype": "Attach",
+   "label": "CIN"
+  },
+  {
+   "depends_on": "sub_agent_is_an_organization",
+   "fieldname": "gst",
+   "fieldtype": "Attach",
+   "label": "GST"
+  },
+  {
+   "depends_on": "sub_agent_is_an_organization",
+   "fieldname": "pan",
+   "fieldtype": "Attach",
+   "label": "PAN"
+  },
+  {
+   "fieldname": "project_allocated_section",
+   "fieldtype": "Section Break",
+   "label": "Project Allocated"
+  },
+  {
+   "fieldname": "project_allocated",
+   "fieldtype": "Table",
+   "label": "Project Allocated",
+   "options": "Project Allocated"
+  }
+ ],
+ "image_field": "sa_photo",
+ "modified": "2020-04-13 11:44:03.813799",
+ "modified_by": "Administrator",
+ "module": "RecruitPRO",
+ "name": "Sub Agent",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

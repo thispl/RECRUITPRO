@@ -1,0 +1,30 @@
+{
+ "creation": "2020-04-13 12:36:53.455965",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "customer_group"
+ ],
+ "fields": [
+  {
+   "fieldname": "customer_group",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Customer Group",
+   "options": "Customer Group",
+   "reqd": 1
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-04-13 12:40:28.747227",
+ "modified_by": "Administrator",
+ "module": "RecruitPRO",
+ "name": "POS Customer Group",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

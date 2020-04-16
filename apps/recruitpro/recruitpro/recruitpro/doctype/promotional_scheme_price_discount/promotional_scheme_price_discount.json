@@ -1,0 +1,175 @@
+{
+ "creation": "2020-04-14 12:02:53.040397",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "disable",
+  "column_break_2",
+  "rule_description",
+  "section_break_4",
+  "min_qty",
+  "max_qty",
+  "column_break_7",
+  "min_amount",
+  "max_amount",
+  "section_break_10",
+  "discount_type",
+  "column_break_12",
+  "rate",
+  "discount_amount",
+  "discount_percentage",
+  "section_break_16",
+  "warehouse",
+  "threshold_for_suggestion",
+  "validate_applied_rule",
+  "column_break_20",
+  "priority",
+  "apply_multiple_pricing_rules",
+  "apply_discount_on_rate"
+ ],
+ "fields": [
+  {
+   "default": "0",
+   "fieldname": "disable",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Disable"
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "rule_description",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Rule Description",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_4",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "min_qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Min Qty"
+  },
+  {
+   "fieldname": "max_qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Max Qty"
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "min_amount",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Min Amount"
+  },
+  {
+   "fieldname": "max_amount",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Max Amount"
+  },
+  {
+   "fieldname": "section_break_10",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "discount_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Discount Type"
+  },
+  {
+   "fieldname": "column_break_12",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "rate",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Rate"
+  },
+  {
+   "fieldname": "discount_amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Discount Amount"
+  },
+  {
+   "fieldname": "discount_percentage",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Discount Percentage"
+  },
+  {
+   "fieldname": "section_break_16",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "warehouse",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Warehouse",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "threshold_for_suggestion",
+   "fieldtype": "Percent",
+   "in_list_view": 1,
+   "label": "Threshold for Suggestion"
+  },
+  {
+   "default": "0",
+   "fieldname": "validate_applied_rule",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Validate Applied Rule"
+  },
+  {
+   "fieldname": "column_break_20",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "priority",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Priority",
+   "options": "\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20"
+  },
+  {
+   "default": "0",
+   "fieldname": "apply_multiple_pricing_rules",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Apply Multiple Pricing Rules"
+  },
+  {
+   "default": "0",
+   "fieldname": "apply_discount_on_rate",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Apply Discount on Rate"
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-04-14 12:04:53.151588",
+ "modified_by": "Administrator",
+ "module": "RecruitPRO",
+ "name": "Promotional Scheme Price Discount",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

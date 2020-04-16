@@ -1,0 +1,88 @@
+{
+ "autoname": "field:attribute_name",
+ "creation": "2020-04-11 17:35:27.846618",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "attribute_name",
+  "numeric_values",
+  "section_break_3",
+  "from_range",
+  "increment",
+  "column_break_6",
+  "to_range",
+  "section_break_8",
+  "item_attribute_values"
+ ],
+ "fields": [
+  {
+   "fieldname": "attribute_name",
+   "fieldtype": "Data",
+   "label": "Attribute Name",
+   "unique": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "numeric_values",
+   "fieldtype": "Check",
+   "label": "Numeric Values"
+  },
+  {
+   "fieldname": "section_break_3",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "from_range",
+   "fieldtype": "Float",
+   "label": "From Range"
+  },
+  {
+   "fieldname": "increment",
+   "fieldtype": "Float",
+   "label": "Increment"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "to_range",
+   "fieldtype": "Float",
+   "label": "To Range"
+  },
+  {
+   "fieldname": "section_break_8",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "item_attribute_values",
+   "fieldtype": "Table",
+   "label": "Item Attribute Values",
+   "options": "Item Attribute Value"
+  }
+ ],
+ "modified": "2020-04-11 18:04:23.440486",
+ "modified_by": "Administrator",
+ "module": "RecruitPRO",
+ "name": "Item Attribute",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

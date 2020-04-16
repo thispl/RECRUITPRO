@@ -1,0 +1,154 @@
+{
+ "autoname": "field:label",
+ "creation": "2020-04-09 10:17:13.044444",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "label",
+  "disabled",
+  "column_break_3",
+  "shipping_rule_type",
+  "accounting_section",
+  "company",
+  "column_break_7",
+  "shipping_account",
+  "accounting_dimensions_section",
+  "cost_center",
+  "column_break_11",
+  "section_break_12",
+  "calculate_based_on",
+  "column_break_14",
+  "shipping_amount",
+  "shipping_rule_conditions_section",
+  "shipping_rule_conditions",
+  "restrict_to_countries_section",
+  "valid_for_countries"
+ ],
+ "fields": [
+  {
+   "fieldname": "label",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Shipping Rule Label",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "disabled",
+   "fieldtype": "Check",
+   "label": "Disabled"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "shipping_rule_type",
+   "fieldtype": "Select",
+   "label": "Shipping Rule Type",
+   "options": "Selling\nBuying"
+  },
+  {
+   "fieldname": "accounting_section",
+   "fieldtype": "Section Break",
+   "label": "Accounting"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "shipping_account",
+   "fieldtype": "Link",
+   "label": "Shipping Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "accounting_dimensions_section",
+   "fieldtype": "Section Break",
+   "label": "Accounting Dimensions"
+  },
+  {
+   "fieldname": "cost_center",
+   "fieldtype": "Link",
+   "label": "Cost Center",
+   "options": "Cost Center"
+  },
+  {
+   "fieldname": "column_break_11",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_12",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "calculate_based_on",
+   "fieldtype": "Select",
+   "label": "Calculate Based On",
+   "options": "Fixed\nNet Total\nNet Weight"
+  },
+  {
+   "fieldname": "column_break_14",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "shipping_amount",
+   "fieldtype": "Data",
+   "label": "Shipping Amount"
+  },
+  {
+   "fieldname": "shipping_rule_conditions_section",
+   "fieldtype": "Section Break",
+   "label": "Shipping Rule Conditions"
+  },
+  {
+   "fieldname": "shipping_rule_conditions",
+   "fieldtype": "Table",
+   "label": "Shipping Rule Conditions",
+   "options": "Shipping Rule Condition"
+  },
+  {
+   "fieldname": "restrict_to_countries_section",
+   "fieldtype": "Section Break",
+   "label": "Restrict to Countries"
+  },
+  {
+   "fieldname": "valid_for_countries",
+   "fieldtype": "Table",
+   "label": "Valid for Countries",
+   "options": "Shipping Rule Country"
+  }
+ ],
+ "modified": "2020-04-14 11:03:35.577833",
+ "modified_by": "Administrator",
+ "module": "RecruitPRO",
+ "name": "Shipping Rule",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

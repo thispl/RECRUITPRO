@@ -1,0 +1,37 @@
+{
+ "creation": "2020-04-14 11:19:10.416555",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "item_group",
+  "uom"
+ ],
+ "fields": [
+  {
+   "fieldname": "item_group",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Item Group",
+   "options": "Item Group"
+  },
+  {
+   "fieldname": "uom",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "UOM",
+   "options": "UOM"
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-04-14 11:19:48.297909",
+ "modified_by": "Administrator",
+ "module": "RecruitPRO",
+ "name": "Pricing Rule Item Group",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -1,0 +1,29 @@
+{
+ "creation": "2020-04-08 09:59:51.704041",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "company"
+ ],
+ "fields": [
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Company",
+   "options": "Company"
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-04-08 10:00:06.802777",
+ "modified_by": "Administrator",
+ "module": "RecruitPRO",
+ "name": "Fiscal Year Company",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

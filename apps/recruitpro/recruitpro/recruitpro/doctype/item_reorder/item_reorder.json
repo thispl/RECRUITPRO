@@ -1,0 +1,61 @@
+{
+ "creation": "2020-04-11 17:11:24.724510",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "check_in_group",
+  "request_for",
+  "re_order_level",
+  "re_order_qty",
+  "material_request_type"
+ ],
+ "fields": [
+  {
+   "fieldname": "check_in_group",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Check in (group)",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "request_for",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Request for",
+   "options": "Warehouse",
+   "reqd": 1
+  },
+  {
+   "fieldname": "re_order_level",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Re-order Level",
+   "reqd": 1
+  },
+  {
+   "fieldname": "re_order_qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Re-order Qty"
+  },
+  {
+   "fieldname": "material_request_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Material Request Type",
+   "options": "Purchase\nTransfer\nMaterial Issue\nManufacture"
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-04-11 17:12:23.184600",
+ "modified_by": "Administrator",
+ "module": "RecruitPRO",
+ "name": "Item Reorder",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -1,0 +1,278 @@
+{
+ "autoname": "Prompt",
+ "creation": "2020-04-14 11:47:43.352681",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_1",
+  "apply_on",
+  "disable",
+  "column_break_4",
+  "pricing_rule_item_code",
+  "pricing_rule_item_group",
+  "pricing_rule_brand",
+  "mixed_conditions",
+  "is_cumulative",
+  "discount_on_other_item_section",
+  "apply_rule_on_other",
+  "column_break_12",
+  "item_code",
+  "item_group",
+  "brand",
+  "party_information_section",
+  "selling",
+  "buying",
+  "column_break_19",
+  "applicable_for",
+  "customer",
+  "customer_group",
+  "territory",
+  "sales_partner",
+  "campaign",
+  "supplier",
+  "supplier_group",
+  "period_settings_section",
+  "valid_from",
+  "valid_upto",
+  "column_break_31",
+  "company",
+  "currency",
+  "price_discount_slabs_section",
+  "promotional_scheme_price_discount",
+  "product_discount_slabs_section",
+  "promotional_scheme_product_discount"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_1",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "disable",
+   "fieldtype": "Check",
+   "label": "Disable"
+  },
+  {
+   "fieldname": "apply_on",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Apply On",
+   "options": "\nItem Code\nItem Group\nBrand\nTransaction",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "pricing_rule_item_code",
+   "fieldtype": "Table",
+   "label": "Pricing Rule Item Code",
+   "options": "Pricing Rule Item Code"
+  },
+  {
+   "fieldname": "pricing_rule_item_group",
+   "fieldtype": "Table",
+   "label": "Pricing Rule Item Group",
+   "options": "Pricing Rule Item Group"
+  },
+  {
+   "fieldname": "pricing_rule_brand",
+   "fieldtype": "Table",
+   "label": "Pricing Rule Brand",
+   "options": "Pricing Rule Brand"
+  },
+  {
+   "default": "0",
+   "fieldname": "mixed_conditions",
+   "fieldtype": "Check",
+   "label": "Mixed Conditions"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_cumulative",
+   "fieldtype": "Check",
+   "label": "Is Cumulative"
+  },
+  {
+   "fieldname": "discount_on_other_item_section",
+   "fieldtype": "Section Break",
+   "label": "Discount on Other Item"
+  },
+  {
+   "fieldname": "apply_rule_on_other",
+   "fieldtype": "Select",
+   "label": "Apply Rule On Other",
+   "options": "Item Code\nItem Group\nBrand"
+  },
+  {
+   "fieldname": "column_break_12",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "item_code",
+   "fieldtype": "Link",
+   "label": "Item Code",
+   "options": "Item"
+  },
+  {
+   "fieldname": "item_group",
+   "fieldtype": "Link",
+   "label": "Item Group",
+   "options": "Item Group"
+  },
+  {
+   "fieldname": "brand",
+   "fieldtype": "Link",
+   "label": "Brand",
+   "options": "Brand"
+  },
+  {
+   "fieldname": "party_information_section",
+   "fieldtype": "Section Break",
+   "label": "Party Information"
+  },
+  {
+   "default": "0",
+   "fieldname": "selling",
+   "fieldtype": "Check",
+   "label": "Selling"
+  },
+  {
+   "default": "0",
+   "fieldname": "buying",
+   "fieldtype": "Check",
+   "label": "Buying"
+  },
+  {
+   "fieldname": "column_break_19",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "applicable_for",
+   "fieldtype": "Select",
+   "label": "Applicable For",
+   "options": "Customer\nCustomer Group\nTerritory\nSales Partner\nCampaign\nSupplier\nSupplier Group"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "customer_group",
+   "fieldtype": "Link",
+   "label": "Customer Group",
+   "options": "Customer Group"
+  },
+  {
+   "fieldname": "territory",
+   "fieldtype": "Link",
+   "label": "Territory",
+   "options": "Territory"
+  },
+  {
+   "fieldname": "sales_partner",
+   "fieldtype": "Link",
+   "label": "Sales Partner",
+   "options": "Sales Partner"
+  },
+  {
+   "fieldname": "campaign",
+   "fieldtype": "Link",
+   "label": "Campaign",
+   "options": "Campaign"
+  },
+  {
+   "fieldname": "supplier",
+   "fieldtype": "Link",
+   "label": "Supplier",
+   "options": "Supplier"
+  },
+  {
+   "fieldname": "supplier_group",
+   "fieldtype": "Link",
+   "label": "Supplier Group",
+   "options": "Supplier Group"
+  },
+  {
+   "fieldname": "period_settings_section",
+   "fieldtype": "Section Break",
+   "label": "Period Settings"
+  },
+  {
+   "fieldname": "valid_from",
+   "fieldtype": "Data",
+   "label": "Valid From"
+  },
+  {
+   "fieldname": "valid_upto",
+   "fieldtype": "Data",
+   "label": "Valid Upto"
+  },
+  {
+   "fieldname": "column_break_31",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "currency",
+   "fieldtype": "Link",
+   "label": "Currency",
+   "options": "Currency"
+  },
+  {
+   "fieldname": "price_discount_slabs_section",
+   "fieldtype": "Section Break",
+   "label": "Price Discount Slabs"
+  },
+  {
+   "fieldname": "promotional_scheme_price_discount",
+   "fieldtype": "Table",
+   "label": "Promotional Scheme Price Discount",
+   "options": "Promotional Scheme Price Discount"
+  },
+  {
+   "fieldname": "product_discount_slabs_section",
+   "fieldtype": "Section Break",
+   "label": "Product Discount Slabs"
+  },
+  {
+   "fieldname": "promotional_scheme_product_discount",
+   "fieldtype": "Table",
+   "label": "Promotional Scheme Product Discount",
+   "options": "Promotional Scheme Product Discount"
+  }
+ ],
+ "modified": "2020-04-14 12:20:21.759200",
+ "modified_by": "Administrator",
+ "module": "RecruitPRO",
+ "name": "Promotional Scheme",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

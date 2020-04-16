@@ -1,0 +1,79 @@
+{
+ "autoname": "naming_series:",
+ "creation": "2020-04-07 18:38:04.168577",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "campaign_section",
+  "campaign_name",
+  "naming_series",
+  "campaign_schedules_section",
+  "campaign_schedules",
+  "section_break_6",
+  "description"
+ ],
+ "fields": [
+  {
+   "fieldname": "campaign_section",
+   "fieldtype": "Section Break",
+   "label": "Campaign"
+  },
+  {
+   "fieldname": "campaign_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Campaign Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "SAL-CAM-.YYYY.-"
+  },
+  {
+   "fieldname": "campaign_schedules_section",
+   "fieldtype": "Section Break",
+   "label": "Campaign Schedules"
+  },
+  {
+   "fieldname": "campaign_schedules",
+   "fieldtype": "Table",
+   "label": "Campaign Schedules",
+   "options": "Campaign Email Schedule"
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text",
+   "label": "Description"
+  }
+ ],
+ "modified": "2020-04-07 18:41:01.774234",
+ "modified_by": "Administrator",
+ "module": "RecruitPRO",
+ "name": "Campaign",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

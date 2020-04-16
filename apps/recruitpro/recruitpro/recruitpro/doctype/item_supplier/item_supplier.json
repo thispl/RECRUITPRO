@@ -1,0 +1,36 @@
+{
+ "creation": "2020-04-11 17:47:40.016497",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "supplier",
+  "supplier_part_number"
+ ],
+ "fields": [
+  {
+   "fieldname": "supplier",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Supplier",
+   "options": "Supplier"
+  },
+  {
+   "fieldname": "supplier_part_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Supplier Part Number"
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-04-11 17:47:55.063415",
+ "modified_by": "Administrator",
+ "module": "RecruitPRO",
+ "name": "Item Supplier",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

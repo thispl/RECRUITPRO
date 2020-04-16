@@ -1,0 +1,170 @@
+{
+ "autoname": "field:loyalty_program_name",
+ "creation": "2020-04-07 22:27:14.164192",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "loyalty_program_name",
+  "loyalty_program_type",
+  "from_date",
+  "to_date",
+  "column_break_5",
+  "customer_group",
+  "customer_territory",
+  "auto_opt_in_for_all_customers",
+  "collection_tier_section",
+  "collection_rules",
+  "redemption_section",
+  "conversion_factor",
+  "expiry_duration_in_days",
+  "column_break_14",
+  "expense_account",
+  "company",
+  "accounting_dimensions_section",
+  "cost_center",
+  "column_break_19",
+  "help_section_section",
+  "loyalty_program_help"
+ ],
+ "fields": [
+  {
+   "fieldname": "loyalty_program_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Loyalty Program Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "loyalty_program_type",
+   "fieldtype": "Select",
+   "label": "Loyalty Program Type",
+   "options": "Single Tier Program\nMultiple Tier Program"
+  },
+  {
+   "fieldname": "from_date",
+   "fieldtype": "Data",
+   "label": "From Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "to_date",
+   "fieldtype": "Data",
+   "label": "To Date"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "customer_group",
+   "fieldtype": "Link",
+   "label": "Customer Group",
+   "options": "Customer Group"
+  },
+  {
+   "fieldname": "customer_territory",
+   "fieldtype": "Link",
+   "label": "Customer Territory",
+   "options": "Territory"
+  },
+  {
+   "default": "0",
+   "fieldname": "auto_opt_in_for_all_customers",
+   "fieldtype": "Check",
+   "label": "Auto Opt In (For all customers)"
+  },
+  {
+   "fieldname": "collection_tier_section",
+   "fieldtype": "Section Break",
+   "label": "Collection Tier"
+  },
+  {
+   "fieldname": "collection_rules",
+   "fieldtype": "Table",
+   "label": "Collection Rules",
+   "options": "Loyalty Program Collection",
+   "reqd": 1
+  },
+  {
+   "fieldname": "redemption_section",
+   "fieldtype": "Section Break",
+   "label": "Redemption"
+  },
+  {
+   "fieldname": "conversion_factor",
+   "fieldtype": "Float",
+   "label": "Conversion Factor"
+  },
+  {
+   "fieldname": "expiry_duration_in_days",
+   "fieldtype": "Int",
+   "label": "Expiry Duration (in days)"
+  },
+  {
+   "fieldname": "column_break_14",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "expense_account",
+   "fieldtype": "Link",
+   "label": "Expense Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "accounting_dimensions_section",
+   "fieldtype": "Section Break",
+   "label": "Accounting Dimensions"
+  },
+  {
+   "fieldname": "cost_center",
+   "fieldtype": "Link",
+   "label": "Cost Center",
+   "options": "Cost Center"
+  },
+  {
+   "fieldname": "column_break_19",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "help_section_section",
+   "fieldtype": "Section Break",
+   "label": "Help Section"
+  },
+  {
+   "fieldname": "loyalty_program_help",
+   "fieldtype": "HTML",
+   "label": "Loyalty Program Help"
+  }
+ ],
+ "modified": "2020-04-11 13:29:02.421596",
+ "modified_by": "Administrator",
+ "module": "RecruitPRO",
+ "name": "Loyalty Program",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

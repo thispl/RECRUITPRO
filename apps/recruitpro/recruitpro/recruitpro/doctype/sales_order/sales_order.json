@@ -1,0 +1,664 @@
+{
+ "autoname": "naming_series:",
+ "creation": "2020-04-08 09:24:13.314510",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "tally_reference",
+  "customer",
+  "order_type",
+  "payment_type",
+  "business_unit",
+  "division",
+  "department",
+  "column_break_9",
+  "company",
+  "transaction_date",
+  "delivery_date",
+  "po_no",
+  "passport_no",
+  "source_executive",
+  "ca_executive",
+  "address_and_contact_section",
+  "customer_address",
+  "billing_address_gstin",
+  "address",
+  "contact_person",
+  "contact",
+  "company_address_name",
+  "company_gstin",
+  "company_address",
+  "column_break_26",
+  "shipping_address_name",
+  "territory",
+  "customer_group",
+  "currency_and_price_list_section",
+  "currency",
+  "column_break_32",
+  "price_list",
+  "ignore_pricing_rule",
+  "section_break_35",
+  "set_source_warehouse",
+  "section_break_37",
+  "scan_barcode",
+  "items",
+  "section_break_40",
+  "total_quantity",
+  "total_company_currency",
+  "net_total_company_currency",
+  "column_break_44",
+  "total",
+  "net_total",
+  "total_net_weight",
+  "taxes_and_charges_section",
+  "tax_category",
+  "column_break_50",
+  "shipping_rule",
+  "section_break_52",
+  "sales_taxes_and_charges_template",
+  "sales_taxes_and_charges",
+  "additional_discount_and_coupon_code_section",
+  "coupon_code",
+  "apply_additional_discount_on",
+  "amount_company_currency",
+  "column_break_59",
+  "additional_discount_percentage",
+  "discount_amount",
+  "section_break_62",
+  "grand_total_company_currency",
+  "rounding_adjustment_company_currency",
+  "rounded_total_company_currency",
+  "in_words_company_currency",
+  "column_break_67",
+  "grand_total",
+  "rounding_adjustment",
+  "rounded_total",
+  "in_words",
+  "advance_paid",
+  "packing_list_section",
+  "packed_items",
+  "payment_terms_section",
+  "payment_terms_template",
+  "payment_schedule",
+  "terms_and_conditions",
+  "terms",
+  "terms_and_conditions_details",
+  "more_information_section",
+  "inter_company_order_reference",
+  "project",
+  "service",
+  "party_account_currency",
+  "column_break_78",
+  "source",
+  "campaign",
+  "commission_section",
+  "sales_partner",
+  "column_break_83",
+  "commission_rate",
+  "total_commission",
+  "sales_team_section",
+  "sales_team",
+  "auto_repeat_section_section",
+  "from_date",
+  "to_date",
+  "column_break_91",
+  "auto_repeat",
+  "update_auto_repeat_reference"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Series",
+   "options": "SO-",
+   "reqd": 1
+  },
+  {
+   "fieldname": "tally_reference",
+   "fieldtype": "Data",
+   "label": "Tally Reference"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "order_type",
+   "fieldtype": "Select",
+   "label": "Order Type",
+   "options": "\nSales\nMaintenance\nShopping Cart"
+  },
+  {
+   "fieldname": "payment_type",
+   "fieldtype": "Select",
+   "label": "Invoice Type",
+   "options": "Client\nCandidate"
+  },
+  {
+   "fieldname": "business_unit",
+   "fieldtype": "Data",
+   "label": "Business Unit"
+  },
+  {
+   "fieldname": "division",
+   "fieldtype": "Data",
+   "label": "Division"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Data",
+   "label": "Department"
+  },
+  {
+   "fieldname": "column_break_9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "transaction_date",
+   "fieldtype": "Data",
+   "label": "Date"
+  },
+  {
+   "fieldname": "delivery_date",
+   "fieldtype": "Data",
+   "label": "Delivery Date"
+  },
+  {
+   "fieldname": "po_no",
+   "fieldtype": "Data",
+   "label": "Customer's Purchase Order"
+  },
+  {
+   "fieldname": "passport_no",
+   "fieldtype": "Data",
+   "label": "Passport No"
+  },
+  {
+   "fieldname": "source_executive",
+   "fieldtype": "Data",
+   "label": "Source Executive"
+  },
+  {
+   "fieldname": "ca_executive",
+   "fieldtype": "Data",
+   "label": "CA Executive"
+  },
+  {
+   "fieldname": "address_and_contact_section",
+   "fieldtype": "Section Break",
+   "label": "Address and Contact"
+  },
+  {
+   "fieldname": "customer_address",
+   "fieldtype": "Link",
+   "label": "Customer Address",
+   "options": "Address"
+  },
+  {
+   "fieldname": "billing_address_gstin",
+   "fieldtype": "Data",
+   "label": "Billing Address GSTIN",
+   "read_only": 1
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Small Text",
+   "label": "Address"
+  },
+  {
+   "fieldname": "contact_person",
+   "fieldtype": "Link",
+   "label": "Contact Person",
+   "options": "Contact"
+  },
+  {
+   "fieldname": "contact",
+   "fieldtype": "Data",
+   "label": "Contact"
+  },
+  {
+   "fieldname": "company_address_name",
+   "fieldtype": "Link",
+   "label": "Company Address Name",
+   "options": "Address"
+  },
+  {
+   "fieldname": "company_gstin",
+   "fieldtype": "Data",
+   "label": "Company GSTIN"
+  },
+  {
+   "fieldname": "company_address",
+   "fieldtype": "Small Text",
+   "label": "Company Address"
+  },
+  {
+   "fieldname": "column_break_26",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "shipping_address_name",
+   "fieldtype": "Link",
+   "label": "Shipping Address Name",
+   "options": "Address"
+  },
+  {
+   "fieldname": "territory",
+   "fieldtype": "Link",
+   "label": "Territory",
+   "options": "Territory"
+  },
+  {
+   "fieldname": "customer_group",
+   "fieldtype": "Link",
+   "label": "Customer Group",
+   "options": "Customer Group"
+  },
+  {
+   "fieldname": "currency_and_price_list_section",
+   "fieldtype": "Section Break",
+   "label": "Currency and Price List"
+  },
+  {
+   "fieldname": "currency",
+   "fieldtype": "Link",
+   "label": "Currency",
+   "options": "Currency"
+  },
+  {
+   "fieldname": "column_break_32",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "price_list",
+   "fieldtype": "Link",
+   "label": "Price List",
+   "options": "Price List"
+  },
+  {
+   "default": "0",
+   "fieldname": "ignore_pricing_rule",
+   "fieldtype": "Check",
+   "label": "Ignore Pricing Rule"
+  },
+  {
+   "fieldname": "section_break_35",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "set_source_warehouse",
+   "fieldtype": "Link",
+   "label": "Set Source Warehouse",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "section_break_37",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "scan_barcode",
+   "fieldtype": "Data",
+   "label": "Scan Barcode"
+  },
+  {
+   "fieldname": "items",
+   "fieldtype": "Table",
+   "label": "Items",
+   "options": "Sales Order Item"
+  },
+  {
+   "fieldname": "section_break_40",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "total_quantity",
+   "fieldtype": "Data",
+   "label": "Total Quantity"
+  },
+  {
+   "fieldname": "total_company_currency",
+   "fieldtype": "Currency",
+   "label": "Total (Company Currency)"
+  },
+  {
+   "fieldname": "net_total_company_currency",
+   "fieldtype": "Currency",
+   "label": "Net Total (Company Currency)"
+  },
+  {
+   "fieldname": "column_break_44",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total",
+   "fieldtype": "Currency",
+   "label": "Total"
+  },
+  {
+   "fieldname": "net_total",
+   "fieldtype": "Currency",
+   "label": "Net Total"
+  },
+  {
+   "fieldname": "total_net_weight",
+   "fieldtype": "Float",
+   "label": "Total Net Weight"
+  },
+  {
+   "fieldname": "taxes_and_charges_section",
+   "fieldtype": "Section Break",
+   "label": "Taxes and Charges"
+  },
+  {
+   "fieldname": "tax_category",
+   "fieldtype": "Link",
+   "label": "Tax Category",
+   "options": "Tax Category"
+  },
+  {
+   "fieldname": "column_break_50",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "shipping_rule",
+   "fieldtype": "Link",
+   "label": "Shipping Rule",
+   "options": "Shipping Rule"
+  },
+  {
+   "fieldname": "section_break_52",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "sales_taxes_and_charges_template",
+   "fieldtype": "Link",
+   "label": "Sales Taxes and Charges Template",
+   "options": "Sales Taxes and Charges Template"
+  },
+  {
+   "fieldname": "sales_taxes_and_charges",
+   "fieldtype": "Table",
+   "label": "Sales Taxes and Charges",
+   "options": "Sales Taxes and Charges"
+  },
+  {
+   "fieldname": "additional_discount_and_coupon_code_section",
+   "fieldtype": "Section Break",
+   "label": "Additional Discount and Coupon Code"
+  },
+  {
+   "fieldname": "coupon_code",
+   "fieldtype": "Link",
+   "label": "Coupon Code",
+   "options": "Coupon Code"
+  },
+  {
+   "fieldname": "apply_additional_discount_on",
+   "fieldtype": "Select",
+   "label": "Apply Additional Discount On",
+   "options": "Grand Total\nNet Total"
+  },
+  {
+   "fieldname": "amount_company_currency",
+   "fieldtype": "Currency",
+   "label": " Amount (Company Currency)"
+  },
+  {
+   "fieldname": "column_break_59",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "additional_discount_percentage",
+   "fieldtype": "Float",
+   "label": "Additional Discount Percentage"
+  },
+  {
+   "fieldname": "discount_amount",
+   "fieldtype": "Currency",
+   "label": "Additional Discount Amount",
+   "options": "currency"
+  },
+  {
+   "fieldname": "section_break_62",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "grand_total_company_currency",
+   "fieldtype": "Currency",
+   "label": "Grand Total (Company Currency)"
+  },
+  {
+   "fieldname": "rounding_adjustment_company_currency",
+   "fieldtype": "Currency",
+   "label": "Rounding Adjustment (Company Currency)"
+  },
+  {
+   "fieldname": "rounded_total_company_currency",
+   "fieldtype": "Currency",
+   "label": "Rounded Total (Company Currency)"
+  },
+  {
+   "fieldname": "in_words_company_currency",
+   "fieldtype": "Data",
+   "label": "In Words (Company Currency)"
+  },
+  {
+   "fieldname": "column_break_67",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "grand_total",
+   "fieldtype": "Currency",
+   "label": "Grand Total"
+  },
+  {
+   "fieldname": "rounding_adjustment",
+   "fieldtype": "Currency",
+   "label": "Rounding Adjustment"
+  },
+  {
+   "fieldname": "rounded_total",
+   "fieldtype": "Currency",
+   "label": "Rounded Total"
+  },
+  {
+   "fieldname": "in_words",
+   "fieldtype": "Data",
+   "label": "In Words"
+  },
+  {
+   "fieldname": "advance_paid",
+   "fieldtype": "Currency",
+   "label": "Advance Paid"
+  },
+  {
+   "fieldname": "more_information_section",
+   "fieldtype": "Section Break",
+   "label": "More Information"
+  },
+  {
+   "fieldname": "inter_company_order_reference",
+   "fieldtype": "Link",
+   "label": "Inter Company Order Reference",
+   "options": "Purchase Order"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "Project"
+  },
+  {
+   "fieldname": "service",
+   "fieldtype": "Link",
+   "label": "Service",
+   "options": "Services"
+  },
+  {
+   "fieldname": "party_account_currency",
+   "fieldtype": "Link",
+   "label": "Party Account Currency",
+   "options": "Currency"
+  },
+  {
+   "fieldname": "column_break_78",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "source",
+   "fieldtype": "Link",
+   "label": "Source",
+   "options": "Lead Source"
+  },
+  {
+   "fieldname": "campaign",
+   "fieldtype": "Link",
+   "label": "Campaign",
+   "options": "Campaign"
+  },
+  {
+   "fieldname": "commission_section",
+   "fieldtype": "Section Break",
+   "label": "Commission"
+  },
+  {
+   "fieldname": "sales_partner",
+   "fieldtype": "Link",
+   "label": "Sales Partner",
+   "options": "Sales Partner"
+  },
+  {
+   "fieldname": "column_break_83",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "commission_rate",
+   "fieldtype": "Data",
+   "label": "Commission Rate"
+  },
+  {
+   "fieldname": "total_commission",
+   "fieldtype": "Currency",
+   "label": "Total Commission"
+  },
+  {
+   "fieldname": "sales_team_section",
+   "fieldtype": "Section Break",
+   "label": "Sales Team"
+  },
+  {
+   "fieldname": "sales_team",
+   "fieldtype": "Table",
+   "label": "Sales Team",
+   "options": "Sales Team"
+  },
+  {
+   "fieldname": "auto_repeat_section_section",
+   "fieldtype": "Section Break",
+   "label": "Auto Repeat Section"
+  },
+  {
+   "fieldname": "from_date",
+   "fieldtype": "Data",
+   "label": "From Date"
+  },
+  {
+   "fieldname": "to_date",
+   "fieldtype": "Data",
+   "label": "To Date"
+  },
+  {
+   "fieldname": "column_break_91",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "auto_repeat",
+   "fieldtype": "Link",
+   "label": "Auto Repeat",
+   "options": "Auto Repeat"
+  },
+  {
+   "fieldname": "update_auto_repeat_reference",
+   "fieldtype": "Data",
+   "label": "Update Auto Repeat Reference"
+  },
+  {
+   "fieldname": "packing_list_section",
+   "fieldtype": "Section Break",
+   "label": "Packing List"
+  },
+  {
+   "fieldname": "packed_items",
+   "fieldtype": "Table",
+   "label": "Packed Items",
+   "options": "Packed Item"
+  },
+  {
+   "fieldname": "payment_terms_section",
+   "fieldtype": "Section Break",
+   "label": "Payment Terms"
+  },
+  {
+   "fieldname": "payment_terms_template",
+   "fieldtype": "Link",
+   "label": "Payment Terms Template",
+   "options": "Payment Terms Template"
+  },
+  {
+   "fieldname": "payment_schedule",
+   "fieldtype": "Table",
+   "label": "Payment Schedule",
+   "options": "Payment Schedule"
+  },
+  {
+   "fieldname": "terms_and_conditions",
+   "fieldtype": "Data",
+   "label": "Terms and Conditions"
+  },
+  {
+   "fieldname": "terms",
+   "fieldtype": "Link",
+   "label": "Terms",
+   "options": "Terms and Conditions"
+  },
+  {
+   "fieldname": "terms_and_conditions_details",
+   "fieldtype": "Text Editor",
+   "label": "Terms and Conditions Details"
+  }
+ ],
+ "modified": "2020-04-14 13:01:22.532376",
+ "modified_by": "Administrator",
+ "module": "RecruitPRO",
+ "name": "Sales Order",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

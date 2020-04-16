@@ -1,0 +1,141 @@
+{
+ "creation": "2020-04-11 12:07:46.042983",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "general_settings",
+  "item_group_name",
+  "parent_item_group",
+  "is_group",
+  "image",
+  "column_break_6",
+  "defaults_section",
+  "item_group_defaults",
+  "item_tax_section",
+  "taxes",
+  "website_settings_section",
+  "show_in_website",
+  "route",
+  "weightage",
+  "slideshow",
+  "description",
+  "website_specifications"
+ ],
+ "fields": [
+  {
+   "fieldname": "general_settings",
+   "fieldtype": "Data",
+   "label": "General Settings"
+  },
+  {
+   "fieldname": "item_group_name",
+   "fieldtype": "Data",
+   "label": "Item Group Name"
+  },
+  {
+   "fieldname": "parent_item_group",
+   "fieldtype": "Link",
+   "label": "Parent Item Group",
+   "options": "Item Group"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_group",
+   "fieldtype": "Check",
+   "label": "Is Group"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "label": "Image"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "defaults_section",
+   "fieldtype": "Section Break",
+   "label": "Defaults"
+  },
+  {
+   "fieldname": "item_group_defaults",
+   "fieldtype": "Table",
+   "label": "Item Group Defaults",
+   "options": "Item Default"
+  },
+  {
+   "fieldname": "item_tax_section",
+   "fieldtype": "Section Break",
+   "label": "Item Tax"
+  },
+  {
+   "fieldname": "taxes",
+   "fieldtype": "Table",
+   "label": "Taxes",
+   "options": "Item Tax"
+  },
+  {
+   "fieldname": "website_settings_section",
+   "fieldtype": "Section Break",
+   "label": "Website Settings"
+  },
+  {
+   "default": "0",
+   "fieldname": "show_in_website",
+   "fieldtype": "Check",
+   "label": "Show in Website"
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "Route"
+  },
+  {
+   "fieldname": "weightage",
+   "fieldtype": "Int",
+   "label": "Weightage"
+  },
+  {
+   "fieldname": "slideshow",
+   "fieldtype": "Link",
+   "label": "Slideshow",
+   "options": "Website Slideshow"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text Editor",
+   "label": "Description"
+  },
+  {
+   "fieldname": "website_specifications",
+   "fieldtype": "Table",
+   "label": "Website Specifications",
+   "options": "Item Website Specification"
+  }
+ ],
+ "modified": "2020-04-11 12:08:03.238501",
+ "modified_by": "Administrator",
+ "module": "RecruitPRO",
+ "name": "Item Group",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

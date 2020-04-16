@@ -1,0 +1,50 @@
+{
+ "creation": "2020-04-08 12:08:01.154911",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "language",
+  "read",
+  "write",
+  "speak"
+ ],
+ "fields": [
+  {
+   "fieldname": "language",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Language",
+   "options": "Languages List"
+  },
+  {
+   "fieldname": "read",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Read"
+  },
+  {
+   "fieldname": "write",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Write"
+  },
+  {
+   "fieldname": "speak",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Speak"
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-04-08 12:10:15.979807",
+ "modified_by": "Administrator",
+ "module": "RecruitPRO",
+ "name": "Languages Known",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

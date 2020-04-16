@@ -1,0 +1,68 @@
+{
+ "creation": "2020-04-08 11:21:06.716701",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "sa_allocated_name",
+  "sa_allocated",
+  "commited_count",
+  "column_break_4",
+  "achieve_count",
+  "psl",
+  "date"
+ ],
+ "fields": [
+  {
+   "fieldname": "sa_allocated_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "SA Allocated name"
+  },
+  {
+   "fieldname": "sa_allocated",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "SA Allocated "
+  },
+  {
+   "fieldname": "commited_count",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Commited Count"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "achieve_count",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Achieve Count"
+  },
+  {
+   "fieldname": "psl",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "PSL"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Date"
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-04-08 11:21:36.665210",
+ "modified_by": "Administrator",
+ "module": "RecruitPRO",
+ "name": "SA Allocated",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

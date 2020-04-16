@@ -1,0 +1,89 @@
+{
+ "creation": "2020-04-11 17:36:50.263157",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "variant_of",
+  "attribute",
+  "column_break_3",
+  "attribute_value",
+  "numeric_values",
+  "section_break_6",
+  "from_range",
+  "increment",
+  "column_break_9",
+  "to_range"
+ ],
+ "fields": [
+  {
+   "fieldname": "variant_of",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Variant Of",
+   "options": "Item"
+  },
+  {
+   "fieldname": "attribute",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Attribute",
+   "options": "Item Attribute",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "attribute_value",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Attribute Value"
+  },
+  {
+   "default": "0",
+   "fieldname": "numeric_values",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Numeric Values"
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "from_range",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "From Range"
+  },
+  {
+   "fieldname": "increment",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Increment"
+  },
+  {
+   "fieldname": "column_break_9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "to_range",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "To Range"
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-04-11 17:38:49.771689",
+ "modified_by": "Administrator",
+ "module": "RecruitPRO",
+ "name": "Item Variant Attribute",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

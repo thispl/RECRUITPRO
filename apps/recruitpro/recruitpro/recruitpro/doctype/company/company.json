@@ -1,0 +1,634 @@
+{
+ "autoname": "field:company_name",
+ "creation": "2020-04-07 20:26:44.289087",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "company_name",
+  "abbr",
+  "change_abbreviation",
+  "is_group",
+  "column_break_5",
+  "domain",
+  "parent_company",
+  "default_values_section",
+  "default_currency",
+  "default_letter_head",
+  "default_holiday_list",
+  "default_finance_book",
+  "standard_working_hours",
+  "default_selling_terms",
+  "default_buying_terms",
+  "default_warehouse_for_sales_return",
+  "column_break_17",
+  "country",
+  "create_chart_of_accounts_based_on",
+  "chart_of_accounts_template",
+  "existing_company",
+  "tax_id",
+  "date_of_establishment",
+  "sales_settings_section",
+  "monthly_sales_target",
+  "sales_monthly_history",
+  "column_break_27",
+  "transactions_annual_history",
+  "total_monthly_sales",
+  "accounts_settings_section",
+  "default_bank_account",
+  "default_cash_account",
+  "default_receivable_account",
+  "round_off_account",
+  "round_off_cost_center",
+  "write_off_account",
+  "discount_allowed_account",
+  "discount_received_account",
+  "exchange_gain__loss_account",
+  "unrealized_exchange_gain_loss_account",
+  "column_break_41",
+  "allow_account_creation_against_child_company",
+  "default_payable_account",
+  "default_employee_advance_account",
+  "default_cost_of_goods_sold_account",
+  "default_income_account",
+  "default_deferred_revenue_account",
+  "default_deferred_expense_account",
+  "default_payroll_payable_account",
+  "default_expense_claim_payable_account",
+  "section_break_51",
+  "default_cost_center",
+  "column_break_53",
+  "credit_limit",
+  "default_payment_terms_template",
+  "stock_settings_section",
+  "enable_perpetual_inventory",
+  "default_inventory_account",
+  "stock_adjustment_account",
+  "column_break_60",
+  "stock_received_but_not_billed",
+  "expenses_included_in_valuation",
+  "fixed_asset_depreciation_settings_section",
+  "accumulated_depreciation_account",
+  "depreciation_expense_account",
+  "series_for_asset_depreciation_entry_journal_entry",
+  "expenses_included_in_asset_valuation",
+  "column_break_68",
+  "gainloss_account_on_asset_disposal",
+  "asset_depreciation_cost_center",
+  "capital_work_in_progress_account",
+  "asset_received_but_not_billed",
+  "hra_settings_section",
+  "basic_component",
+  "hra_component",
+  "arrear_component",
+  "budget_detail_section",
+  "exception_budget_approver_role",
+  "company_info_section",
+  "company_logo",
+  "date_of_incorporation",
+  "html_82",
+  "date_of_commencement",
+  "phone_no",
+  "fax",
+  "email",
+  "website",
+  "column_break_88",
+  "company_description",
+  "section_break_90",
+  "registration_details",
+  "delete_company_transactions"
+ ],
+ "fields": [
+  {
+   "fieldname": "company_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Company",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "abbr",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Abbr",
+   "reqd": 1
+  },
+  {
+   "fieldname": "change_abbreviation",
+   "fieldtype": "Button",
+   "label": "Change Abbreviation"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_group",
+   "fieldtype": "Check",
+   "label": "Is Group"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "domain",
+   "fieldtype": "Link",
+   "label": "Domain",
+   "options": "Domain"
+  },
+  {
+   "fieldname": "parent_company",
+   "fieldtype": "Link",
+   "label": "Parent Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "default_values_section",
+   "fieldtype": "Section Break",
+   "label": "Default Values"
+  },
+  {
+   "fieldname": "default_currency",
+   "fieldtype": "Link",
+   "label": "Default Currency",
+   "options": "Currency"
+  },
+  {
+   "fieldname": "default_letter_head",
+   "fieldtype": "Link",
+   "label": "Default Letter Head",
+   "options": "Letter Head"
+  },
+  {
+   "fieldname": "default_holiday_list",
+   "fieldtype": "Link",
+   "label": "Default Holiday List",
+   "options": "Holiday List"
+  },
+  {
+   "fieldname": "default_finance_book",
+   "fieldtype": "Link",
+   "label": "Default Finance Book",
+   "options": "Finance Book"
+  },
+  {
+   "fieldname": "standard_working_hours",
+   "fieldtype": "Float",
+   "label": "Standard Working Hours"
+  },
+  {
+   "fieldname": "default_selling_terms",
+   "fieldtype": "Link",
+   "label": "Default Selling Terms",
+   "options": "Terms and Conditions"
+  },
+  {
+   "fieldname": "default_buying_terms",
+   "fieldtype": "Link",
+   "label": "Default Buying Terms",
+   "options": "Terms and Conditions"
+  },
+  {
+   "fieldname": "default_warehouse_for_sales_return",
+   "fieldtype": "Data",
+   "label": "Default warehouse for Sales Return",
+   "options": "Warehouse "
+  },
+  {
+   "fieldname": "column_break_17",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "country",
+   "fieldtype": "Link",
+   "label": "Country",
+   "options": "Country"
+  },
+  {
+   "fieldname": "create_chart_of_accounts_based_on",
+   "fieldtype": "Select",
+   "label": "Create Chart Of Accounts Based On",
+   "options": "\nStandard Template\nExisting Company"
+  },
+  {
+   "fieldname": "chart_of_accounts_template",
+   "fieldtype": "Select",
+   "label": "Chart Of Accounts Template"
+  },
+  {
+   "fieldname": "existing_company",
+   "fieldtype": "Link",
+   "label": "Existing Company ",
+   "options": "Company"
+  },
+  {
+   "fieldname": "tax_id",
+   "fieldtype": "Data",
+   "label": "Tax ID"
+  },
+  {
+   "fieldname": "date_of_establishment",
+   "fieldtype": "Data",
+   "label": "Date of Establishment"
+  },
+  {
+   "fieldname": "sales_settings_section",
+   "fieldtype": "Section Break",
+   "label": "Sales Settings"
+  },
+  {
+   "fieldname": "monthly_sales_target",
+   "fieldtype": "Currency",
+   "label": "Monthly Sales Target",
+   "options": "default_currency"
+  },
+  {
+   "fieldname": "sales_monthly_history",
+   "fieldtype": "Small Text",
+   "label": "Sales Monthly History"
+  },
+  {
+   "fieldname": "column_break_27",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "transactions_annual_history",
+   "fieldtype": "Code",
+   "label": "Transactions Annual History"
+  },
+  {
+   "fieldname": "total_monthly_sales",
+   "fieldtype": "Currency",
+   "label": "Total Monthly Sales",
+   "options": "default_currency"
+  },
+  {
+   "fieldname": "accounts_settings_section",
+   "fieldtype": "Section Break",
+   "label": "Accounts Settings"
+  },
+  {
+   "fieldname": "default_bank_account",
+   "fieldtype": "Link",
+   "label": "Default Bank Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "default_cash_account",
+   "fieldtype": "Link",
+   "label": "Default Cash Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "default_receivable_account",
+   "fieldtype": "Link",
+   "label": "Default Receivable Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "round_off_account",
+   "fieldtype": "Link",
+   "label": "Round Off Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "round_off_cost_center",
+   "fieldtype": "Link",
+   "label": "Round Off Cost Center",
+   "options": "Cost Center"
+  },
+  {
+   "fieldname": "write_off_account",
+   "fieldtype": "Link",
+   "label": "Write Off Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "discount_allowed_account",
+   "fieldtype": "Link",
+   "label": "Discount Allowed Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "discount_received_account",
+   "fieldtype": "Link",
+   "label": "Discount Received Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "exchange_gain__loss_account",
+   "fieldtype": "Link",
+   "label": "Exchange Gain / Loss Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "unrealized_exchange_gain_loss_account",
+   "fieldtype": "Link",
+   "label": "Unrealized Exchange Gain / Loss Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "column_break_41",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "allow_account_creation_against_child_company",
+   "fieldtype": "Check",
+   "label": "Allow Account Creation Against Child Company",
+   "options": "Account"
+  },
+  {
+   "fieldname": "default_payable_account",
+   "fieldtype": "Link",
+   "label": "Default Payable Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "default_employee_advance_account",
+   "fieldtype": "Link",
+   "label": "Default Employee Advance Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "default_cost_of_goods_sold_account",
+   "fieldtype": "Link",
+   "label": "Default Cost of Goods Sold Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "default_income_account",
+   "fieldtype": "Link",
+   "label": "Default Income Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "default_deferred_revenue_account",
+   "fieldtype": "Link",
+   "label": "Default Deferred Revenue Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "default_deferred_expense_account",
+   "fieldtype": "Link",
+   "label": "Default Deferred Expense Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "default_payroll_payable_account",
+   "fieldtype": "Link",
+   "label": "Default Payroll Payable Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "default_expense_claim_payable_account",
+   "fieldtype": "Link",
+   "label": "Default Expense Claim Payable Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "section_break_51",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "default_cost_center",
+   "fieldtype": "Link",
+   "label": "Default Cost Center",
+   "options": "Cost Center"
+  },
+  {
+   "fieldname": "column_break_53",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "credit_limit",
+   "fieldtype": "Currency",
+   "label": "Credit Limit",
+   "options": "default_currency"
+  },
+  {
+   "fieldname": "default_payment_terms_template",
+   "fieldtype": "Link",
+   "label": "Default Payment Terms Template",
+   "options": "Payment Terms Template"
+  },
+  {
+   "fieldname": "stock_settings_section",
+   "fieldtype": "Section Break",
+   "label": "Stock Settings"
+  },
+  {
+   "default": "0",
+   "fieldname": "enable_perpetual_inventory",
+   "fieldtype": "Check",
+   "label": "Enable Perpetual Inventory"
+  },
+  {
+   "fieldname": "default_inventory_account",
+   "fieldtype": "Link",
+   "label": "Default Inventory Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "stock_adjustment_account",
+   "fieldtype": "Link",
+   "label": "Stock Adjustment Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "column_break_60",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "stock_received_but_not_billed",
+   "fieldtype": "Link",
+   "label": "Stock Received But Not Billed",
+   "options": "Account"
+  },
+  {
+   "fieldname": "expenses_included_in_valuation",
+   "fieldtype": "Link",
+   "label": "Expenses Included In Valuation",
+   "options": "Account"
+  },
+  {
+   "fieldname": "fixed_asset_depreciation_settings_section",
+   "fieldtype": "Section Break",
+   "label": "Fixed Asset Depreciation Settings"
+  },
+  {
+   "fieldname": "accumulated_depreciation_account",
+   "fieldtype": "Link",
+   "label": "Accumulated Depreciation Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "depreciation_expense_account",
+   "fieldtype": "Link",
+   "label": "Depreciation Expense Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "series_for_asset_depreciation_entry_journal_entry",
+   "fieldtype": "Data",
+   "label": "Series for Asset Depreciation Entry (Journal Entry)"
+  },
+  {
+   "fieldname": "expenses_included_in_asset_valuation",
+   "fieldtype": "Link",
+   "label": "Expenses Included In Asset Valuation",
+   "options": "Account"
+  },
+  {
+   "fieldname": "column_break_68",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "gainloss_account_on_asset_disposal",
+   "fieldtype": "Link",
+   "label": "Gain/Loss Account on Asset Disposal",
+   "options": "Account"
+  },
+  {
+   "fieldname": "asset_depreciation_cost_center",
+   "fieldtype": "Link",
+   "label": "Asset Depreciation Cost Center",
+   "options": "Account"
+  },
+  {
+   "fieldname": "capital_work_in_progress_account",
+   "fieldtype": "Link",
+   "label": "Capital Work In Progress Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "asset_received_but_not_billed",
+   "fieldtype": "Link",
+   "label": "Asset Received But Not Billed",
+   "options": "Account"
+  },
+  {
+   "fieldname": "hra_settings_section",
+   "fieldtype": "Section Break",
+   "label": "HRA Settings"
+  },
+  {
+   "fieldname": "basic_component",
+   "fieldtype": "Link",
+   "label": "Basic Component",
+   "options": "Salary Component"
+  },
+  {
+   "fieldname": "hra_component",
+   "fieldtype": "Link",
+   "label": "HRA Component",
+   "options": "Salary Component"
+  },
+  {
+   "fieldname": "arrear_component",
+   "fieldtype": "Link",
+   "label": "Arrear Component",
+   "options": "Salary Component"
+  },
+  {
+   "fieldname": "budget_detail_section",
+   "fieldtype": "Section Break",
+   "label": "Budget Detail"
+  },
+  {
+   "fieldname": "exception_budget_approver_role",
+   "fieldtype": "Link",
+   "label": "Exception Budget Approver Role",
+   "options": "Role"
+  },
+  {
+   "fieldname": "company_info_section",
+   "fieldtype": "Section Break",
+   "label": "Company Info"
+  },
+  {
+   "fieldname": "company_logo",
+   "fieldtype": "Attach Image",
+   "label": "Company Logo"
+  },
+  {
+   "fieldname": "date_of_incorporation",
+   "fieldtype": "Data",
+   "label": "Date of Incorporation"
+  },
+  {
+   "fieldname": "html_82",
+   "fieldtype": "HTML"
+  },
+  {
+   "fieldname": "date_of_commencement",
+   "fieldtype": "Data",
+   "label": "Date of Commencement"
+  },
+  {
+   "fieldname": "phone_no",
+   "fieldtype": "Data",
+   "label": "Phone No"
+  },
+  {
+   "fieldname": "fax",
+   "fieldtype": "Data",
+   "label": "Fax"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "website",
+   "fieldtype": "Data",
+   "label": "Website"
+  },
+  {
+   "fieldname": "column_break_88",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "company_description",
+   "fieldtype": "Text Editor",
+   "label": "Company Description"
+  },
+  {
+   "fieldname": "section_break_90",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "registration_details",
+   "fieldtype": "Code",
+   "label": "Registration Details"
+  },
+  {
+   "fieldname": "delete_company_transactions",
+   "fieldtype": "Button",
+   "label": "Delete Company Transactions"
+  }
+ ],
+ "modified": "2020-04-10 17:53:51.515261",
+ "modified_by": "Administrator",
+ "module": "RecruitPRO",
+ "name": "Company",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

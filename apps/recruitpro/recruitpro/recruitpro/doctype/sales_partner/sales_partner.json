@@ -1,0 +1,186 @@
+{
+ "autoname": "field:partner_name",
+ "creation": "2020-04-07 22:30:06.205332",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "partner_name",
+  "partner_type",
+  "territory",
+  "column_break_4",
+  "commission_rate",
+  "address__contacts_section",
+  "address_desc",
+  "address_html",
+  "column_break_9",
+  "contact_desc",
+  "contact_html",
+  "sales_partner_target_section",
+  "targets",
+  "website_section",
+  "show_in_website",
+  "column_break_16",
+  "referral_code",
+  "section_break_18",
+  "route",
+  "column_break_20",
+  "logo",
+  "partner_website",
+  "section_break_23",
+  "introduction",
+  "description"
+ ],
+ "fields": [
+  {
+   "fieldname": "partner_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Sales Partner Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "partner_type",
+   "fieldtype": "Link",
+   "label": "Partner Type",
+   "options": "Sales Partner Type"
+  },
+  {
+   "fieldname": "territory",
+   "fieldtype": "Link",
+   "label": "Territory",
+   "options": "Territory",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "commission_rate",
+   "fieldtype": "Float",
+   "label": "Commission Rate"
+  },
+  {
+   "fieldname": "address__contacts_section",
+   "fieldtype": "Section Break",
+   "label": "Address & Contacts"
+  },
+  {
+   "fieldname": "address_desc",
+   "fieldtype": "HTML",
+   "label": "Address Desc"
+  },
+  {
+   "fieldname": "address_html",
+   "fieldtype": "HTML",
+   "label": "Address HTML"
+  },
+  {
+   "fieldname": "column_break_9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "contact_desc",
+   "fieldtype": "HTML",
+   "label": "Contact Desc"
+  },
+  {
+   "fieldname": "contact_html",
+   "fieldtype": "HTML",
+   "label": "Contact HTML"
+  },
+  {
+   "fieldname": "sales_partner_target_section",
+   "fieldtype": "Section Break",
+   "label": "Sales Partner Target"
+  },
+  {
+   "fieldname": "targets",
+   "fieldtype": "Table",
+   "label": "Targets",
+   "options": "Target Detail"
+  },
+  {
+   "fieldname": "website_section",
+   "fieldtype": "Section Break",
+   "label": "Website"
+  },
+  {
+   "default": "0",
+   "fieldname": "show_in_website",
+   "fieldtype": "Check",
+   "label": "Show In Website"
+  },
+  {
+   "fieldname": "column_break_16",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "referral_code",
+   "fieldtype": "Data",
+   "label": "Referral Code"
+  },
+  {
+   "fieldname": "section_break_18",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "Route"
+  },
+  {
+   "fieldname": "column_break_20",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "logo",
+   "fieldtype": "Attach",
+   "label": "Logo"
+  },
+  {
+   "fieldname": "partner_website",
+   "fieldtype": "Data",
+   "label": "Partner website"
+  },
+  {
+   "fieldname": "section_break_23",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "introduction",
+   "fieldtype": "Text",
+   "label": "Introduction"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text Editor",
+   "label": "Description"
+  }
+ ],
+ "modified": "2020-04-11 14:34:56.398348",
+ "modified_by": "Administrator",
+ "module": "RecruitPRO",
+ "name": "Sales Partner",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

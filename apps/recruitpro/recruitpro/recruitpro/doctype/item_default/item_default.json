@@ -1,0 +1,113 @@
+{
+ "creation": "2020-04-11 11:51:24.929895",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "company",
+  "default_warehouse",
+  "column_break_3",
+  "default_price_list",
+  "purchase_defaults_section",
+  "default_buying_cost_center",
+  "default_supplier",
+  "column_break_8",
+  "default_expense_account",
+  "sales_defaults",
+  "default_selling_cost_center",
+  "column_break_12",
+  "default_income_account"
+ ],
+ "fields": [
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "default_warehouse",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Default Warehouse",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "default_price_list",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Default Price List",
+   "options": "Price List"
+  },
+  {
+   "fieldname": "purchase_defaults_section",
+   "fieldtype": "Section Break",
+   "label": "Purchase Defaults"
+  },
+  {
+   "fieldname": "default_buying_cost_center",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Default Buying Cost Center",
+   "options": "Cost Center"
+  },
+  {
+   "fieldname": "default_supplier",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Default Supplier",
+   "options": "Supplier"
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "default_expense_account",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Default Expense Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "sales_defaults",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Sales Defaults"
+  },
+  {
+   "fieldname": "default_selling_cost_center",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Default Selling Cost Center",
+   "options": "Cost Center"
+  },
+  {
+   "fieldname": "column_break_12",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "default_income_account",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Default Income Account",
+   "options": "Account"
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-04-11 11:54:11.148452",
+ "modified_by": "Administrator",
+ "module": "RecruitPRO",
+ "name": "Item Default",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
