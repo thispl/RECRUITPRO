@@ -29,8 +29,6 @@
   "tax_id",
   "tax_category",
   "disabled",
-  "is_internal",
-  "represents",
   "follow_up_section",
   "next_contact_by",
   "last_contacted_by",
@@ -119,8 +117,10 @@
    "options": "Salutation"
   },
   {
+   "bold": 1,
    "fieldname": "full_name",
    "fieldtype": "Data",
+   "in_global_search": 1,
    "in_list_view": 1,
    "label": "Full Name",
    "reqd": 1
@@ -177,7 +177,6 @@
   {
    "fieldname": "spoc",
    "fieldtype": "Link",
-   "hidden": 1,
    "label": "SPOC",
    "options": "User"
   },
@@ -185,7 +184,6 @@
    "default": "0",
    "fieldname": "fe_registered",
    "fieldtype": "Check",
-   "hidden": 1,
    "label": "FE Registered ?"
   },
   {
@@ -238,6 +236,7 @@
    "label": "Is Internal Customer"
   },
   {
+   "depends_on": "is_internal_customer",
    "fieldname": "represents_company",
    "fieldtype": "Link",
    "label": "Represents Company",
@@ -472,7 +471,6 @@
   {
    "fieldname": "follow_up_section",
    "fieldtype": "Section Break",
-   "hidden": 1,
    "label": "Follow Up"
   },
   {
@@ -580,27 +578,14 @@
    "fieldtype": "Table",
    "label": "Credit Limit",
    "options": "Customer Credit Limit"
-  },
-  {
-   "default": "0",
-   "fieldname": "is_internal",
-   "fieldtype": "Check",
-   "label": "Is Internal Customer"
-  },
-  {
-   "depends_on": "is_internal",
-   "fieldname": "represents",
-   "fieldtype": "Link",
-   "label": "Represents Company",
-   "options": "Company",
-   "reqd": 1
   }
  ],
  "image_field": "image",
- "modified": "2020-04-16 13:32:54.538469",
+ "modified": "2020-04-17 11:25:58.375777",
  "modified_by": "Administrator",
  "module": "RecruitPRO",
  "name": "Customer",
+ "name_case": "Title Case",
  "owner": "Administrator",
  "permissions": [
   {
@@ -617,7 +602,9 @@
   }
  ],
  "quick_entry": 1,
+ "search_fields": "full_name,customer_group,territory, mobile_no,primary_address",
  "sort_field": "modified",
  "sort_order": "DESC",
+ "title_field": "full_name",
  "track_changes": 1
 }

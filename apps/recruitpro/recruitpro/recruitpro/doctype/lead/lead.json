@@ -2,6 +2,7 @@
  "autoname": "naming_series:",
  "creation": "2020-04-07 18:28:48.460742",
  "doctype": "DocType",
+ "document_type": "Document",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
@@ -14,10 +15,10 @@
   "lead_potential",
   "visited_company",
   "validated_lead",
-  "from_customer",
   "targeted_lead",
   "expected_value",
   "campaign_name",
+  "lead_age",
   "column_break_15",
   "lead_owner",
   "status",
@@ -26,6 +27,7 @@
   "lead_category",
   "gender",
   "source",
+  "from_customer",
   "image",
   "follow_up_section",
   "next_contact_by",
@@ -102,6 +104,8 @@
   {
    "fieldname": "organization_name",
    "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Organization Name"
   },
   {
@@ -170,14 +174,18 @@
   {
    "fieldname": "lead_owner",
    "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Lead Owner",
    "options": "User"
   },
   {
    "fieldname": "status",
    "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Status",
-   "options": "New\nOpen\nCanceled\nOn-Hold\nConverted\nDo Not Contact"
+   "options": "New\nOpen\nCancelled\nOn-Hold\nConverted\nDo Not Contact"
   },
   {
    "default": "Company",
@@ -216,7 +224,6 @@
   {
    "fieldname": "last_contacted_by",
    "fieldtype": "Link",
-   "hidden": 1,
    "label": "Last Contacted by",
    "options": "User"
   },
@@ -516,12 +523,19 @@
    "fieldname": "organization_lead",
    "fieldtype": "Check",
    "label": "Lead is an Organization"
+  },
+  {
+   "fieldname": "lead_age",
+   "fieldtype": "Int",
+   "label": "Lead Age"
   }
  ],
- "modified": "2020-04-16 12:25:21.264505",
+ "image_field": "image",
+ "modified": "2020-04-17 11:03:25.265131",
  "modified_by": "Administrator",
  "module": "RecruitPRO",
  "name": "Lead",
+ "name_case": "Title Case",
  "owner": "Administrator",
  "permissions": [
   {
@@ -538,8 +552,10 @@
   }
  ],
  "quick_entry": 1,
+ "search_fields": "lead_name,lead_owner,status",
+ "show_name_in_global_search": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
- "title_field": "image",
+ "title_field": "lead_name",
  "track_changes": 1
 }

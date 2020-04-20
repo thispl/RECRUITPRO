@@ -41,14 +41,26 @@
   "remarks",
   "additional_benefits_section",
   "working_hours",
-  "free_food",
-  "free_local_travel",
-  "free_accommodation",
+  "other_working_hours",
+  "food",
+  "food_allowance",
+  "visa_type",
   "column_break_40",
-  "contract_period_in_years",
-  "ot",
-  "free_joining_ticket",
-  "leave_policy_applicable",
+  "transportation",
+  "transportation_allowance",
+  "accommodation1",
+  "accommodation_allowance1",
+  "nationality",
+  "column_break_68",
+  "contract_period__year",
+  "contract_period__months",
+  "over_time",
+  "over_time_applicable",
+  "column_break_73",
+  "joining_ticket",
+  "leave",
+  "other_leave",
+  "any_other_allowance",
   "section_break_45",
   "job_des",
   "column_break_47",
@@ -258,55 +270,8 @@
    "label": "Additional Benefits"
   },
   {
-   "fieldname": "working_hours",
-   "fieldtype": "Data",
-   "label": "Working Hours"
-  },
-  {
-   "default": "0",
-   "fieldname": "free_food",
-   "fieldtype": "Check",
-   "label": "Free Food"
-  },
-  {
-   "default": "0",
-   "fieldname": "free_local_travel",
-   "fieldtype": "Check",
-   "label": "Free Local Travel"
-  },
-  {
-   "default": "0",
-   "fieldname": "free_accommodation",
-   "fieldtype": "Check",
-   "label": "Free Accommodation"
-  },
-  {
    "fieldname": "column_break_40",
    "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "contract_period_in_years",
-   "fieldtype": "Select",
-   "label": "Contract Period (In Years)",
-   "options": "\n01\n02\n03\n04\n05\n06\n07\n08\n09\n10"
-  },
-  {
-   "default": "0",
-   "fieldname": "ot",
-   "fieldtype": "Check",
-   "label": "OT"
-  },
-  {
-   "default": "0",
-   "fieldname": "free_joining_ticket",
-   "fieldtype": "Check",
-   "label": "Free Joining Ticket"
-  },
-  {
-   "default": "0",
-   "fieldname": "leave_policy_applicable",
-   "fieldtype": "Check",
-   "label": "Leave Policy Applicable"
   },
   {
    "fieldname": "section_break_45",
@@ -407,9 +372,125 @@
    "fieldname": "job_des",
    "fieldtype": "Int",
    "label": "Job Description"
+  },
+  {
+   "fieldname": "working_hours",
+   "fieldtype": "Select",
+   "label": "Working Hours",
+   "options": "8 hours\n9 hours\n10 hours\n12 hours\nOthers"
+  },
+  {
+   "depends_on": "eval:in_list([\"Others\"], doc.working_hours)",
+   "fieldname": "other_working_hours",
+   "fieldtype": "Data",
+   "label": "Other working Hours"
+  },
+  {
+   "fieldname": "food",
+   "fieldtype": "Select",
+   "label": "Food",
+   "options": "Free\nIncluded in Salary\nAllowance"
+  },
+  {
+   "depends_on": "eval:in_list([\"Allowance\"], doc.food)",
+   "fieldname": "food_allowance",
+   "fieldtype": "Data",
+   "label": "Food Allowance"
+  },
+  {
+   "fieldname": "visa_type",
+   "fieldtype": "Select",
+   "label": "Visa Type",
+   "options": "Permeant - 2 years\nProject - 3 Months\nProject - 9 Months\nVisit"
+  },
+  {
+   "fieldname": "transportation",
+   "fieldtype": "Select",
+   "label": "Transportation",
+   "options": "Free\nIncluded in Salary\nAllowance"
+  },
+  {
+   "depends_on": "eval:in_list([\"Allowance\"], doc.transportation)",
+   "fieldname": "transportation_allowance",
+   "fieldtype": "Data",
+   "label": "Transportation Allowance"
+  },
+  {
+   "fieldname": "accommodation1",
+   "fieldtype": "Select",
+   "label": "Accommodation",
+   "options": "Free\nIncluded in Salary\nAllowance"
+  },
+  {
+   "depends_on": "eval:in_list([\"Allowance\"], doc.accommodation1)",
+   "fieldname": "accommodation_allowance1",
+   "fieldtype": "Data",
+   "label": "Accommodation Allowance"
+  },
+  {
+   "fieldname": "nationality",
+   "fieldtype": "Link",
+   "label": "Nationality",
+   "options": "Territory"
+  },
+  {
+   "fieldname": "column_break_68",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "contract_period__year",
+   "fieldtype": "Select",
+   "label": "Contract Period (In Year)",
+   "options": "00\n01\n02\n03\n04\n05\n06\n07\n08\n09\n10"
+  },
+  {
+   "fieldname": "contract_period__months",
+   "fieldtype": "Select",
+   "label": "Contract Period (In Months)",
+   "options": "00\n01\n02\n03\n04\n05\n06\n07\n08\n09\n10\n11"
+  },
+  {
+   "default": "Not Applicable",
+   "fieldname": "over_time",
+   "fieldtype": "Select",
+   "label": "Over Time",
+   "options": "Applicable\nNot Applicable"
+  },
+  {
+   "depends_on": "eval:in_list([\"Applicable\"], doc.over_time)",
+   "fieldname": "over_time_applicable",
+   "fieldtype": "Data",
+   "label": "Over Time Applicable"
+  },
+  {
+   "fieldname": "column_break_73",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "joining_ticket",
+   "fieldtype": "Select",
+   "label": "Joining Ticket",
+   "options": "Company\nCandidate\nReimbursable"
+  },
+  {
+   "fieldname": "leave",
+   "fieldtype": "Select",
+   "label": "Leave",
+   "options": "Yearly\n2 Years\nOthers"
+  },
+  {
+   "depends_on": "eval:in_list([\"Others\"], doc.leave)",
+   "fieldname": "other_leave",
+   "fieldtype": "Data",
+   "label": "Other Leave"
+  },
+  {
+   "fieldname": "any_other_allowance",
+   "fieldtype": "Data",
+   "label": "Any Other Allowance"
   }
  ],
- "modified": "2020-04-11 12:24:49.285643",
+ "modified": "2020-04-17 15:10:38.631465",
  "modified_by": "Administrator",
  "module": "RecruitPRO",
  "name": "Project",
