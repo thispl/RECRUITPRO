@@ -234,12 +234,12 @@
   {
    "fieldname": "direct_appointments_section",
    "fieldtype": "Section Break",
-   "hidden": 1,
    "label": "Direct Appointments"
   },
   {
    "fieldname": "appointment_taken",
    "fieldtype": "Button",
+   "hidden": 1,
    "label": "Appointment Taken"
   },
   {
@@ -255,6 +255,7 @@
   {
    "fieldname": "last_appointment_by",
    "fieldtype": "Link",
+   "hidden": 1,
    "label": "Last Appointment by",
    "options": "User"
   },
@@ -262,6 +263,7 @@
    "default": "0",
    "fieldname": "appointment_fixed",
    "fieldtype": "Check",
+   "hidden": 1,
    "label": "Appointment Fixed"
   },
   {
@@ -338,6 +340,7 @@
   {
    "fieldname": "last_appointment_on",
    "fieldtype": "Data",
+   "hidden": 1,
    "label": "Last Appointment On"
   },
   {
@@ -531,7 +534,7 @@
   }
  ],
  "image_field": "image",
- "modified": "2020-04-17 11:03:25.265131",
+ "modified": "2020-04-20 11:35:12.117174",
  "modified_by": "Administrator",
  "module": "RecruitPRO",
  "name": "Lead",

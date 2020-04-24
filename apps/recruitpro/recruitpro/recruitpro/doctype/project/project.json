@@ -52,8 +52,8 @@
   "accommodation_allowance1",
   "nationality",
   "column_break_68",
-  "contract_period__year",
-  "contract_period__months",
+  "contract_period_year",
+  "contract_period_months",
   "over_time",
   "over_time_applicable",
   "column_break_73",
@@ -81,7 +81,7 @@
   "kick_off",
   "minutes_remarks",
   "section_break_64",
-  "sa_allocation"
+  "sa_candidate_summary"
  ],
  "fields": [
   {
@@ -153,13 +153,15 @@
   },
   {
    "fieldname": "customer",
-   "fieldtype": "Data",
-   "label": "Customer"
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer"
   },
   {
    "fieldname": "territory",
-   "fieldtype": "Data",
-   "label": "Territory"
+   "fieldtype": "Link",
+   "label": "Territory",
+   "options": "Territory"
   },
   {
    "fieldname": "service",
@@ -356,17 +358,12 @@
   {
    "fieldname": "minutes_remarks",
    "fieldtype": "Small Text",
+   "hidden": 1,
    "label": "Minutes & Remarks"
   },
   {
    "fieldname": "section_break_64",
    "fieldtype": "Section Break"
-  },
-  {
-   "fieldname": "sa_allocation",
-   "fieldtype": "Table",
-   "label": "SA Allocation",
-   "options": "SA Allocation"
   },
   {
    "fieldname": "job_des",
@@ -428,6 +425,7 @@
    "label": "Accommodation Allowance"
   },
   {
+   "default": "India",
    "fieldname": "nationality",
    "fieldtype": "Link",
    "label": "Nationality",
@@ -436,18 +434,6 @@
   {
    "fieldname": "column_break_68",
    "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "contract_period__year",
-   "fieldtype": "Select",
-   "label": "Contract Period (In Year)",
-   "options": "00\n01\n02\n03\n04\n05\n06\n07\n08\n09\n10"
-  },
-  {
-   "fieldname": "contract_period__months",
-   "fieldtype": "Select",
-   "label": "Contract Period (In Months)",
-   "options": "00\n01\n02\n03\n04\n05\n06\n07\n08\n09\n10\n11"
   },
   {
    "default": "Not Applicable",
@@ -488,9 +474,27 @@
    "fieldname": "any_other_allowance",
    "fieldtype": "Data",
    "label": "Any Other Allowance"
+  },
+  {
+   "fieldname": "contract_period_year",
+   "fieldtype": "Select",
+   "label": "Contract Period (In Year)",
+   "options": "00\n01\n02\n03\n04\n05\n06\n07\n08\n09\n10"
+  },
+  {
+   "fieldname": "contract_period_months",
+   "fieldtype": "Select",
+   "label": "Contract Period (In Months)",
+   "options": "00\n01\n02\n03\n04\n05\n06\n07\n08\n09\n10\n11"
+  },
+  {
+   "fieldname": "sa_candidate_summary",
+   "fieldtype": "Table",
+   "label": "SA Task and Candidate",
+   "options": "SA Candidate Summary"
   }
  ],
- "modified": "2020-04-17 15:10:38.631465",
+ "modified": "2020-04-24 14:50:43.952079",
  "modified_by": "Administrator",
  "module": "RecruitPRO",
  "name": "Project",
@@ -509,7 +513,6 @@
    "write": 1
   }
  ],
- "quick_entry": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
  "track_changes": 1

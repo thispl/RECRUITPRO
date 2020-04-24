@@ -41,7 +41,9 @@
   "cin",
   "gst",
   "pan",
-  "project_allocated_section",
+  "section_break_37",
+  "project_allocation",
+  "section_break_39",
   "project_allocated"
  ],
  "fields": [
@@ -244,19 +246,28 @@
    "label": "PAN"
   },
   {
-   "fieldname": "project_allocated_section",
-   "fieldtype": "Section Break",
-   "label": "Project Allocated"
+   "fieldname": "section_break_37",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "project_allocation",
+   "fieldtype": "Table",
+   "label": "Project Allocation",
+   "options": "Project Allocation"
+  },
+  {
+   "fieldname": "section_break_39",
+   "fieldtype": "Section Break"
   },
   {
    "fieldname": "project_allocated",
    "fieldtype": "Table",
-   "label": "Project Allocated",
+   "label": "SA Performance",
    "options": "Project Allocated"
   }
  ],
  "image_field": "sa_photo",
- "modified": "2020-04-13 11:44:03.813799",
+ "modified": "2020-04-24 18:18:37.008819",
  "modified_by": "Administrator",
  "module": "RecruitPRO",
  "name": "Sub Agent",
@@ -276,7 +287,9 @@
   }
  ],
  "quick_entry": 1,
+ "search_fields": "person_name",
  "sort_field": "modified",
  "sort_order": "DESC",
+ "title_field": "person_name",
  "track_changes": 1
 }

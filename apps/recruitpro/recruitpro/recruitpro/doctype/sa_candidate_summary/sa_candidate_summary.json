@@ -1,0 +1,102 @@
+{
+ "creation": "2020-04-24 14:37:08.053585",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "sa_id",
+  "sa_name",
+  "sa_mobile",
+  "no_candidate",
+  "fp",
+  "sl",
+  "sp",
+  "psl",
+  "idb",
+  "total_sa"
+ ],
+ "fields": [
+  {
+   "columns": 1,
+   "fieldname": "sa_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "SA ID",
+   "options": "Sub Agent"
+  },
+  {
+   "columns": 1,
+   "fieldname": "sa_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "SA Name"
+  },
+  {
+   "columns": 1,
+   "fieldname": "sa_mobile",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "SA Mobile Number"
+  },
+  {
+   "columns": 1,
+   "fieldname": "no_candidate",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Candidate #"
+  },
+  {
+   "columns": 1,
+   "fieldname": "fp",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "#FP_SA"
+  },
+  {
+   "columns": 1,
+   "fieldname": "sp",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "#SP_SA"
+  },
+  {
+   "columns": 1,
+   "fieldname": "psl",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "#PSL_SA"
+  },
+  {
+   "columns": 1,
+   "fieldname": "idb",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "#IDB_SA"
+  },
+  {
+   "columns": 1,
+   "fieldname": "total_sa",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Total_SA"
+  },
+  {
+   "columns": 1,
+   "fieldname": "sl",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "#SL_SA"
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-04-24 14:48:22.357582",
+ "modified_by": "Administrator",
+ "module": "RecruitPRO",
+ "name": "SA Candidate Summary",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -52,9 +52,12 @@
   "passport",
   "sa_details_section",
   "sa_agent",
+  "sa_name",
+  "sa_mobile_number",
   "column_break_48",
-  "sa__name",
-  "sa_contact_no",
+  "sa_mail_id",
+  "sa_location",
+  "sa_state",
   "personal_details_section",
   "date_of_birth",
   "age",
@@ -121,8 +124,8 @@
   {
    "fieldname": "job_description",
    "fieldtype": "Link",
-   "label": "Job Description",
-   "options": "Job Description"
+   "label": "Position",
+   "options": "Position"
   },
   {
    "fieldname": "column_break_4",
@@ -343,22 +346,14 @@
   },
   {
    "fieldname": "sa_agent",
-   "fieldtype": "Data",
-   "label": "SA Agent"
+   "fieldtype": "Link",
+   "label": "SA Agent",
+   "options": "Sub Agent"
   },
   {
+   "fetch_from": "sa_agent.mobile",
    "fieldname": "column_break_48",
    "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "sa__name",
-   "fieldtype": "Data",
-   "label": "SA  Name"
-  },
-  {
-   "fieldname": "sa_contact_no",
-   "fieldtype": "Data",
-   "label": "SA Contact No"
   },
   {
    "fieldname": "dob",
@@ -616,9 +611,39 @@
    "fieldname": "state1",
    "fieldtype": "Data",
    "label": "State"
+  },
+  {
+   "fetch_from": "sa_agent.person_name",
+   "fieldname": "sa_name",
+   "fieldtype": "Data",
+   "label": "SA  Name"
+  },
+  {
+   "fetch_from": "sa_agent.mobile",
+   "fieldname": "sa_mobile_number",
+   "fieldtype": "Data",
+   "label": "SA Mobile Number"
+  },
+  {
+   "fetch_from": "sa_agent.email_id",
+   "fieldname": "sa_mail_id",
+   "fieldtype": "Data",
+   "label": "SA Mail ID"
+  },
+  {
+   "fetch_from": "sa_agent.district",
+   "fieldname": "sa_location",
+   "fieldtype": "Data",
+   "label": "SA Location"
+  },
+  {
+   "fetch_from": "sa_agent.state",
+   "fieldname": "sa_state",
+   "fieldtype": "Data",
+   "label": "SA State"
   }
  ],
- "modified": "2020-04-08 20:07:28.123857",
+ "modified": "2020-04-24 19:25:54.481897",
  "modified_by": "Administrator",
  "module": "RecruitPRO",
  "name": "Candidate",
@@ -638,7 +663,9 @@
   }
  ],
  "quick_entry": 1,
+ "search_fields": "given_name",
  "sort_field": "modified",
  "sort_order": "DESC",
+ "title_field": "given_name",
  "track_changes": 1
 }

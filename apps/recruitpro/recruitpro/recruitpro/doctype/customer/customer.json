@@ -71,6 +71,14 @@
   "accounting_section",
   "accounts",
   "credit_limit_and_payment_terms_section",
+  "credit_limit",
+  "bypass_credit_limit_check_at_sales_order",
+  "client_payment",
+  "credit_days",
+  "candidate_payment",
+  "column_break_72",
+  "payment_terms",
+  "agreement_validity",
   "default_payment_terms_template",
   "credit_limits",
   "more_information_section",
@@ -578,10 +586,52 @@
    "fieldtype": "Table",
    "label": "Credit Limit",
    "options": "Customer Credit Limit"
+  },
+  {
+   "fieldname": "credit_limit",
+   "fieldtype": "Currency",
+   "label": "Credit Limit"
+  },
+  {
+   "default": "0",
+   "fieldname": "bypass_credit_limit_check_at_sales_order",
+   "fieldtype": "Check",
+   "label": "Bypass credit limit check at Sales Order"
+  },
+  {
+   "default": "0",
+   "fieldname": "client_payment",
+   "fieldtype": "Check",
+   "label": "Client Payment"
+  },
+  {
+   "fieldname": "credit_days",
+   "fieldtype": "Int",
+   "label": "Credit Days"
+  },
+  {
+   "default": "0",
+   "fieldname": "candidate_payment",
+   "fieldtype": "Check",
+   "label": "Candidate Payment"
+  },
+  {
+   "fieldname": "column_break_72",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "payment_terms",
+   "fieldtype": "Small Text",
+   "label": "Payment Terms"
+  },
+  {
+   "fieldname": "agreement_validity",
+   "fieldtype": "Data",
+   "label": "Agreement Validity"
   }
  ],
  "image_field": "image",
- "modified": "2020-04-17 11:25:58.375777",
+ "modified": "2020-04-20 15:40:07.805092",
  "modified_by": "Administrator",
  "module": "RecruitPRO",
  "name": "Customer",
