@@ -1565,3 +1565,6 @@ Queued events for site recruitpro.local
 [DEBUG] 2020-04-24 19:37:52,011 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
+[DEBUG] 2020-04-24 19:38:52,222 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
