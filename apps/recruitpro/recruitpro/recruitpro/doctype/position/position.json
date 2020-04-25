@@ -1,6 +1,6 @@
 {
  "allow_rename": 1,
- "autoname": "POSITION-.YYYY.-.#####",
+ "autoname": "P.####",
  "creation": "2020-04-08 10:28:21.780956",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -474,10 +474,11 @@
    "options": "SA Candidate Summary"
   }
  ],
- "modified": "2020-04-24 19:32:32.146171",
+ "modified": "2020-04-24 20:30:43.245670",
  "modified_by": "Administrator",
  "module": "RecruitPRO",
  "name": "Position",
+ "name_case": "Title Case",
  "owner": "Administrator",
  "permissions": [
   {

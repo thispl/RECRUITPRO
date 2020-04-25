@@ -5,4 +5,4 @@ frappe.ui.form.on('Position', {
 	// refresh: function(frm) {
 
 	// }
-});
+})

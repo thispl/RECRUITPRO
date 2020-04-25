@@ -1,0 +1,51 @@
+{
+ "creation": "2020-04-25 10:56:43.653611",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "territory",
+  "date_of_issue",
+  "date_of_expiry",
+  "status"
+ ],
+ "fields": [
+  {
+   "fieldname": "territory",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Territory",
+   "options": "Territory"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "\nValid\nInvalid"
+  },
+  {
+   "fieldname": "date_of_issue",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "DOI"
+  },
+  {
+   "fieldname": "date_of_expiry",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "DOE"
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-04-25 10:58:49.893749",
+ "modified_by": "Administrator",
+ "module": "RecruitPRO",
+ "name": "Driving Licence",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

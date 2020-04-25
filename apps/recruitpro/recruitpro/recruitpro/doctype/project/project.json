@@ -62,7 +62,7 @@
   "other_leave",
   "any_other_allowance",
   "section_break_45",
-  "job_des",
+  "position",
   "column_break_47",
   "tvac",
   "column_break_49",
@@ -366,11 +366,6 @@
    "fieldtype": "Section Break"
   },
   {
-   "fieldname": "job_des",
-   "fieldtype": "Int",
-   "label": "Job Description"
-  },
-  {
    "fieldname": "working_hours",
    "fieldtype": "Select",
    "label": "Working Hours",
@@ -492,9 +487,14 @@
    "fieldtype": "Table",
    "label": "SA Task and Candidate",
    "options": "SA Candidate Summary"
+  },
+  {
+   "fieldname": "position",
+   "fieldtype": "Int",
+   "label": "Position"
   }
  ],
- "modified": "2020-04-24 14:50:43.952079",
+ "modified": "2020-04-24 19:53:43.177181",
  "modified_by": "Administrator",
  "module": "RecruitPRO",
  "name": "Project",
