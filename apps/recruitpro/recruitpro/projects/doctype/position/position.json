@@ -11,6 +11,7 @@
   "project",
   "territory",
   "column_break_5",
+  "service",
   "status",
   "operation_status",
   "project_manager",
@@ -89,7 +90,7 @@
    "label": "Subject"
   },
   {
-   "fetch_from": "project.customer",
+   "fetch_from": "customer.full_name",
    "fieldname": "customer",
    "fieldtype": "Link",
    "label": "Customer",
@@ -297,6 +298,11 @@
    "label": "Indian Experience"
   },
   {
+   "fieldname": "minimum",
+   "fieldtype": "Data",
+   "label": "Minimum"
+  },
+  {
    "fieldname": "column_break_45",
    "fieldtype": "Column Break"
   },
@@ -306,52 +312,9 @@
    "label": "GCC Experience"
   },
   {
-   "fieldname": "minimum",
-   "fieldtype": "Data",
-   "label": "Minimum"
-  },
-  {
    "fieldname": "allowancesbenefits_section",
    "fieldtype": "Section Break",
    "label": "ALLOWANCES/Benefits"
-  },
-  {
-   "fieldname": "payment_terms",
-   "fieldtype": "Small Text",
-   "hidden": 1,
-   "label": "Payment Terms"
-  },
-  {
-   "fieldname": "column_break_55",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "mode_of_interview",
-   "fieldtype": "Data",
-   "hidden": 1,
-   "label": "Mode of Interview"
-  },
-  {
-   "fieldname": "interview_details",
-   "fieldtype": "Table",
-   "hidden": 1,
-   "label": "Interview Details",
-   "options": "Direct Interview Details",
-   "read_only": 1
-  },
-  {
-   "fieldname": "candidates_details_section",
-   "fieldtype": "Section Break",
-   "label": "Candidates Details"
-  },
-  {
-   "fieldname": "table_64",
-   "fieldtype": "Table",
-   "options": "Job Description Candidate"
-  },
-  {
-   "fieldname": "section_break_65",
-   "fieldtype": "Section Break"
   },
   {
    "fieldname": "working_days",
@@ -384,6 +347,16 @@
    "options": "Permeant - 2 years\nProject - 3 Months\nProject - 9 Months\nVisit"
   },
   {
+   "fieldname": "payment_terms",
+   "fieldtype": "Small Text",
+   "hidden": 1,
+   "label": "Payment Terms"
+  },
+  {
+   "fieldname": "column_break_55",
+   "fieldtype": "Column Break"
+  },
+  {
    "fieldname": "transportation",
    "fieldtype": "Select",
    "label": "Transportation",
@@ -413,6 +386,12 @@
    "label": "Nationality"
   },
   {
+   "fieldname": "mode_of_interview",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Mode of Interview"
+  },
+  {
    "fieldname": "column_break_61",
    "fieldtype": "Column Break"
   },
@@ -429,6 +408,18 @@
    "options": "00\n01\n02\n03\n04\n05\n06\n07\n08\n09\n10\n11"
   },
   {
+   "fieldname": "overtime",
+   "fieldtype": "Select",
+   "label": "Over time",
+   "options": "Applicable\nNot Applicable"
+  },
+  {
+   "depends_on": "eval:in_list([\"Applicable\"], doc.overtime)",
+   "fieldname": "over_time_applicable",
+   "fieldtype": "Data",
+   "label": "Over Time Applicable"
+  },
+  {
    "fieldname": "column_break_66",
    "fieldtype": "Column Break"
   },
@@ -437,6 +428,12 @@
    "fieldtype": "Select",
    "label": "Joining Ticket",
    "options": "Company\nCandidate\nReimbursable"
+  },
+  {
+   "fieldname": "leave_policy",
+   "fieldtype": "Select",
+   "label": "Leave ",
+   "options": "Yearly\n2 Years\nOthers"
   },
   {
    "depends_on": "eval:in_list([\"Others\"], doc.leave_policy)",
@@ -450,33 +447,44 @@
    "label": "Any Other Allowance"
   },
   {
-   "fieldname": "overtime",
-   "fieldtype": "Select",
-   "label": "Over time",
-   "options": "Applicable\nNot Applicable"
+   "fieldname": "interview_details",
+   "fieldtype": "Table",
+   "hidden": 1,
+   "label": "Interview Details",
+   "options": "Direct Interview Details",
+   "read_only": 1
   },
   {
-   "fieldname": "leave_policy",
-   "fieldtype": "Select",
-   "label": "Leave ",
-   "options": "Yearly\n2 Years\nOthers"
+   "fieldname": "candidates_details_section",
+   "fieldtype": "Section Break",
+   "label": "Candidates Details"
   },
   {
-   "depends_on": "eval:in_list([\"Applicable\"], doc.overtime)",
-   "fieldname": "over_time_applicable",
-   "fieldtype": "Data",
-   "label": "Over Time Applicable"
+   "fieldname": "table_64",
+   "fieldtype": "Table",
+   "options": "Job Description Candidate"
+  },
+  {
+   "fieldname": "section_break_65",
+   "fieldtype": "Section Break"
   },
   {
    "fieldname": "sa_candidate_summary",
    "fieldtype": "Table",
    "label": "SA Candidate Summary",
    "options": "SA Candidate Summary"
+  },
+  {
+   "fetch_from": "project.service",
+   "fieldname": "service",
+   "fieldtype": "Link",
+   "label": "Service",
+   "options": "Services"
   }
  ],
- "modified": "2020-04-24 20:30:43.245670",
+ "modified": "2020-04-27 10:09:07.654998",
  "modified_by": "Administrator",
- "module": "RecruitPRO",
+ "module": "Projects",
  "name": "Position",
  "name_case": "Title Case",
  "owner": "Administrator",

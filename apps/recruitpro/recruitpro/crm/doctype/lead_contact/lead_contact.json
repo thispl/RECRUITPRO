@@ -1,0 +1,49 @@
+{
+ "creation": "2020-04-07 18:52:01.303636",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "person_name",
+  "designation",
+  "mobile",
+  "email_id"
+ ],
+ "fields": [
+  {
+   "fieldname": "person_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Person Name"
+  },
+  {
+   "fieldname": "designation",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Designation"
+  },
+  {
+   "fieldname": "mobile",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Mobile"
+  },
+  {
+   "fieldname": "email_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Email Id"
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-04-25 11:43:34.823976",
+ "modified_by": "Administrator",
+ "module": "CRM",
+ "name": "Lead Contact",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

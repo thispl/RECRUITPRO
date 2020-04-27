@@ -1,0 +1,660 @@
+{
+ "autoname": "naming_series:",
+ "creation": "2020-04-07 18:31:45.205321",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "project_details_status",
+  "name_and_type_section",
+  "naming_series",
+  "salutation",
+  "full_name",
+  "gender",
+  "customer_type",
+  "gst_category",
+  "export_type",
+  "default_bank_account",
+  "from_lead",
+  "image",
+  "spoc",
+  "fe_registered",
+  "column_break_15",
+  "status",
+  "customer_status",
+  "account_manager",
+  "customer_group",
+  "customer_class",
+  "territory",
+  "tax_id",
+  "tax_category",
+  "disabled",
+  "follow_up_section",
+  "next_contact_by",
+  "last_contacted_by",
+  "column_break_28",
+  "next_contact_date",
+  "last_contacted_date",
+  "is_internal_customer",
+  "represents_company",
+  "appointment_details_section",
+  "appointment_on",
+  "last_appointment_by",
+  "appointment_taken",
+  "column_break_37",
+  "appointment_to_be_taken_by",
+  "last_appointment_on",
+  "appointment_fixed",
+  "allowed_to_transact_with_section",
+  "companies",
+  "currency_and_price_list_section",
+  "billing_currency",
+  "default_price_list",
+  "column_break_29",
+  "print_language",
+  "address_and_contact_section",
+  "address_html",
+  "website",
+  "column_break_34",
+  "contact_html",
+  "primary_address_and_contact_detail_section",
+  "customer_primary_contact",
+  "mobile_no",
+  "email_id",
+  "secondary_contact_detail_section",
+  "customer_secondary_contact",
+  "mobile_number",
+  "email_id1",
+  "column_break_40",
+  "customer_primary_address",
+  "primary_address",
+  "accounting_section",
+  "accounts",
+  "credit_limit_and_payment_terms_section",
+  "credit_limit",
+  "bypass_credit_limit_check_at_sales_order",
+  "client_payment",
+  "credit_days",
+  "candidate_payment",
+  "column_break_72",
+  "payment_terms",
+  "agreement_validity",
+  "default_payment_terms_template",
+  "credit_limits",
+  "more_information_section",
+  "customer_details",
+  "column_break_50",
+  "market_segment",
+  "industry",
+  "is_frozen",
+  "loyalty_points_section",
+  "loyalty_program",
+  "loyalty_program_tier",
+  "sales_partner_and_commission_section",
+  "sales_partner",
+  "default_commission_rate",
+  "sales_team_section",
+  "sales_team",
+  "remarks_section",
+  "remarks",
+  "customer_pos_id"
+ ],
+ "fields": [
+  {
+   "fieldname": "project_details_status",
+   "fieldtype": "HTML",
+   "label": "Project Details Status"
+  },
+  {
+   "fieldname": "name_and_type_section",
+   "fieldtype": "Section Break",
+   "label": "Name and Type"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "CUST-",
+   "set_only_once": 1
+  },
+  {
+   "depends_on": "eval:doc.customer_type!='Company'",
+   "fieldname": "salutation",
+   "fieldtype": "Link",
+   "label": "Salutation",
+   "options": "Salutation"
+  },
+  {
+   "bold": 1,
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "label": "Full Name",
+   "reqd": 1
+  },
+  {
+   "depends_on": "eval:doc.customer_type != 'Company'",
+   "fieldname": "gender",
+   "fieldtype": "Link",
+   "label": "Gender",
+   "options": "Gender"
+  },
+  {
+   "default": "Company",
+   "fieldname": "customer_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Type",
+   "options": "Company\nIndividual",
+   "reqd": 1
+  },
+  {
+   "fieldname": "gst_category",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "GST Category",
+   "options": "\nRegistered Regular\nRegistered Composition\nUnregistered\nSEZ\nOverseas\nConsumer\nDeemed Export\nUIN Holders"
+  },
+  {
+   "default": "Without Payment of Tax",
+   "depends_on": "eval:in_list([\"SEZ\", \"Overseas\", \"Deemed Export\"], doc.gst_category)",
+   "fieldname": "export_type",
+   "fieldtype": "Select",
+   "label": "Export Type",
+   "options": "\nWith Payment of Tax\nWithout Payment of Tax"
+  },
+  {
+   "fieldname": "default_bank_account",
+   "fieldtype": "Link",
+   "label": "Default Bank Account",
+   "options": "Bank Account"
+  },
+  {
+   "fieldname": "from_lead",
+   "fieldtype": "Link",
+   "label": "From Lead",
+   "options": "Lead"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "hidden": 1,
+   "label": "Image"
+  },
+  {
+   "fieldname": "spoc",
+   "fieldtype": "Link",
+   "label": "SPOC",
+   "options": "User"
+  },
+  {
+   "default": "0",
+   "fieldname": "fe_registered",
+   "fieldtype": "Check",
+   "label": "FE Registered ?"
+  },
+  {
+   "fieldname": "column_break_15",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Status",
+   "options": "\nActive\nOpen\nDormant"
+  },
+  {
+   "fieldname": "customer_status",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Customer Status",
+   "options": "\nSales\nProject\nRenewal"
+  },
+  {
+   "fieldname": "account_manager",
+   "fieldtype": "Link",
+   "label": "Account Manager",
+   "options": "User"
+  },
+  {
+   "fieldname": "customer_group",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Customer Group",
+   "options": "Customer Group",
+   "reqd": 1
+  },
+  {
+   "fieldname": "customer_class",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Customer Class",
+   "options": "Key\nName\nRetail\nDormant\nNamed"
+  },
+  {
+   "fieldname": "territory",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Territory",
+   "options": "Territory",
+   "reqd": 1
+  },
+  {
+   "fieldname": "tax_id",
+   "fieldtype": "Data",
+   "label": "Tax ID"
+  },
+  {
+   "fieldname": "tax_category",
+   "fieldtype": "Link",
+   "label": "Tax Category",
+   "options": "Tax Category"
+  },
+  {
+   "default": "0",
+   "fieldname": "disabled",
+   "fieldtype": "Check",
+   "label": "Disabled"
+  },
+  {
+   "fieldname": "follow_up_section",
+   "fieldtype": "Section Break",
+   "label": "Follow Up"
+  },
+  {
+   "fieldname": "next_contact_by",
+   "fieldtype": "Link",
+   "label": "Next Contact by",
+   "options": "User"
+  },
+  {
+   "fieldname": "last_contacted_by",
+   "fieldtype": "Link",
+   "label": "Last Contacted By",
+   "options": "User"
+  },
+  {
+   "fieldname": "column_break_28",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "next_contact_date",
+   "fieldtype": "Data",
+   "label": "Next Contact Date"
+  },
+  {
+   "fieldname": "last_contacted_date",
+   "fieldtype": "Data",
+   "label": "Last Contacted Date"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_internal_customer",
+   "fieldtype": "Check",
+   "label": "Is Internal Customer"
+  },
+  {
+   "depends_on": "is_internal_customer",
+   "fieldname": "represents_company",
+   "fieldtype": "Link",
+   "label": "Represents Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "appointment_details_section",
+   "fieldtype": "Section Break",
+   "hidden": 1,
+   "label": "appointment details"
+  },
+  {
+   "fieldname": "appointment_on",
+   "fieldtype": "Data",
+   "label": "Appointment On"
+  },
+  {
+   "fieldname": "last_appointment_by",
+   "fieldtype": "Data",
+   "label": "Last Appointment by"
+  },
+  {
+   "fieldname": "appointment_taken",
+   "fieldtype": "Button",
+   "label": "Appointment Taken"
+  },
+  {
+   "fieldname": "column_break_37",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "appointment_to_be_taken_by",
+   "fieldtype": "Link",
+   "label": "Appointment to be taken by",
+   "options": "User"
+  },
+  {
+   "fieldname": "last_appointment_on",
+   "fieldtype": "Data",
+   "label": "Last Appointment On"
+  },
+  {
+   "default": "0",
+   "fieldname": "appointment_fixed",
+   "fieldtype": "Check",
+   "label": "Appointment Fixed"
+  },
+  {
+   "fieldname": "allowed_to_transact_with_section",
+   "fieldtype": "Section Break",
+   "hidden": 1,
+   "label": "Allowed To Transact With"
+  },
+  {
+   "fieldname": "companies",
+   "fieldtype": "Table",
+   "label": "Allowed To Transact With",
+   "options": "Allowed To Transact With"
+  },
+  {
+   "fieldname": "currency_and_price_list_section",
+   "fieldtype": "Section Break",
+   "label": "Currency and Price List"
+  },
+  {
+   "fieldname": "billing_currency",
+   "fieldtype": "Link",
+   "label": "Billing Currency",
+   "options": "Currency"
+  },
+  {
+   "fieldname": "default_price_list",
+   "fieldtype": "Link",
+   "label": "Default Price List",
+   "options": "Price List"
+  },
+  {
+   "fieldname": "column_break_29",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "print_language",
+   "fieldtype": "Link",
+   "label": "Print Language",
+   "options": "Language"
+  },
+  {
+   "fieldname": "address_and_contact_section",
+   "fieldtype": "Section Break",
+   "label": "Address and Contact"
+  },
+  {
+   "fieldname": "address_html",
+   "fieldtype": "HTML",
+   "label": "Address HTML",
+   "read_only": 1
+  },
+  {
+   "fieldname": "website",
+   "fieldtype": "Data",
+   "label": "Website"
+  },
+  {
+   "fieldname": "column_break_34",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "contact_html",
+   "fieldtype": "HTML",
+   "label": "Contact HTML",
+   "read_only": 1
+  },
+  {
+   "fieldname": "primary_address_and_contact_detail_section",
+   "fieldtype": "Section Break",
+   "hidden": 1,
+   "label": "Primary Address and Contact Detail"
+  },
+  {
+   "fieldname": "customer_primary_contact",
+   "fieldtype": "Link",
+   "label": "Customer Primary Contact",
+   "options": "Contact"
+  },
+  {
+   "fieldname": "mobile_no",
+   "fieldtype": "Read Only",
+   "label": "Mobile No"
+  },
+  {
+   "fieldname": "email_id",
+   "fieldtype": "Read Only",
+   "label": "Email Id"
+  },
+  {
+   "fieldname": "secondary_contact_detail_section",
+   "fieldtype": "Section Break",
+   "hidden": 1,
+   "label": "Secondary Contact Detail"
+  },
+  {
+   "fieldname": "customer_secondary_contact",
+   "fieldtype": "Link",
+   "label": "Customer Secondary Contact",
+   "options": "Contact"
+  },
+  {
+   "fieldname": "mobile_number",
+   "fieldtype": "Data",
+   "label": "Mobile Number"
+  },
+  {
+   "fieldname": "email_id1",
+   "fieldtype": "Data",
+   "label": "Email Id"
+  },
+  {
+   "fieldname": "column_break_40",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "customer_primary_address",
+   "fieldtype": "Link",
+   "label": "Customer Primary Address",
+   "options": "Address"
+  },
+  {
+   "fieldname": "primary_address",
+   "fieldtype": "Read Only",
+   "label": "Primary Address"
+  },
+  {
+   "fieldname": "accounting_section",
+   "fieldtype": "Section Break",
+   "label": "Accounting"
+  },
+  {
+   "fieldname": "accounts",
+   "fieldtype": "Table",
+   "label": "Accounts",
+   "options": "Party Account"
+  },
+  {
+   "fieldname": "credit_limit_and_payment_terms_section",
+   "fieldtype": "Section Break",
+   "label": "Credit Limit and Payment Terms"
+  },
+  {
+   "fieldname": "credit_limit",
+   "fieldtype": "Currency",
+   "label": "Credit Limit"
+  },
+  {
+   "default": "0",
+   "fieldname": "bypass_credit_limit_check_at_sales_order",
+   "fieldtype": "Check",
+   "label": "Bypass credit limit check at Sales Order"
+  },
+  {
+   "default": "0",
+   "fieldname": "client_payment",
+   "fieldtype": "Check",
+   "label": "Client Payment"
+  },
+  {
+   "fieldname": "credit_days",
+   "fieldtype": "Int",
+   "label": "Credit Days"
+  },
+  {
+   "default": "0",
+   "fieldname": "candidate_payment",
+   "fieldtype": "Check",
+   "label": "Candidate Payment"
+  },
+  {
+   "fieldname": "column_break_72",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "payment_terms",
+   "fieldtype": "Small Text",
+   "label": "Payment Terms"
+  },
+  {
+   "fieldname": "agreement_validity",
+   "fieldtype": "Data",
+   "label": "Agreement Validity"
+  },
+  {
+   "fieldname": "default_payment_terms_template",
+   "fieldtype": "Link",
+   "label": "Default Payment Terms Template",
+   "options": "Payment Terms Template"
+  },
+  {
+   "fieldname": "credit_limits",
+   "fieldtype": "Table",
+   "label": "Credit Limit",
+   "options": "Customer Credit Limit"
+  },
+  {
+   "fieldname": "more_information_section",
+   "fieldtype": "Section Break",
+   "label": "More Information"
+  },
+  {
+   "fieldname": "customer_details",
+   "fieldtype": "Text",
+   "label": "Customer Details"
+  },
+  {
+   "fieldname": "column_break_50",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "market_segment",
+   "fieldtype": "Link",
+   "label": "Market Segment",
+   "options": "Market Segment"
+  },
+  {
+   "fieldname": "industry",
+   "fieldtype": "Link",
+   "label": "Industry",
+   "options": "Industry Type"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_frozen",
+   "fieldtype": "Check",
+   "label": "Is Frozen"
+  },
+  {
+   "fieldname": "loyalty_points_section",
+   "fieldtype": "Section Break",
+   "label": "Loyalty Points"
+  },
+  {
+   "fieldname": "loyalty_program",
+   "fieldtype": "Link",
+   "label": "Loyalty Program",
+   "options": "Loyalty Program"
+  },
+  {
+   "fieldname": "loyalty_program_tier",
+   "fieldtype": "Data",
+   "label": "Loyalty Program Tier"
+  },
+  {
+   "fieldname": "sales_partner_and_commission_section",
+   "fieldtype": "Section Break",
+   "label": "Sales Partner and Commission"
+  },
+  {
+   "fieldname": "sales_partner",
+   "fieldtype": "Link",
+   "label": "Sales Partner",
+   "options": "Sales Partner"
+  },
+  {
+   "fieldname": "default_commission_rate",
+   "fieldtype": "Float",
+   "label": "Commission Rate"
+  },
+  {
+   "fieldname": "sales_team_section",
+   "fieldtype": "Section Break",
+   "label": "Sales Team"
+  },
+  {
+   "fieldname": "sales_team",
+   "fieldtype": "Table",
+   "label": "Sales Team Details",
+   "options": "Sales Team"
+  },
+  {
+   "fieldname": "remarks_section",
+   "fieldtype": "Section Break",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "customer_pos_id",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Customer POS id"
+  }
+ ],
+ "image_field": "image",
+ "modified": "2020-04-25 15:58:25.289626",
+ "modified_by": "Administrator",
+ "module": "CRM",
+ "name": "Customer",
+ "name_case": "Title Case",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "search_fields": "full_name,customer_group,territory, mobile_no,primary_address",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "full_name",
+ "track_changes": 1
+}

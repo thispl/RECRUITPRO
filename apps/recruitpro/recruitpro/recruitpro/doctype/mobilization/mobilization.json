@@ -10,9 +10,9 @@
   "dropped_date",
   "pending_for",
   "status_updated_on",
-  "column_break_6",
   "selection_status",
   "interview_location",
+  "column_break_6",
   "selection_date",
   "client_reference_no",
   "naming_series",
@@ -20,10 +20,11 @@
   "supplier",
   "project",
   "customer",
-  "job_description",
+  "position",
   "candidate",
   "column_break_18",
   "territory",
+  "dnd_onboarding_date",
   "payment_terms",
   "client_payment_applicable",
   "service_charge_client",
@@ -39,6 +40,7 @@
   "passport_details_section",
   "passport_no",
   "date_of_issue",
+  "ecr_status",
   "column_break_35",
   "expiry_date",
   "nationality",
@@ -52,14 +54,30 @@
   "certificate",
   "cer",
   "original_documents_received_section",
-  "original_documents_recieved",
+  "document_type",
+  "custodian_type",
+  "document_custodian",
+  "degree_certificate_no",
+  "license_details_section",
+  "column_break_55",
+  "licence_issued_country",
+  "column_break_56",
+  "licence_expiry_date",
+  "offered_salary_section",
+  "basic",
+  "column_break_60",
+  "food",
+  "column_break_62",
+  "other_allowances",
   "collection_details_section",
+  "advance_payment",
   "advance_paid_client",
   "pending_payment_client",
   "column_break_52",
   "advance_paid_candidate",
   "write_off_candidate",
   "pending_payment_candidate",
+  "section_break_73",
   "customer_relation_executive",
   "source_executive",
   "team_leader",
@@ -133,22 +151,26 @@
   {
    "fieldname": "sales_order_confirmed_date",
    "fieldtype": "Data",
+   "hidden": 1,
    "label": "Sales Order Confirmed Date"
   },
   {
    "fieldname": "dropped_date",
    "fieldtype": "Data",
-   "label": "Dropped Date"
+   "label": "Dropped Date",
+   "read_only": 1
   },
   {
    "fieldname": "pending_for",
    "fieldtype": "Link",
+   "hidden": 1,
    "label": "Pending For",
    "options": "Mobilization Status"
   },
   {
    "fieldname": "status_updated_on",
    "fieldtype": "Data",
+   "hidden": 1,
    "label": "Status Updated On"
   },
   {
@@ -178,6 +200,7 @@
   {
    "fieldname": "naming_series",
    "fieldtype": "Data",
+   "hidden": 1,
    "label": "Naming Series"
   },
   {
@@ -187,6 +210,7 @@
   {
    "fieldname": "supplier",
    "fieldtype": "Link",
+   "hidden": 1,
    "label": "Supplier",
    "options": "Supplier"
   },
@@ -201,12 +225,6 @@
    "fieldtype": "Link",
    "label": "Customer",
    "options": "Customer"
-  },
-  {
-   "fieldname": "job_description",
-   "fieldtype": "Link",
-   "label": "Job Description",
-   "options": "Job Description"
   },
   {
    "fieldname": "candidate",
@@ -360,14 +378,7 @@
   },
   {
    "fieldname": "original_documents_received_section",
-   "fieldtype": "Section Break",
-   "label": "Original Documents Received"
-  },
-  {
-   "fieldname": "original_documents_recieved",
-   "fieldtype": "Table",
-   "label": "Original Documents Recieved",
-   "options": "Original Documents List"
+   "fieldtype": "Section Break"
   },
   {
    "fieldname": "collection_details_section",
@@ -694,7 +705,7 @@
   },
   {
    "fieldname": "additional_remarks",
-   "fieldtype": "Data",
+   "fieldtype": "Section Break",
    "label": "Additional Remarks"
   },
   {
@@ -707,9 +718,112 @@
    "fieldtype": "Link",
    "label": "Amended From",
    "options": "Mobilization"
+  },
+  {
+   "fieldname": "position",
+   "fieldtype": "Link",
+   "label": "Position",
+   "options": "Position"
+  },
+  {
+   "fieldname": "dnd_onboarding_date",
+   "fieldtype": "Data",
+   "label": "DnD Onboarding Date"
+  },
+  {
+   "fieldname": "ecr_status",
+   "fieldtype": "Select",
+   "label": "ECR Status",
+   "options": "ECR\nECNR\nUnknown"
+  },
+  {
+   "fieldname": "document_type",
+   "fieldtype": "Select",
+   "label": "Document Type",
+   "options": "\nPassport\nDegree Certificate"
+  },
+  {
+   "fieldname": "custodian_type",
+   "fieldtype": "Select",
+   "label": "Custodian Type",
+   "options": "\nBranch\nAssociate\nCandidate\nSupplier"
+  },
+  {
+   "fieldname": "document_custodian",
+   "fieldtype": "Dynamic Link",
+   "label": "Document Custodian",
+   "options": "custodian_type"
+  },
+  {
+   "depends_on": "eval:doc.document_type == 'Degree Certificate'",
+   "fieldname": "degree_certificate_no",
+   "fieldtype": "Data",
+   "label": "Degree Certificate No"
+  },
+  {
+   "fieldname": "license_details_section",
+   "fieldtype": "Section Break",
+   "label": "License Details"
+  },
+  {
+   "fieldname": "licence_issued_country",
+   "fieldtype": "Link",
+   "label": "Licence Issued Country",
+   "options": "Country"
+  },
+  {
+   "fieldname": "licence_expiry_date",
+   "fieldtype": "Data",
+   "label": "Licence Expiry Date"
+  },
+  {
+   "fieldname": "offered_salary_section",
+   "fieldtype": "Section Break",
+   "label": "Offered Salary"
+  },
+  {
+   "fieldname": "basic",
+   "fieldtype": "Currency",
+   "label": "Basic"
+  },
+  {
+   "fieldname": "food",
+   "fieldtype": "Currency",
+   "label": "Food"
+  },
+  {
+   "fieldname": "other_allowances",
+   "fieldtype": "Currency",
+   "label": "Other Allowances"
+  },
+  {
+   "fieldname": "column_break_56",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_60",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_62",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_55",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_73",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "advance_payment",
+   "fieldtype": "Table",
+   "label": "Advance Payment",
+   "options": "Advance Payment"
   }
  ],
- "modified": "2020-04-13 11:23:45.295942",
+ "modified": "2020-04-25 20:07:14.299012",
  "modified_by": "Administrator",
  "module": "RecruitPRO",
  "name": "Mobilization",

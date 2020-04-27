@@ -10,12 +10,13 @@
   {
    "fieldname": "original_documents_list",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Original Documents List",
    "options": "Original Documents"
   }
  ],
  "istable": 1,
- "modified": "2020-04-08 11:54:54.854429",
+ "modified": "2020-04-25 19:34:53.802471",
  "modified_by": "Administrator",
  "module": "RecruitPRO",
  "name": "Original Documents List",
