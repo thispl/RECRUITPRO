@@ -305,7 +305,6 @@
   {
    "fieldname": "appointment_details_section",
    "fieldtype": "Section Break",
-   "hidden": 1,
    "label": "appointment details"
   },
   {
@@ -359,6 +358,7 @@
   {
    "fieldname": "currency_and_price_list_section",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "label": "Currency and Price List"
   },
   {
@@ -391,8 +391,7 @@
   {
    "fieldname": "address_html",
    "fieldtype": "HTML",
-   "label": "Address HTML",
-   "read_only": 1
+   "label": "Address HTML"
   },
   {
    "fieldname": "website",
@@ -406,13 +405,11 @@
   {
    "fieldname": "contact_html",
    "fieldtype": "HTML",
-   "label": "Contact HTML",
-   "read_only": 1
+   "label": "Contact HTML"
   },
   {
    "fieldname": "primary_address_and_contact_detail_section",
    "fieldtype": "Section Break",
-   "hidden": 1,
    "label": "Primary Address and Contact Detail"
   },
   {
@@ -434,7 +431,6 @@
   {
    "fieldname": "secondary_contact_detail_section",
    "fieldtype": "Section Break",
-   "hidden": 1,
    "label": "Secondary Contact Detail"
   },
   {
@@ -471,6 +467,7 @@
   {
    "fieldname": "accounting_section",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "label": "Accounting"
   },
   {
@@ -504,6 +501,7 @@
   {
    "fieldname": "credit_days",
    "fieldtype": "Int",
+   "hidden": 1,
    "label": "Credit Days"
   },
   {
@@ -529,6 +527,7 @@
   {
    "fieldname": "default_payment_terms_template",
    "fieldtype": "Link",
+   "hidden": 1,
    "label": "Default Payment Terms Template",
    "options": "Payment Terms Template"
   },
@@ -573,6 +572,7 @@
   {
    "fieldname": "loyalty_points_section",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "label": "Loyalty Points"
   },
   {
@@ -589,6 +589,7 @@
   {
    "fieldname": "sales_partner_and_commission_section",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "label": "Sales Partner and Commission"
   },
   {
@@ -605,6 +606,7 @@
   {
    "fieldname": "sales_team_section",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "label": "Sales Team"
   },
   {
@@ -631,7 +633,7 @@
   }
  ],
  "image_field": "image",
- "modified": "2020-04-25 15:58:25.289626",
+ "modified": "2020-04-27 10:26:26.144520",
  "modified_by": "Administrator",
  "module": "CRM",
  "name": "Customer",

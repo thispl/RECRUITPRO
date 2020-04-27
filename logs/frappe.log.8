@@ -1,12 +1,9 @@
-[ERROR] 2020-04-24 12:44:17,647 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/error.py:
-Could not take error snapshot: characters_written
-Traceback (most recent call last):
-  File "/home/sharmila/frappe-bench/env/lib/python3.6/shutil.py", line 550, in move
-    os.rename(src, real_dst)
-FileNotFoundError: [Errno 2] No such file or directory: '/home/sharmila/frappe-bench/apps/recruitpro/recruitpro/recruitpro/doctype/job_description' -> '/home/sharmila/frappe-bench/apps/recruitpro/recruitpro/recruitpro/doctype/position/job_description'
-
-During handling of the above exception, another exception occurred:
-
+[ERROR] 2020-04-25 13:16:47,995 | /home/sharmila/frappe-bench/apps/frappe/frappe/app.py:
+Site: recruitpro.local
+Form Dict: {
+ "cmd": "frappe.client.get_hooks"
+}
+Request Error
 Traceback (most recent call last):
   File "/home/sharmila/frappe-bench/apps/frappe/frappe/app.py", line 62, in application
     response = frappe.api.handle()
@@ -18,35 +15,40 @@ Traceback (most recent call last):
     return frappe.call(method, **frappe.form_dict)
   File "/home/sharmila/frappe-bench/apps/frappe/frappe/__init__.py", line 1054, in call
     return fn(*args, **newargs)
-  File "/home/sharmila/frappe-bench/apps/frappe/frappe/model/rename_doc.py", line 20, in update_document_title
-    docname = rename_doc(doctype=doctype, old=docname, new=new_name, merge=merge)
-  File "/home/sharmila/frappe-bench/apps/frappe/frappe/model/rename_doc.py", line 51, in rename_doc
-    out = old_doc.run_method("before_rename", old, new, merge) or {}
-  File "/home/sharmila/frappe-bench/apps/frappe/frappe/model/document.py", line 794, in run_method
-    out = Document.hook(fn)(self, *args, **kwargs)
-  File "/home/sharmila/frappe-bench/apps/frappe/frappe/model/document.py", line 1065, in composer
-    return composed(self, method, *args, **kwargs)
-  File "/home/sharmila/frappe-bench/apps/frappe/frappe/model/document.py", line 1048, in runner
-    add_to_return_value(self, fn(self, *args, **kwargs))
-  File "/home/sharmila/frappe-bench/apps/frappe/frappe/model/document.py", line 788, in <lambda>
-    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
-  File "/home/sharmila/frappe-bench/apps/frappe/frappe/core/doctype/doctype/doctype.py", line 386, in before_rename
-    self.rename_files_and_folders(old, new)
-  File "/home/sharmila/frappe-bench/apps/frappe/frappe/core/doctype/doctype/doctype.py", line 404, in rename_files_and_folders
-    shutil.move(old_path, new_path)
-  File "/home/sharmila/frappe-bench/env/lib/python3.6/shutil.py", line 564, in move
-    copy_function(src, real_dst)
-  File "/home/sharmila/frappe-bench/env/lib/python3.6/shutil.py", line 263, in copy2
-    copyfile(src, dst, follow_symlinks=follow_symlinks)
-  File "/home/sharmila/frappe-bench/env/lib/python3.6/shutil.py", line 120, in copyfile
-    with open(src, 'rb') as fsrc:
-FileNotFoundError: [Errno 2] No such file or directory: '/home/sharmila/frappe-bench/apps/recruitpro/recruitpro/recruitpro/doctype/job_description'
-
-During handling of the above exception, another exception occurred:
-
+TypeError: get_hooks() missing 1 required positional argument: 'hook'
+[ERROR] 2020-04-25 13:16:47,995 | /home/sharmila/frappe-bench/apps/frappe/frappe/app.py:
+Site: recruitpro.local
+Form Dict: {
+ "cmd": "frappe.desk.form.load.getdoctype"
+}
+Request Error
 Traceback (most recent call last):
-  File "/home/sharmila/frappe-bench/apps/frappe/frappe/utils/error.py", line 36, in make_error_snapshot
-    snapshot = get_snapshot(exception)
-  File "/home/sharmila/frappe-bench/apps/frappe/frappe/utils/error.py", line 128, in get_snapshot
-    value = pydoc.text.repr(getattr(evalue, name))
-AttributeError: characters_written
+  File "/home/sharmila/frappe-bench/apps/frappe/frappe/app.py", line 62, in application
+    response = frappe.api.handle()
+  File "/home/sharmila/frappe-bench/apps/frappe/frappe/api.py", line 55, in handle
+    return frappe.handler.handle()
+  File "/home/sharmila/frappe-bench/apps/frappe/frappe/handler.py", line 22, in handle
+    data = execute_cmd(cmd)
+  File "/home/sharmila/frappe-bench/apps/frappe/frappe/handler.py", line 61, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/sharmila/frappe-bench/apps/frappe/frappe/__init__.py", line 1054, in call
+    return fn(*args, **newargs)
+TypeError: getdoctype() missing 1 required positional argument: 'doctype'
+[ERROR] 2020-04-25 13:16:48,024 | /home/sharmila/frappe-bench/apps/frappe/frappe/app.py:
+Site: recruitpro.local
+Form Dict: {
+ "cmd": "frappe.realtime.get_user_info"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/sharmila/frappe-bench/apps/frappe/frappe/app.py", line 62, in application
+    response = frappe.api.handle()
+  File "/home/sharmila/frappe-bench/apps/frappe/frappe/api.py", line 55, in handle
+    return frappe.handler.handle()
+  File "/home/sharmila/frappe-bench/apps/frappe/frappe/handler.py", line 22, in handle
+    data = execute_cmd(cmd)
+  File "/home/sharmila/frappe-bench/apps/frappe/frappe/handler.py", line 61, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/sharmila/frappe-bench/apps/frappe/frappe/__init__.py", line 1054, in call
+    return fn(*args, **newargs)
+TypeError: get_user_info() missing 1 required positional argument: 'sid'
