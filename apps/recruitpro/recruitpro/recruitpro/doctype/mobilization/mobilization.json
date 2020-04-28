@@ -27,9 +27,12 @@
   "dnd_onboarding_date",
   "payment_terms",
   "client_payment_applicable",
-  "service_charge_client",
-  "candidate_payment_applicablecandidate_payment_applicable",
-  "service_charge_candidate",
+  "client_sc",
+  "client_reimb",
+  "candidate_payment_applicable",
+  "candidate_sc",
+  "candidate_reimb",
+  "currency_type",
   "redeputation_cost",
   "personal_details_section",
   "name1",
@@ -84,24 +87,49 @@
   "dnd_incharge",
   "last_updated_on",
   "current_location",
+  "column_break_80",
+  "sub_agent_name",
+  "sub_agent_contact_no",
   "psl_attachments_section",
   "irf",
   "passport",
   "column_break_65",
+  "cv_attached_date",
+  "passport_attach_date",
   "photo",
   "certificates",
+  "section_break_149",
+  "hrd",
+  "culture",
+  "column_break_96",
+  "hrd_attach",
+  "hrd_attached_date",
+  "column_break_99",
+  "embassy",
+  "column_break_101",
+  "embassy_attach",
+  "embassy_attached_date",
+  "column_break_104",
+  "university_attestation",
   "documentation_section",
   "offer_letter",
   "offer_letter_date",
   "mol",
   "mol_date",
   "column_break_73",
-  "degree_attestation",
-  "attestation_date",
   "premedical",
   "premedical_date",
-  "section_break_78",
+  "section_break_161",
   "visa",
+  "visa_attached_date",
+  "visa__wakala__aplication_number",
+  "column_break_100",
+  "entry_visa_date",
+  "entry_visa_type",
+  "entry_visa_received_date",
+  "entry_visa_date_of_issue",
+  "entry_visa_expiry_date",
+  "section_break_78",
   "visa_date",
   "visa_type",
   "visa_received_date",
@@ -109,24 +137,34 @@
   "visa_validity_period",
   "column_break_85",
   "pcc",
+  "pcc_attached_date",
   "pcc_date",
   "column_break_88",
   "final_medical",
+  "final_attached_date",
   "final_medical_date",
   "section_break_91",
-  "stamped_visa",
-  "stamped_visa_date",
+  "teampro_affidavit",
+  "teampro_affidavit_attached_date",
+  "safe_arrival",
   "column_break_94",
-  "slbfe",
-  "slbfe_date",
+  "safe_arrival_attached_date",
+  "poe",
+  "poe_attached_date",
   "section_break_97",
-  "payment_receipt",
-  "payment_receipt_date",
+  "date_of_journey_requested",
+  "return_needed",
+  "send_ticket_request",
+  "column_break_122",
+  "doj_type",
+  "boarding_point",
+  "destination_point",
   "section_break_100",
   "airlines",
   "boarding",
   "arrival",
   "ticket",
+  "ticket_booked",
   "ticket_date",
   "column_break_106",
   "travel_instructions",
@@ -255,24 +293,7 @@
   },
   {
    "default": "0",
-   "fieldname": "service_charge_client",
-   "fieldtype": "Check",
-   "label": "Service Charge (Client)"
-  },
-  {
-   "default": "0",
-   "fieldname": "candidate_payment_applicablecandidate_payment_applicable",
-   "fieldtype": "Check",
-   "label": "Candidate Payment ApplicableCandidate Payment Applicable"
-  },
-  {
-   "default": "0",
-   "fieldname": "service_charge_candidate",
-   "fieldtype": "Check",
-   "label": "Service Charge (Candidate)"
-  },
-  {
-   "default": "0",
+   "depends_on": "eval:doc.status == 'Onboarded'",
    "fieldname": "redeputation_cost",
    "fieldtype": "Check",
    "label": "Redeputation Cost"
@@ -352,7 +373,8 @@
   },
   {
    "fieldname": "section_break_41",
-   "fieldtype": "Section Break"
+   "fieldtype": "Section Break",
+   "hidden": 1
   },
   {
    "fieldname": "driving_licence",
@@ -417,6 +439,7 @@
   {
    "fieldname": "customer_relation_executive",
    "fieldtype": "Link",
+   "hidden": 1,
    "label": "Customer Relation Executive",
    "options": "User"
   },
@@ -470,11 +493,13 @@
   {
    "fieldname": "photo",
    "fieldtype": "Attach Image",
+   "hidden": 1,
    "label": "Photo"
   },
   {
    "fieldname": "certificates",
    "fieldtype": "Attach",
+   "hidden": 1,
    "label": "Certificates/Licence"
   },
   {
@@ -490,7 +515,8 @@
   {
    "fieldname": "offer_letter_date",
    "fieldtype": "Data",
-   "label": "Offer Letter Date"
+   "label": "Offer Letter Date",
+   "read_only": 1
   },
   {
    "fieldname": "mol",
@@ -500,21 +526,12 @@
   {
    "fieldname": "mol_date",
    "fieldtype": "Data",
-   "label": "MOL Date"
+   "label": "MOL Date",
+   "read_only": 1
   },
   {
    "fieldname": "column_break_73",
    "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "degree_attestation",
-   "fieldtype": "Attach",
-   "label": "Degree Attestation"
-  },
-  {
-   "fieldname": "attestation_date",
-   "fieldtype": "Data",
-   "label": "Attestation Date"
   },
   {
    "fieldname": "premedical",
@@ -524,16 +541,12 @@
   {
    "fieldname": "premedical_date",
    "fieldtype": "Data",
-   "label": "PreMedical Date"
+   "label": "PreMedical Date",
+   "read_only": 1
   },
   {
    "fieldname": "section_break_78",
    "fieldtype": "Section Break"
-  },
-  {
-   "fieldname": "visa",
-   "fieldtype": "Attach",
-   "label": "Visa"
   },
   {
    "fieldname": "visa_date",
@@ -574,6 +587,7 @@
   {
    "fieldname": "pcc_date",
    "fieldtype": "Data",
+   "hidden": 1,
    "label": "PCC Date"
   },
   {
@@ -588,6 +602,7 @@
   {
    "fieldname": "final_medical_date",
    "fieldtype": "Data",
+   "hidden": 1,
    "label": "Final Medical Date"
   },
   {
@@ -595,42 +610,13 @@
    "fieldtype": "Section Break"
   },
   {
-   "fieldname": "stamped_visa",
-   "fieldtype": "Attach",
-   "label": "Stamped Visa"
-  },
-  {
-   "fieldname": "stamped_visa_date",
-   "fieldtype": "Data",
-   "label": "Stamped Visa Date"
-  },
-  {
    "fieldname": "column_break_94",
    "fieldtype": "Column Break"
   },
   {
-   "fieldname": "slbfe",
-   "fieldtype": "Attach",
-   "label": "SLBFE"
-  },
-  {
-   "fieldname": "slbfe_date",
-   "fieldtype": "Data",
-   "label": "SLBFE Date"
-  },
-  {
    "fieldname": "section_break_97",
-   "fieldtype": "Section Break"
-  },
-  {
-   "fieldname": "payment_receipt",
-   "fieldtype": "Attach",
-   "label": "Payment Receipt"
-  },
-  {
-   "fieldname": "payment_receipt_date",
-   "fieldtype": "Data",
-   "label": "Payment Receipt Date"
+   "fieldtype": "Section Break",
+   "label": "Ticket Request"
   },
   {
    "fieldname": "section_break_100",
@@ -821,9 +807,280 @@
    "fieldtype": "Table",
    "label": "Advance Payment",
    "options": "Advance Payment"
+  },
+  {
+   "fieldname": "column_break_80",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sub_agent_name",
+   "fieldtype": "Data",
+   "label": "Sub Agent Name"
+  },
+  {
+   "fieldname": "sub_agent_contact_no",
+   "fieldtype": "Data",
+   "label": "Sub Agent Contact No"
+  },
+  {
+   "default": "0",
+   "fieldname": "ticket_booked",
+   "fieldtype": "Check",
+   "label": "Ticket Booked"
+  },
+  {
+   "fieldname": "date_of_journey_requested",
+   "fieldtype": "Data",
+   "label": "Date of Journey Requested"
+  },
+  {
+   "default": "0",
+   "fieldname": "return_needed",
+   "fieldtype": "Check",
+   "label": "Return Needed "
+  },
+  {
+   "fieldname": "send_ticket_request",
+   "fieldtype": "Button",
+   "label": "Send Ticket Request"
+  },
+  {
+   "fieldname": "column_break_122",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "doj_type",
+   "fieldtype": "Select",
+   "label": "DOJ Type",
+   "options": "Fixed\nFlexible"
+  },
+  {
+   "fieldname": "boarding_point",
+   "fieldtype": "Data",
+   "label": "Boarding Point"
+  },
+  {
+   "fieldname": "destination_point",
+   "fieldtype": "Data",
+   "label": "Destination Point"
+  },
+  {
+   "fieldname": "teampro_affidavit",
+   "fieldtype": "Attach",
+   "label": "Teampro Affidavit"
+  },
+  {
+   "fieldname": "safe_arrival",
+   "fieldtype": "Attach",
+   "label": "Safe Arrival"
+  },
+  {
+   "fieldname": "safe_arrival_attached_date",
+   "fieldtype": "Data",
+   "label": "Safe Arrival Attached Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "poe",
+   "fieldtype": "Attach",
+   "label": "POE"
+  },
+  {
+   "fieldname": "poe_attached_date",
+   "fieldtype": "Data",
+   "label": "POE Attached Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "visa_attached_date",
+   "fieldtype": "Data",
+   "label": "Visa Attached Date"
+  },
+  {
+   "fieldname": "visa__wakala__aplication_number",
+   "fieldtype": "Data",
+   "label": "Visa / Wakala / Aplication Number"
+  },
+  {
+   "fieldname": "column_break_100",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_149",
+   "fieldtype": "Section Break",
+   "label": "Degree Attestation"
+  },
+  {
+   "fieldname": "entry_visa_date",
+   "fieldtype": "Data",
+   "label": "Entry Visa Date"
+  },
+  {
+   "fieldname": "entry_visa_type",
+   "fieldtype": "Select",
+   "label": "Entry Visa Type",
+   "options": "Block Visa\nResident Visa\nVisit Visa"
+  },
+  {
+   "fieldname": "entry_visa_received_date",
+   "fieldtype": "Data",
+   "label": "Entry Visa Received Date"
+  },
+  {
+   "fieldname": "entry_visa_date_of_issue",
+   "fieldtype": "Data",
+   "label": "Entry Visa Date of Issue"
+  },
+  {
+   "fieldname": "entry_visa_expiry_date",
+   "fieldtype": "Data",
+   "label": "Entry Visa Expiry Date"
+  },
+  {
+   "depends_on": "eval:doc.client_payment_applicable == 1",
+   "fieldname": "currency_type",
+   "fieldtype": "Link",
+   "label": "Currency Type",
+   "options": "Currency"
+  },
+  {
+   "default": "0",
+   "fieldname": "candidate_payment_applicable",
+   "fieldtype": "Check",
+   "label": "Candidate Payment Applicable"
+  },
+  {
+   "default": "0",
+   "depends_on": "client_payment_applicable",
+   "fieldname": "client_sc",
+   "fieldtype": "Currency",
+   "label": "Service Charge (Client)"
+  },
+  {
+   "depends_on": "client_payment_applicable",
+   "fieldname": "client_reimb",
+   "fieldtype": "Currency",
+   "label": "Client Reimbursement"
+  },
+  {
+   "default": "0",
+   "depends_on": "candidate_payment_applicable",
+   "fieldname": "candidate_sc",
+   "fieldtype": "Currency",
+   "label": "Service Charge (Candidate)"
+  },
+  {
+   "default": "0",
+   "depends_on": "candidate_payment_applicable",
+   "fieldname": "candidate_reimb",
+   "fieldtype": "Currency",
+   "label": "Candidate Reimbursement"
+  },
+  {
+   "fieldname": "cv_attached_date",
+   "fieldtype": "Data",
+   "label": "IRF Attached Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "passport_attach_date",
+   "fieldtype": "Data",
+   "label": "Passport Attach Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "teampro_affidavit_attached_date",
+   "fieldtype": "Data",
+   "label": "Teampro Affidavit Attached Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "final_attached_date",
+   "fieldtype": "Data",
+   "label": "Final Medical Attached Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "pcc_attached_date",
+   "fieldtype": "Data",
+   "label": "PCC Attached Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "visa",
+   "fieldtype": "Attach",
+   "label": "Entry Visa"
+  },
+  {
+   "fieldname": "section_break_161",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "hrd",
+   "fieldtype": "Check",
+   "label": "HRD"
+  },
+  {
+   "fieldname": "column_break_96",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "hrd",
+   "fieldname": "hrd_attach",
+   "fieldtype": "Attach",
+   "label": "HRD Attach"
+  },
+  {
+   "fieldname": "hrd_attached_date",
+   "fieldtype": "Data",
+   "label": "HRD Attached Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_99",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "embassy",
+   "fieldtype": "Check",
+   "label": "Embassy"
+  },
+  {
+   "fieldname": "column_break_101",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "embassy",
+   "fieldname": "embassy_attach",
+   "fieldtype": "Attach",
+   "label": "Embassy Attach"
+  },
+  {
+   "fieldname": "embassy_attached_date",
+   "fieldtype": "Data",
+   "label": "Embassy Attached Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_104",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "university_attestation",
+   "fieldtype": "Check",
+   "label": "University Attestation"
+  },
+  {
+   "default": "0",
+   "fieldname": "culture",
+   "fieldtype": "Check",
+   "label": "Culture"
   }
  ],
- "modified": "2020-04-25 20:07:14.299012",
+ "modified": "2020-04-27 19:07:14.385112",
  "modified_by": "Administrator",
  "module": "RecruitPRO",
  "name": "Mobilization",

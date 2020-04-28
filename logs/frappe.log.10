@@ -1,92 +1,321 @@
-[ERROR] 2020-04-24 20:11:26,176 | /home/sharmila/frappe-bench/apps/frappe/frappe/app.py:
+[DEBUG] 2020-04-27 12:10:27,678 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
-Form Dict: {
- "cmd": "frappe.realtime.get_user_info"
-}
-Request Error
-Traceback (most recent call last):
-  File "/home/sharmila/frappe-bench/apps/frappe/frappe/app.py", line 62, in application
-    response = frappe.api.handle()
-  File "/home/sharmila/frappe-bench/apps/frappe/frappe/api.py", line 55, in handle
-    return frappe.handler.handle()
-  File "/home/sharmila/frappe-bench/apps/frappe/frappe/handler.py", line 22, in handle
-    data = execute_cmd(cmd)
-  File "/home/sharmila/frappe-bench/apps/frappe/frappe/handler.py", line 61, in execute_cmd
-    return frappe.call(method, **frappe.form_dict)
-  File "/home/sharmila/frappe-bench/apps/frappe/frappe/__init__.py", line 1054, in call
-    return fn(*args, **newargs)
-TypeError: get_user_info() missing 1 required positional argument: 'sid'
-[ERROR] 2020-04-24 20:11:26,177 | /home/sharmila/frappe-bench/apps/frappe/frappe/app.py:
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 12:11:27,884 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
-Form Dict: {
- "cmd": "frappe.realtime.get_user_info"
-}
-Request Error
-Traceback (most recent call last):
-  File "/home/sharmila/frappe-bench/apps/frappe/frappe/app.py", line 62, in application
-    response = frappe.api.handle()
-  File "/home/sharmila/frappe-bench/apps/frappe/frappe/api.py", line 55, in handle
-    return frappe.handler.handle()
-  File "/home/sharmila/frappe-bench/apps/frappe/frappe/handler.py", line 22, in handle
-    data = execute_cmd(cmd)
-  File "/home/sharmila/frappe-bench/apps/frappe/frappe/handler.py", line 61, in execute_cmd
-    return frappe.call(method, **frappe.form_dict)
-  File "/home/sharmila/frappe-bench/apps/frappe/frappe/__init__.py", line 1054, in call
-    return fn(*args, **newargs)
-TypeError: get_user_info() missing 1 required positional argument: 'sid'
-[ERROR] 2020-04-24 20:11:34,660 | /home/sharmila/frappe-bench/apps/frappe/frappe/app.py:
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 12:12:28,115 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
-Form Dict: {
- "action": "Save",
- "cmd": "frappe.desk.form.save.savedocs",
- "doc": "{\"docstatus\":0,\"doctype\":\"Position\",\"name\":\"New Position 1\",\"__islocal\":1,\"__unsaved\":1,\"owner\":\"Administrator\",\"status\":\"\",\"operation_status\":\"\",\"passport_category\":\"\",\"salary_type\":\"\",\"working_days\":\"8 hours\",\"food\":\"Free\",\"visa_type\":\"Permeant - 2 years\",\"transportation\":\"Free\",\"accomodation\":\"Free\",\"contract_period_probation\":\"00\",\"contract_period__month\":\"00\",\"overtime\":\"Applicable\",\"joining_ticket\":\"Company\",\"leave_policy\":\"Yearly\"}"
-}
-Request Error
-Traceback (most recent call last):
-  File "/home/sharmila/frappe-bench/apps/frappe/frappe/app.py", line 62, in application
-    response = frappe.api.handle()
-  File "/home/sharmila/frappe-bench/apps/frappe/frappe/api.py", line 55, in handle
-    return frappe.handler.handle()
-  File "/home/sharmila/frappe-bench/apps/frappe/frappe/handler.py", line 22, in handle
-    data = execute_cmd(cmd)
-  File "/home/sharmila/frappe-bench/apps/frappe/frappe/handler.py", line 61, in execute_cmd
-    return frappe.call(method, **frappe.form_dict)
-  File "/home/sharmila/frappe-bench/apps/frappe/frappe/__init__.py", line 1054, in call
-    return fn(*args, **newargs)
-  File "/home/sharmila/frappe-bench/apps/frappe/frappe/desk/form/save.py", line 12, in savedocs
-    doc = frappe.get_doc(json.loads(doc))
-  File "/home/sharmila/frappe-bench/apps/frappe/frappe/__init__.py", line 752, in get_doc
-    doc = frappe.model.document.get_doc(*args, **kwargs)
-  File "/home/sharmila/frappe-bench/apps/frappe/frappe/model/document.py", line 69, in get_doc
-    controller = get_controller(doctype)
-  File "/home/sharmila/frappe-bench/apps/frappe/frappe/model/base_document.py", line 56, in get_controller
-    raise ImportError(doctype)
-ImportError: Position
-[ERROR] 2020-04-24 20:12:19,333 | /home/sharmila/frappe-bench/apps/frappe/frappe/app.py:
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 12:13:28,323 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
-Form Dict: {
- "action": "Save",
- "cmd": "frappe.desk.form.save.savedocs",
- "doc": "{\"docstatus\":0,\"doctype\":\"Position\",\"name\":\"New Position 1\",\"__islocal\":1,\"__unsaved\":1,\"owner\":\"Administrator\",\"status\":\"\",\"operation_status\":\"\",\"passport_category\":\"\",\"salary_type\":\"\",\"working_days\":\"8 hours\",\"food\":\"Free\",\"visa_type\":\"Permeant - 2 years\",\"transportation\":\"Free\",\"accomodation\":\"Free\",\"contract_period_probation\":\"00\",\"contract_period__month\":\"00\",\"overtime\":\"Applicable\",\"joining_ticket\":\"Company\",\"leave_policy\":\"Yearly\",\"subject\":\"test\"}"
-}
-Request Error
-Traceback (most recent call last):
-  File "/home/sharmila/frappe-bench/apps/frappe/frappe/app.py", line 62, in application
-    response = frappe.api.handle()
-  File "/home/sharmila/frappe-bench/apps/frappe/frappe/api.py", line 55, in handle
-    return frappe.handler.handle()
-  File "/home/sharmila/frappe-bench/apps/frappe/frappe/handler.py", line 22, in handle
-    data = execute_cmd(cmd)
-  File "/home/sharmila/frappe-bench/apps/frappe/frappe/handler.py", line 61, in execute_cmd
-    return frappe.call(method, **frappe.form_dict)
-  File "/home/sharmila/frappe-bench/apps/frappe/frappe/__init__.py", line 1054, in call
-    return fn(*args, **newargs)
-  File "/home/sharmila/frappe-bench/apps/frappe/frappe/desk/form/save.py", line 12, in savedocs
-    doc = frappe.get_doc(json.loads(doc))
-  File "/home/sharmila/frappe-bench/apps/frappe/frappe/__init__.py", line 752, in get_doc
-    doc = frappe.model.document.get_doc(*args, **kwargs)
-  File "/home/sharmila/frappe-bench/apps/frappe/frappe/model/document.py", line 69, in get_doc
-    controller = get_controller(doctype)
-  File "/home/sharmila/frappe-bench/apps/frappe/frappe/model/base_document.py", line 56, in get_controller
-    raise ImportError(doctype)
-ImportError: Position
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 12:14:28,522 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 12:15:28,758 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 12:16:28,997 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 12:17:29,200 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 12:18:29,412 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 12:19:29,750 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 12:20:30,005 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 12:21:30,253 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 12:22:30,450 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 12:23:30,669 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 12:24:30,984 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 12:25:31,176 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 12:26:31,372 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 12:27:31,579 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 12:28:31,807 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 12:29:32,017 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 12:30:32,224 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 12:31:32,454 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 12:32:32,711 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 12:33:32,922 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 12:34:33,130 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 12:35:33,333 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 12:36:33,538 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 12:37:33,752 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 12:38:33,949 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 12:39:34,152 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 12:40:34,473 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 12:41:34,675 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 12:42:34,868 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 12:43:35,071 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 12:44:35,298 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 12:45:35,501 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 12:46:35,705 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 12:47:35,965 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 12:48:36,199 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 12:49:36,418 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 12:50:36,621 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 12:51:36,837 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 12:52:37,093 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 12:53:37,292 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 12:54:37,500 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 12:55:37,702 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 12:56:37,927 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 12:57:38,142 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 12:58:38,347 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 12:59:38,616 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 13:00:38,857 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 13:01:39,054 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 13:02:39,307 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 13:03:39,526 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 13:04:39,818 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 13:05:40,089 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 13:06:40,290 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 13:07:40,503 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 13:08:40,742 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 13:09:40,994 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 13:10:41,260 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 13:11:41,464 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 13:12:41,755 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 13:13:41,956 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 13:14:42,163 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 13:15:42,370 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 13:16:42,600 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 13:17:42,832 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 13:18:43,176 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 13:19:43,379 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 13:20:43,592 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 13:21:43,860 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 13:22:44,073 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 13:23:44,278 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 13:24:44,507 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 13:25:44,789 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 13:26:45,009 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 13:27:45,498 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 13:28:45,745 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 13:29:45,966 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 13:30:46,173 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 13:31:46,373 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 13:32:46,663 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 13:33:46,881 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 13:34:47,139 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 13:35:47,347 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 13:36:47,569 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 13:37:47,768 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 13:38:47,969 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 13:39:48,276 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 13:40:48,500 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 13:41:48,698 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 13:42:48,903 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 13:43:49,107 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 13:44:49,335 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 13:45:49,534 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 13:46:49,727 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 13:47:50,063 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 13:48:50,290 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 13:49:50,512 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 13:50:50,742 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 13:51:51,007 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 13:52:51,242 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 13:53:51,445 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 13:54:51,712 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 13:55:51,917 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 13:56:52,217 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local

@@ -206,13 +206,14 @@
    "fieldname": "mode_of_interview",
    "fieldtype": "Select",
    "label": "Mode of Interview",
-   "options": "\nDirect\nCV Selection\nWire Selection"
+   "options": "Direct\nCV Selection\nWire Selection"
   },
   {
    "fieldname": "column_break_23",
    "fieldtype": "Column Break"
   },
   {
+   "depends_on": "eval:doc.mode_of_interview === 'Direct'",
    "fieldname": "date_and_location",
    "fieldtype": "Table",
    "label": "Date and Location",
@@ -495,7 +496,7 @@
    "options": "SA Candidate Summary"
   }
  ],
- "modified": "2020-04-25 15:23:26.384121",
+ "modified": "2020-04-28 11:41:09.310903",
  "modified_by": "Administrator",
  "module": "Projects",
  "name": "Project",

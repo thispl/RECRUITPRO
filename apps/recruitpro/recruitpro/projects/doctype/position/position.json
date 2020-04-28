@@ -30,9 +30,8 @@
   "sp",
   "column_break_22",
   "fp",
-  "column_break_24",
-  "sl",
   "column_break_26",
+  "column_break_27",
   "psl",
   "details_section",
   "job_description",
@@ -79,7 +78,7 @@
   "any_other_allowance",
   "interview_details",
   "candidates_details_section",
-  "table_64",
+  "position_candidate",
   "section_break_65",
   "sa_candidate_summary"
  ],
@@ -201,15 +200,6 @@
    "label": "#FP"
   },
   {
-   "fieldname": "column_break_24",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "sl",
-   "fieldtype": "Data",
-   "label": "#SL"
-  },
-  {
    "fieldname": "column_break_26",
    "fieldtype": "Column Break"
   },
@@ -226,7 +216,7 @@
   {
    "fieldname": "job_description",
    "fieldtype": "Text Editor",
-   "label": "Job Description"
+   "label": "Position Description"
   },
   {
    "fieldname": "requirement_details_section",
@@ -456,13 +446,7 @@
   },
   {
    "fieldname": "candidates_details_section",
-   "fieldtype": "Section Break",
-   "label": "Candidates Details"
-  },
-  {
-   "fieldname": "table_64",
-   "fieldtype": "Table",
-   "options": "Job Description Candidate"
+   "fieldtype": "Section Break"
   },
   {
    "fieldname": "section_break_65",
@@ -480,9 +464,19 @@
    "fieldtype": "Link",
    "label": "Service",
    "options": "Services"
+  },
+  {
+   "fieldname": "position_candidate",
+   "fieldtype": "Table",
+   "label": "Candidates Details",
+   "options": "Position Candidate"
+  },
+  {
+   "fieldname": "column_break_27",
+   "fieldtype": "Column Break"
   }
  ],
- "modified": "2020-04-27 10:09:07.654998",
+ "modified": "2020-04-27 14:11:54.903042",
  "modified_by": "Administrator",
  "module": "Projects",
  "name": "Position",

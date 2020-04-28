@@ -105,7 +105,6 @@
    "options": "Project"
   },
   {
-   "fetch_from": "customer.full_name",
    "fieldname": "customer",
    "fieldtype": "Link",
    "label": "Customer",
@@ -116,6 +115,7 @@
    "fieldtype": "Column Break"
   },
   {
+   "fetch_from": "project.territory",
    "fieldname": "territory",
    "fieldtype": "Read Only",
    "label": "Territory"
@@ -154,11 +154,6 @@
    "label": "Nationality",
    "options": "Country",
    "read_only": 1
-  },
-  {
-   "fieldname": "india_experience",
-   "fieldtype": "Data",
-   "label": "India Experience"
   },
   {
    "fieldname": "gcc_experience",
@@ -589,9 +584,14 @@
    "fieldtype": "Table",
    "label": "Driving Licence",
    "options": "Driving Licence"
+  },
+  {
+   "fieldname": "india_experience",
+   "fieldtype": "Data",
+   "label": "India Experience"
   }
  ],
- "modified": "2020-04-27 11:09:50.235898",
+ "modified": "2020-04-28 14:29:07.972459",
  "modified_by": "Administrator",
  "module": "RecruitPRO",
  "name": "Candidate",
