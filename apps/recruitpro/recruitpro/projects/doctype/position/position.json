@@ -7,8 +7,8 @@
  "engine": "InnoDB",
  "field_order": [
   "subject",
-  "customer",
   "project",
+  "customer",
   "territory",
   "column_break_5",
   "service",
@@ -476,7 +476,7 @@
    "fieldtype": "Column Break"
   }
  ],
- "modified": "2020-04-27 14:11:54.903042",
+ "modified": "2020-04-28 19:55:18.095452",
  "modified_by": "Administrator",
  "module": "Projects",
  "name": "Position",

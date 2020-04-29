@@ -105,6 +105,7 @@
    "options": "Project"
   },
   {
+   "fetch_from": "customer.full_name",
    "fieldname": "customer",
    "fieldtype": "Link",
    "label": "Customer",
@@ -591,7 +592,7 @@
    "label": "India Experience"
   }
  ],
- "modified": "2020-04-28 14:29:07.972459",
+ "modified": "2020-04-29 11:57:31.979832",
  "modified_by": "Administrator",
  "module": "RecruitPRO",
  "name": "Candidate",

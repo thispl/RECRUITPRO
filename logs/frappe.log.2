@@ -1,64 +1,427 @@
-[ERROR] 2020-04-27 13:03:06,103 | /home/sharmila/frappe-bench/apps/frappe/frappe/app.py:
+[DEBUG] 2020-04-27 17:21:13,956 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
-Form Dict: {
- "cmd": "runserverobj",
- "docs": "{\"name\":\"Customize Form\",\"max_attachments\":0,\"allow_copy\":0,\"istable\":0,\"editable_grid\":1,\"quick_entry\":1,\"track_changes\":1,\"track_views\":0,\"allow_auto_repeat\":0,\"allow_import\":0,\"image_view\":0,\"sort_order\":\"DESC\",\"doctype\":\"Customize Form\",\"fields\":[{\"name\":\"99eff2140e\",\"parent\":\"Customize Form\",\"parentfield\":\"fields\",\"parenttype\":\"Customize Form\",\"idx\":1,\"docstatus\":0,\"label\":\"Subject\",\"fieldtype\":\"Data\",\"fieldname\":\"subject\",\"reqd\":0,\"unique\":0,\"in_list_view\":0,\"in_standard_filter\":0,\"in_global_search\":0,\"bold\":0,\"allow_in_quick_entry\":0,\"translatable\":0,\"precision\":\"\",\"length\":0,\"fetch_if_empty\":0,\"permlevel\":0,\"hidden\":0,\"read_only\":0,\"collapsible\":0,\"allow_bulk_edit\":0,\"ignore_user_permissions\":0,\"allow_on_submit\":0,\"report_hide\":0,\"remember_last_selected_value\":0,\"in_filter\":0,\"print_hide\":0,\"print_hide_if_no_value\":0,\"columns\":0,\"is_custom_field\":0,\"doctype\":\"Customize Form Field\",\"_sortable\":false},{\"name\":\"411a414e9f\",\"parent\":\"Customize Form\",\"parentfield\":\"fields\",\"parenttype\":\"Customize Form\",\"idx\":2,\"docstatus\":0,\"label\":\"Customer\",\"fieldtype\":\"Link\",\"fieldname\":\"customer\",\"reqd\":0,\"unique\":0,\"in_list_view\":0,\"in_standard_filter\":0,\"in_global_search\":0,\"bold\":0,\"allow_in_quick_entry\":0,\"translatable\":0,\"precision\":\"\",\"length\":0,\"options\":\"Customer\",\"fetch_from\":\"customer.full_name\",\"fetch_if_empty\":0,\"permlevel\":0,\"hidden\":0,\"read_only\":0,\"collapsible\":0,\"allow_bulk_edit\":0,\"ignore_user_permissions\":0,\"allow_on_submit\":0,\"report_hide\":0,\"remember_last_selected_value\":0,\"in_filter\":0,\"print_hide\":0,\"print_hide_if_no_value\":0,\"columns\":0,\"is_custom_field\":0,\"doctype\":\"Customize Form Field\",\"_sortable\":false},{\"name\":\"e1ed0e996c\",\"parent\":\"Customize Form\",\"parentfield\":\"fields\",\"parenttype\":\"Customize Form\",\"idx\":3,\"docstatus\":0,\"label\":\"Project\",\"fieldtype\":\"Link\",\"fieldname\":\"project\",\"reqd\":0,\"unique\":0,\"in_list_view\":0,\"in_standard_filter\":0,\"in_global_search\":0,\"bold\":0,\"allow_in_quick_entry\":0,\"translatable\":0,\"precision\":\"\",\"length\":0,\"options\":\"Project\",\"fetch_from\":\"\",\"fetch_if_empty\":0,\"permlevel\":0,\"hidden\":0,\"read_only\":0,\"collapsible\":0,\"allow_bulk_edit\":0,\"ignore_user_permissions\":0,\"allow_on_submit\":0,\"report_hide\":0,\"remember_last_selected_value\":0,\"in_filter\":0,\"print_hide\":0,\"print_hide_if_no_value\":0,\"columns\":0,\"is_custom_field\":0,\"doctype\":\"Customize Form Field\",\"_sortable\":false},{\"name\":\"3fddf1258a\",\"parent\":\"Customize Form\",\"parentfield\":\"fields\",\"parenttype\":\"Customize Form\",\"idx\":4,\"docstatus\":0,\"label\":\"Territory\",\"fieldtype\":\"Link\",\"fieldname\":\"territory\",\"reqd\":0,\"unique\":0,\"in_list_view\":0,\"in_standard_filter\":0,\"in_global_search\":0,\"bold\":0,\"allow_in_quick_entry\":0,\"translatable\":0,\"precision\":\"\",\"length\":0,\"options\":\"Territory\",\"fetch_from\":\"\",\"fetch_if_empty\":0,\"permlevel\":0,\"hidden\":0,\"read_only\":0,\"collapsible\":0,\"allow_bulk_edit\":0,\"ignore_user_permissions\":0,\"allow_on_submit\":0,\"report_hide\":0,\"remember_last_selected_value\":0,\"in_filter\":0,\"print_hide\":0,\"print_hide_if_no_value\":0,\"columns\":0,\"is_custom_field\":0,\"doctype\":\"Customize Form Field\",\"_sortable\":false},{\"name\":\"bbcbf4e4c8\",\"parent\":\"Customize Form\",\"parentfield\":\"fields\",\"parenttype\":\"Customize Form\",\"idx\":5,\"docstatus\":0,\"fieldtype\":\"Column Break\",\"fieldname\":\"column_break_5\",\"reqd\":0,\"unique\":0,\"in_list_view\":0,\"in_standard_filter\":0,\"in_global_search\":0,\"bold\":0,\"allow_in_quick_entry\":0,\"translatable\":0,\"precision\":\"\",\"length\":0,\"fetch_if_empty\":0,\"permlevel\":0,\"hidden\":0,\"read_only\":0,\"collapsible\":0,\"allow_bulk_edit\":0,\"ignore_user_permissions\":0,\"allow_on_submit\":0,\"report_hide\":0,\"remember_last_selected_value\":0,\"in_filter\":0,\"print_hide\":0,\"print_hide_if_no_value\":0,\"columns\":0,\"is_custom_field\":0,\"doctype\":\"Customize Form Field\",\"_sortable\":false},{\"name\":\"f4dd41b1a2\",\"parent\":\"Customize Form\",\"parentfield\":\"fields\",\"parenttype\":\"Customize Form\",\"idx\":6,\"docstatus\":0,\"label\":\"Service\",\"fieldtype\":\"Link\",\"fieldname\":\"service\",\"reqd\":0,\"unique\":0,\"in_list_view\":0,\"in_standard_filter\":0,\"in_global_search\":0,\"bold\":0,\"allow_in_quick_entry\":0,\"translatable\":0,\"precision\":\"\",\"length\":0,\"options\":\"Services\",\"fetch_from\":\"project.service\",\"fetch_if_empty\":0,\"permlevel\":0,\"hidden\":0,\"read_only\":0,\"collapsible\":0,\"allow_bulk_edit\":0,\"ignore_user_permissions\":0,\"allow_on_submit\":0,\"report_hide\":0,\"remember_last_selected_value\":0,\"in_filter\":0,\"print_hide\":0,\"print_hide_if_no_value\":0,\"columns\":0,\"is_custom_field\":0,\"doctype\":\"Customize Form Field\",\"_sortable\":false},{\"name\":\"2bb52a3593\",\"parent\":\"Customize Form\",\"parentfield\":\"fields\",\"parenttype\":\"Customize Form\",\"idx\":7,\"docstatus\":0,\"label\":\"Status\",\"fieldtype\":\"Select\",\"fieldname\":\"status\",\"reqd\":0,\"unique\":0,\"in_list_view\":0,\"in_standard_filter\":0,\"in_global_search\":0,\"bold\":0,\"allow_in_quick_entry\":0,\"translatable\":0,\"precision\":\"\",\"length\":0,\"options\":\"\\nOpen\\nWorking\\nPending Review\\nOverdue\\nCompleted\\nCancelled\",\"fetch_if_empty\":0,\"permlevel\":0,\"hidden\":0,\"read_only\":0,\"collapsible\":0,\"allow_bulk_edit\":0,\"ignore_user_permissions\":0,\"allow_on_submit\":0,\"report_hide\":0,\"remember_last_selected_value\":0,\"in_filter\":0,\"print_hide\":0,\"print_hide_if_no_value\":0,\"columns\":0,\"is_custom_field\":0,\"doctype\":\"Customize Form Field\",\"_sortable\":false},{\"name\":\"051d3fea3b\",\"parent\":\"Customize Form\",\"parentfield\":\"fields\",\"parenttype\":\"Customize Form\",\"idx\":8,\"docstatus\":0,\"label\":\"Operation Status\",\"fieldtype\":\"Select\",\"fieldname\":\"operation_status\",\"reqd\":0,\"unique\":0,\"in_list_view\":0,\"in_standard_filter\":0,\"in_global_search\":0,\"bold\":0,\"allow_in_quick_entry\":0,\"translatable\":0,\"precision\":\"\",\"length\":0,\"options\":\"\\nPending\\nAcknowledged\\nConfirmed\\nDeclined\\nSourcing\\nDnD\\nHold\\nCompleted\\nCancelled\",\"fetch_if_empty\":0,\"permlevel\":0,\"hidden\":0,\"read_only\":0,\"collapsible\":0,\"allow_bulk_edit\":0,\"ignore_user_permissions\":0,\"allow_on_submit\":0,\"report_hide\":0,\"remember_last_selected_value\":0,\"in_filter\":0,\"print_hide\":0,\"print_hide_if_no_value\":0,\"columns\":0,\"is_custom_field\":0,\"doctype\":\"Customize Form Field\",\"_sortable\":false},{\"name\":\"4b719f3561\",\"parent\":\"Customize Form\",\"parentfield\":\"fields\",\"parenttype\":\"Customize Form\",\"idx\":9,\"docstatus\":0,\"label\":\"Project Manager\",\"fieldtype\":\"Data\",\"fieldname\":\"project_manager\",\"reqd\":0,\"unique\":0,\"in_list_view\":0,\"in_standard_filter\":0,\"in_global_search\":0,\"bold\":0,\"allow_in_quick_entry\":0,\"translatable\":0,\"precision\":\"\",\"length\":0,\"fetch_if_empty\":0,\"permlevel\":0,\"hidden\":0,\"read_only\":0,\"collapsible\":0,\"allow_bulk_edit\":0,\"ignore_user_permissions\":0,\"allow_on_submit\":0,\"report_hide\":0,\"remember_last_selected_value\":0,\"in_filter\":0,\"print_hide\":0,\"print_hide_if_no_value\":0,\"columns\":0,\"is_custom_field\":0,\"doctype\":\"Customize Form Field\",\"_sortable\":false},{\"name\":\"97a880f2a0\",\"parent\":\"Customize Form\",\"parentfield\":\"fields\",\"parenttype\":\"Customize Form\",\"idx\":10,\"docstatus\":0,\"label\":\"Account Manager\",\"fieldtype\":\"Data\",\"fieldname\":\"account_manager\",\"reqd\":0,\"unique\":0,\"in_list_view\":0,\"in_standard_filter\":0,\"in_global_search\":0,\"bold\":0,\"allow_in_quick_entry\":0,\"translatable\":0,\"precision\":\"\",\"length\":0,\"fetch_if_empty\":0,\"permlevel\":0,\"hidden\":0,\"read_only\":0,\"collapsible\":0,\"allow_bulk_edit\":0,\"ignore_user_permissions\":0,\"allow_on_submit\":0,\"report_hide\":0,\"remember_last_selected_value\":0,\"in_filter\":0,\"print_hide\":0,\"print_hide_if_no_value\":0,\"columns\":0,\"is_custom_field\":0,\"doctype\":\"Customize Form Field\",\"_sortable\":false},{\"name\":\"4b5c181586\",\"parent\":\"Customize Form\",\"parentfield\":\"fields\",\"parenttype\":\"Customize Form\",\"idx\":11,\"docstatus\":0,\"label\":\"Timeline\",\"fieldtype\":\"Section Break\",\"fieldname\":\"timeline_section\",\"reqd\":0,\"unique\":0,\"in_list_view\":0,\"in_standard_filter\":0,\"in_global_search\":0,\"bold\":0,\"allow_in_quick_entry\":0,\"translatable\":0,\"precision\":\"\",\"length\":0,\"fetch_if_empty\":0,\"permlevel\":0,\"hidden\":0,\"read_only\":0,\"collapsible\":0,\"allow_bulk_edit\":0,\"ignore_user_permissions\":0,\"allow_on_submit\":0,\"report_hide\":0,\"remember_last_selected_value\":0,\"in_filter\":0,\"print_hide\":0,\"print_hide_if_no_value\":0,\"columns\":0,\"is_custom_field\":0,\"doctype\":\"Customize Form Field\",\"_sortable\":false},{\"name\":\"0133a71054\",\"parent\":\"Customize Form\",\"parentfield\":\"fields\",\"parenttype\":\"Customize Form\",\"idx\":12,\"docstatus\":0,\"label\":\"Expected Start Date\",\"fieldtype\":\"Data\",\"fieldname\":\"expected_start_date\",\"reqd\":0,\"unique\":0,\"in_list_view\":0,\"in_standard_filter\":0,\"in_global_search\":0,\"bold\":0,\"allow_in_quick_entry\":0,\"translatable\":0,\"precision\":\"\",\"length\":0,\"fetch_if_empty\":0,\"permlevel\":0,\"hidden\":0,\"read_only\":0,\"collapsible\":0,\"allow_bulk_edit\":0,\"ignore_user_permissions\":0,\"allow_on_submit\":0,\"report_hide\":0,\"remember_last_selected_value\":0,\"in_filter\":0,\"print_hide\":0,\"print_hide_if_no_value\":0,\"columns\":0,\"is_custom_field\":0,\"doctype\":\"Customize Form Field\",\"_sortable\":false},{\"name\":\"b10010ac83\",\"parent\":\"Customize Form\",\"parentfield\":\"fields\",\"parenttype\":\"Customize Form\",\"idx\":13,\"docstatus\":0,\"fieldtype\":\"Column Break\",\"fieldname\":\"column_break_12\",\"reqd\":0,\"unique\":0,\"in_list_view\":0,\"in_standard_filter\":0,\"in_global_search\":0,\"bold\":0,\"allow_in_quick_entry\":0,\"translatable\":0,\"precision\":\"\",\"length\":0,\"fetch_if_empty\":0,\"permlevel\":0,\"hidden\":0,\"read_only\":0,\"collapsible\":0,\"allow_bulk_edit\":0,\"ignore_user_permissions\":0,\"allow_on_submit\":0,\"report_hide\":0,\"remember_last_selected_value\":0,\"in_filter\":0,\"print_hide\":0,\"print_hide_if_no_value\":0,\"columns\":0,\"is_custom_field\":0,\"doctype\":\"Customize Form Field\",\"_sortable\":false},{\"name\":\"32c6696e38\",\"parent\":\"Customize Form\",\"parentfield\":\"fields\",\"parenttype\":\"Customize Form\",\"idx\":14,\"docstatus\":0,\"label\":\"Expected End Date\",\"fieldtype\":\"Data\",\"fieldname\":\"expected_end_date\",\"reqd\":0,\"unique\":0,\"in_list_view\":0,\"in_standard_filter\":0,\"in_global_search\":0,\"bold\":0,\"allow_in_quick_entry\":0,\"translatable\":0,\"precision\":\"\",\"length\":0,\"fetch_if_empty\":0,\"permlevel\":0,\"hidden\":0,\"read_only\":0,\"collapsible\":0,\"allow_bulk_edit\":0,\"ignore_user_permissions\":0,\"allow_on_submit\":0,\"report_hide\":0,\"remember_last_selected_value\":0,\"in_filter\":0,\"print_hide\":0,\"print_hide_if_no_value\":0,\"columns\":0,\"is_custom_field\":0,\"doctype\":\"Customize Form Field\",\"_sortable\":false},{\"name\":\"86253c013d\",\"parent\":\"Customize Form\",\"parentfield\":\"fields\",\"parenttype\":\"Customize Form\",\"idx\":15,\"docstatus\":0,\"fieldtype\":\"Section Break\",\"fieldname\":\"section_break_14\",\"reqd\":0,\"unique\":0,\"in_list_view\":0,\"in_standard_filter\":0,\"in_global_search\":0,\"bold\":0,\"allow_in_quick_entry\":0,\"translatable\":0,\"precision\":\"\",\"length\":0,\"fetch_if_empty\":0,\"permlevel\":0,\"hidden\":0,\"read_only\":0,\"collapsible\":0,\"allow_bulk_edit\":0,\"ignore_user_permissions\":0,\"allow_on_submit\":0,\"report_hide\":0,\"remember_last_selected_value\":0,\"in_filter\":0,\"print_hide\":0,\"print_hide_if_no_value\":0,\"columns\":0,\"is_custom_field\":0,\"doctype\":\"Customize Form Field\",\"_sortable\":false},{\"name\":\"02b6758cca\",\"parent\":\"Customize Form\",\"parentfield\":\"fields\",\"parenttype\":\"Customize Form\",\"idx\":16,\"docstatus\":0,\"label\":\"Work Plan\",\"fieldtype\":\"Table\",\"fieldname\":\"work_plan\",\"reqd\":0,\"unique\":0,\"in_list_view\":0,\"in_standard_filter\":0,\"in_global_search\":0,\"bold\":0,\"allow_in_quick_entry\":0,\"translatable\":0,\"precision\":\"\",\"length\":0,\"options\":\"Work Plan\",\"fetch_if_empty\":0,\"permlevel\":0,\"hidden\":0,\"read_only\":0,\"collapsible\":0,\"allow_bulk_edit\":0,\"ignore_user_permissions\":0,\"allow_on_submit\":0,\"report_hide\":0,\"remember_last_selected_value\":0,\"in_filter\":0,\"print_hide\":0,\"print_hide_if_no_value\":0,\"columns\":0,\"is_custom_field\":0,\"doctype\":\"Customize Form Field\",\"_sortable\":false},{\"name\":\"960e63a309\",\"parent\":\"Customize Form\",\"parentfield\":\"fields\",\"parenttype\":\"Customize Form\",\"idx\":17,\"docstatus\":0,\"label\":\"Count Report\",\"fieldtype\":\"Section Break\",\"fieldname\":\"count_report_section\",\"reqd\":0,\"unique\":0,\"in_list_view\":0,\"in_standard_filter\":0,\"in_global_search\":0,\"bold\":0,\"allow_in_quick_entry\":0,\"translatable\":0,\"precision\":\"\",\"length\":0,\"fetch_if_empty\":0,\"permlevel\":0,\"hidden\":0,\"read_only\":0,\"collapsible\":0,\"allow_bulk_edit\":0,\"ignore_user_permissions\":0,\"allow_on_submit\":0,\"report_hide\":0,\"remember_last_selected_value\":0,\"in_filter\":0,\"print_hide\":0,\"print_hide_if_no_value\":0,\"columns\":0,\"is_custom_field\":0,\"doctype\":\"Customize Form Field\",\"_sortable\":false},{\"name\":\"2a441e9d93\",\"parent\":\"Customize Form\",\"parentfield\":\"fields\",\"parenttype\":\"Customize Form\",\"idx\":18,\"docstatus\":0,\"label\":\"#VAC\",\"fieldtype\":\"Int\",\"fieldname\":\"vac\",\"reqd\":0,\"unique\":0,\"in_list_view\":0,\"in_standard_filter\":0,\"in_global_search\":0,\"bold\":0,\"allow_in_quick_entry\":0,\"translatable\":0,\"precision\":\"\",\"length\":0,\"fetch_if_empty\":0,\"permlevel\":0,\"hidden\":0,\"read_only\":0,\"collapsible\":0,\"allow_bulk_edit\":0,\"ignore_user_permissions\":0,\"allow_on_submit\":0,\"report_hide\":0,\"remember_last_selected_value\":0,\"in_filter\":0,\"print_hide\":0,\"print_hide_if_no_value\":0,\"columns\":0,\"is_custom_field\":0,\"doctype\":\"Customize Form Field\",\"_sortable\":false},{\"name\":\"6abbb08cbb\",\"parent\":\"Customize Form\",\"parentfield\":\"fields\",\"parenttype\":\"Customize Form\",\"idx\":19,\"docstatus\":0,\"fieldtype\":\"Column Break\",\"fieldname\":\"column_break_18\",\"reqd\":0,\"unique\":0,\"in_list_view\":0,\"in_standard_filter\":0,\"in_global_search\":0,\"bold\":0,\"allow_in_quick_entry\":0,\"translatable\":0,\"precision\":\"\",\"length\":0,\"fetch_if_empty\":0,\"permlevel\":0,\"hidden\":0,\"read_only\":0,\"collapsible\":0,\"allow_bulk_edit\":0,\"ignore_user_permissions\":0,\"allow_on_submit\":0,\"report_hide\":0,\"remember_last_selected_value\":0,\"in_filter\":0,\"print_hide\":0,\"print_hide_if_no_value\":0,\"columns\":0,\"is_custom_field\":0,\"doctype\":\"Customize Form Field\",\"_sortable\":false},{\"name\":\"4e5daacf96\",\"parent\":\"Customize Form\",\"parentfield\":\"fields\",\"parenttype\":\"Customize Form\",\"idx\":20,\"docstatus\":0,\"label\":\"#PROP\",\"fieldtype\":\"Int\",\"fieldname\":\"prop\",\"reqd\":0,\"unique\":0,\"in_list_view\":0,\"in_standard_filter\":0,\"in_global_search\":0,\"bold\":0,\"allow_in_quick_entry\":0,\"translatable\":0,\"precision\":\"\",\"length\":0,\"fetch_if_empty\":0,\"permlevel\":0,\"hidden\":0,\"read_only\":0,\"collapsible\":0,\"allow_bulk_edit\":0,\"ignore_user_permissions\":0,\"allow_on_submit\":0,\"report_hide\":0,\"remember_last_selected_value\":0,\"in_filter\":0,\"print_hide\":0,\"print_hide_if_no_value\":0,\"columns\":0,\"is_custom_field\":0,\"doctype\":\"Customize Form Field\",\"_sortable\":false},{\"name\":\"464c410e0c\",\"parent\":\"Customize Form\",\"parentfield\":\"fields\",\"parenttype\":\"Customize Form\",\"idx\":21,\"docstatus\":0,\"fieldtype\":\"Column Break\",\"fieldname\":\"column_break_20\",\"reqd\":0,\"unique\":0,\"in_list_view\":0,\"in_standard_filter\":0,\"in_global_search\":0,\"bold\":0,\"allow_in_quick_entry\":0,\"translatable\":0,\"precision\":\"\",\"length\":0,\"fetch_if_empty\":0,\"permlevel\":0,\"hidden\":0,\"read_only\":0,\"collapsible\":0,\"allow_bulk_edit\":0,\"ignore_user_permissions\":0,\"allow_on_submit\":0,\"report_hide\":0,\"remember_last_selected_value\":0,\"in_filter\":0,\"print_hide\":0,\"print_hide_if_no_value\":0,\"columns\":0,\"is_custom_field\":0,\"doctype\":\"Customize Form Field\",\"_sortable\":false},{\"name\":\"c1f8512e7c\",\"parent\":\"Customize Form\",\"parentfield\":\"fields\",\"parenttype\":\"Customize Form\",\"idx\":22,\"docstatus\":0,\"label\":\"#SP\",\"fieldtype\":\"Int\",\"fieldname\":\"sp\",\"reqd\":0,\"unique\":0,\"in_list_view\":0,\"in_standard_filter\":0,\"in_global_search\":0,\"bold\":0,\"allow_in_quick_entry\":0,\"translatable\":0,\"precision\":\"\",\"length\":0,\"fetch_if_empty\":0,\"permlevel\":0,\"hidden\":0,\"read_only\":0,\"collapsible\":0,\"allow_bulk_edit\":0,\"ignore_user_permissions\":0,\"allow_on_submit\":0,\"report_hide\":0,\"remember_last_selected_value\":0,\"in_filter\":0,\"print_hide\":0,\"print_hide_if_no_value\":0,\"columns\":0,\"is_custom_field\":0,\"doctype\":\"Customize Form Field\",\"_sortable\":false},{\"name\":\"599ab8a141\",\"parent\":\"Customize Form\",\"parentfield\":\"fields\",\"parenttype\":\"Customize Form\",\"idx\":23,\"docstatus\":0,\"fieldtype\":\"Column Break\",\"fieldname\":\"column_break_22\",\"reqd\":0,\"unique\":0,\"in_list_view\":0,\"in_standard_filter\":0,\"in_global_search\":0,\"bold\":0,\"allow_in_quick_entry\":0,\"translatable\":0,\"precision\":\"\",\"length\":0,\"fetch_if_empty\":0,\"permlevel\":0,\"hidden\":0,\"read_only\":0,\"collapsible\":0,\"allow_bulk_edit\":0,\"ignore_user_permissions\":0,\"allow_on_submit\":0,\"report_hide\":0,\"remember_last_selected_value\":0,\"in_filter\":0,\"print_hide\":0,\"print_hide_if_no_value\":0,\"columns\":0,\"is_custom_field\":0,\"doctype\":\"Customize Form Field\",\"_sortable\":false},{\"name\":\"4e5a3c6e07\",\"parent\":\"Customize Form\",\"parentfield\":\"fields\",\"parenttype\":\"Customize Form\",\"idx\":24,\"docstatus\":0,\"label\":\"#FP\",\"fieldtype\":\"Int\",\"fieldname\":\"fp\",\"reqd\":0,\"unique\":0,\"in_list_view\":0,\"in_standard_filter\":0,\"in_global_search\":0,\"bold\":0,\"allow_in_quick_entry\":0,\"translatable\":0,\"precision\":\"\",\"length\":0,\"fetch_if_empty\":0,\"permlevel\":0,\"hidden\":0,\"read_only\":0,\"collapsible\":0,\"allow_bulk_edit\":0,\"ignore_user_permissions\":0,\"allow_on_submit\":0,\"report_hide\":0,\"remember_last_selected_value\":0,\"in_filter\":0,\"print_hide\":0,\"print_hide_if_no_value\":0,\"columns\":0,\"is_custom_field\":0,\"doctype\":\"Customize Form Field\",\"_sortable\":false},{\"name\":\"bf9b6ab132\",\"parent\":\"Customize Form\",\"parentfield\":\"fields\",\"parenttype\":\"Customize Form\",\"idx\":25,\"docstatus\":0,\"fieldtype\":\"Column Break\",\"fieldname\":\"column_break_26\",\"reqd\":0,\"unique\":0,\"in_list_view\":0,\"in_standard_filter\":0,\"in_global_search\":0,\"bold\":0,\"allow_in_quick_entry\":0,\"translatable\":0,\"precision\":\"\",\"length\":0,\"fetch_if_empty\":0,\"permlevel\":0,\"hidden\":0,\"read_only\":0,\"collapsible\":0,\"allow_bulk_edit\":0,\"ignore_user_permissions\":0,\"allow_on_submit\":0,\"report_hide\":0,\"remember_last_selected_value\":0,\"in_filter\":0,\"print_hide\":0,\"print_hide_if_no_value\":0,\"columns\":0,\"is_custom_field\":0,\"doctype\":\"Customize Form Field\",\"_sortable\":false},{\"name\":\"Position-sl\",\"parent\":\"Customize Form\",\"parentfield\":\"fields\",\"parenttype\":\"Customize Form\",\"idx\":26,\"docstatus\":0,\"label\":\"#SL\",\"fieldtype\":\"Int\",\"fieldname\":\"sl\",\"reqd\":0,\"unique\":0,\"in_list_view\":0,\"in_standard_filter\":0,\"in_global_search\":0,\"bold\":0,\"allow_in_quick_entry\":0,\"translatable\":0,\"precision\":\"\",\"length\":0,\"fetch_if_empty\":0,\"permlevel\":0,\"hidden\":0,\"read_only\":0,\"collapsible\":0,\"allow_bulk_edit\":0,\"ignore_user_permissions\":0,\"allow_on_submit\":0,\"report_hide\":0,\"remember_last_selected_value\":0,\"in_filter\":0,\"print_hide\":0,\"print_hide_if_no_value\":0,\"columns\":0,\"is_custom_field\":1,\"doctype\":\"Customize Form Field\"},{\"name\":\"6b109fde5c\",\"parent\":\"Customize Form\",\"parentfield\":\"fields\",\"parenttype\":\"Customize Form\",\"idx\":27,\"docstatus\":0,\"fieldtype\":\"Column Break\",\"fieldname\":\"column_break_27\",\"reqd\":0,\"unique\":0,\"in_list_view\":0,\"in_standard_filter\":0,\"in_global_search\":0,\"bold\":0,\"allow_in_quick_entry\":0,\"translatable\":0,\"precision\":\"\",\"length\":0,\"fetch_if_empty\":0,\"permlevel\":0,\"hidden\":0,\"read_only\":0,\"collapsible\":0,\"allow_bulk_edit\":0,\"ignore_user_permissions\":0,\"allow_on_submit\":0,\"report_hide\":0,\"remember_last_selected_value\":0,\"in_filter\":0,\"print_hide\":0,\"print_hide_if_no_value\":0,\"columns\":0,\"is_custom_field\":0,\"doctype\":\"Customize Form Field\",\"_sortable\":false},{\"name\":\"0b16edd5d9\",\"parent\":\"Customize Form\",\"parentfield\":\"fields\",\"parenttype\":\"Customize Form\",\"idx\":28,\"docstatus\":0,\"label\":\"#PSL\",\"fieldtype\":\"Int\",\"fieldname\":\"psl\",\"reqd\":0,\"unique\":0,\"in_list_view\":0,\"in_standard_filter\":0,\"in_global_search\":0,\"bold\":0,\"allow_in_quick_entry\":0,\"translatable\":0,\"precision\":\"\",\"length\":0,\"fetch_if_empty\":0,\"permlevel\":0,\"hidden\":0,\"read_only\":0,\"collapsible\":0,\"allow_bulk_edit\":0,\"ignore_user_permissions\":0,\"allow_on_submit\":0,\"report_hide\":0,\"remember_last_selected_value\":0,\"in_filter\":0,\"print_hide\":0,\"print_hide_if_no_value\":0,\"columns\":0,\"is_custom_field\":0,\"doctype\":\"Customize Form Field\",\"_sortable\":false},{\"name\":\"2308be8fc4\",\"parent\":\"Customize Form\",\"parentfield\":\"fields\",\"parenttype\":\"Customize Form\",\"idx\":29,\"docstatus\":0,\"label\":\"Details\",\"fieldtype\":\"Section Break\",\"fieldname\":\"details_section\",\"reqd\":0,\"unique\":0,\"in_list_view\":0,\"in_standard_filter\":0,\"in_global_search\":0,\"bold\":0,\"allow_in_quick_entry\":0,\"translatable\":0,\"precision\":\"\",\"length\":0,\"fetch_if_empty\":0,\"permlevel\":0,\"hidden\":0,\"read_only\":0,\"collapsible\":0,\"allow_bulk_edit\":0,\"ignore_user_permissions\":0,\"allow_on_submit\":0,\"report_hide\":0,\"remember_last_selected_value\":0,\"in_filter\":0,\"print_hide\":0,\"print_hide_if_no_value\":0,\"columns\":0,\"is_custom_field\":0,\"doctype\":\"Customize Form Field\",\"_sortable\":false},{\"name\":\"5d150bf1af\",\"parent\":\"Customize Form\",\"parentfield\":\"fields\",\"parenttype\":\"Customize Form\",\"idx\":30,\"docstatus\":0,\"label\":\"Job Description\",\"fieldtype\":\"Text Editor\",\"fieldname\":\"job_description\",\"reqd\":0,\"unique\":0,\"in_list_view\":0,\"in_standard_filter\":0,\"in_global_search\":0,\"bold\":0,\"allow_in_quick_entry\":0,\"translatable\":0,\"precision\":\"\",\"length\":0,\"fetch_if_empty\":0,\"permlevel\":0,\"hidden\":0,\"read_only\":0,\"collapsible\":0,\"allow_bulk_edit\":0,\"ignore_user_permissions\":0,\"allow_on_submit\":0,\"report_hide\":0,\"remember_last_selected_value\":0,\"in_filter\":0,\"print_hide\":0,\"print_hide_if_no_value\":0,\"columns\":0,\"is_custom_field\":0,\"doctype\":\"Customize Form Field\",\"_sortable\":false},{\"name\":\"6a35aa912c\",\"parent\":\"Customize Form\",\"parentfield\":\"fields\",\"parenttype\":\"Customize Form\",\"idx\":31,\"docstatus\":0,\"label\":\"Requirement Details\",\"fieldtype\":\"Section Break\",\"fieldname\":\"requirement_details_section\",\"reqd\":0,\"unique\":0,\"in_list_view\":0,\"in_standard_filter\":0,\"in_global_search\":0,\"bold\":0,\"allow_in_quick_entry\":0,\"translatable\":0,\"precision\":\"\",\"length\":0,\"fetch_if_empty\":0,\"permlevel\":0,\"hidden\":0,\"read_only\":0,\"collapsible\":0,\"allow_bulk_edit\":0,\"ignore_user_permissions\":0,\"allow_on_submit\":0,\"report_hide\":0,\"remember_last_selected_value\":0,\"in_filter\":0,\"print_hide\":0,\"print_hide_if_no_value\":0,\"columns\":0,\"is_custom_field\":0,\"doctype\":\"Customize Form Field\",\"_sortable\":false},{\"name\":\"34873431fa\",\"parent\":\"Customize Form\",\"parentfield\":\"fields\",\"parenttype\":\"Customize Form\",\"idx\":32,\"docstatus\":0,\"label\":\"Qualification\",\"fieldtype\":\"Data\",\"fieldname\":\"qualification\",\"reqd\":0,\"unique\":0,\"in_list_view\":0,\"in_standard_filter\":0,\"in_global_search\":0,\"bold\":0,\"allow_in_quick_entry\":0,\"translatable\":0,\"precision\":\"\",\"length\":0,\"fetch_if_empty\":0,\"permlevel\":0,\"hidden\":0,\"read_only\":0,\"collapsible\":0,\"allow_bulk_edit\":0,\"ignore_user_permissions\":0,\"allow_on_submit\":0,\"report_hide\":0,\"remember_last_selected_value\":0,\"in_filter\":0,\"print_hide\":0,\"print_hide_if_no_value\":0,\"columns\":0,\"is_custom_field\":0,\"doctype\":\"Customize Form Field\",\"_sortable\":false},{\"name\":\"0e4e131523\",\"parent\":\"Customize Form\",\"parentfield\":\"fields\",\"parenttype\":\"Customize Form\",\"idx\":33,\"docstatus\":0,\"label\":\"Total Experience\",\"fieldtype\":\"Int\",\"fieldname\":\"total_experience\",\"reqd\":0,\"unique\":0,\"in_list_view\":0,\"in_standard_filter\":0,\"in_global_search\":0,\"bold\":0,\"allow_in_quick_entry\":0,\"translatable\":0,\"precision\":\"\",\"length\":0,\"fetch_if_empty\":0,\"permlevel\":0,\"hidden\":0,\"read_only\":0,\"collapsible\":0,\"allow_bulk_edit\":0,\"ignore_user_permissions\":0,\"allow_on_submit\":0,\"report_hide\":0,\"remember_last_selected_value\":0,\"in_filter\":0,\"print_hide\":0,\"print_hide_if_no_value\":0,\"columns\":0,\"is_custom_field\":0,\"doctype\":\"Customize Form Field\",\"_sortable\":false},{\"name\":\"7ee1c55ec7\",\"parent\":\"Customize Form\",\"parentfield\":\"fields\",\"parenttype\":\"Customize Form\",\"idx\":34,\"docstatus\":0,\"fieldtype\":\"Column Break\",\"fieldname\":\"column_break_33\",\"reqd\":0,\"unique\":0,\"in_list_view\":0,\"in_standard_filter\":0,\"in_global_search\":0,\"bold\":0,\"allow_in_quick_entry\":0,\"translatable\":0,\"precision\":\"\",\"length\":0,\"fetch_if_empty\":0,\"permlevel\":0,\"hidden\":0,\"read_only\":0,\"collapsible\":0,\"allow_bulk_edit\":0,\"ignore_user_permissions\":0,\"allow_on_submit\":0,\"report_hide\":0,\"remember_last_selected_value\":0,\"in_filter\":0,\"print_hide\":0,\"print_hide_if_no_value\":0,\"columns\":0,\"is_custom_field\":0,\"doctype\":\"Customize Form Field\",\"_sortable\":false},{\"name\":\"518cbeec6b\",\"parent\":\"Customize Form\",\"parentfield\":\"fields\",\"parenttype\":\"Customize Form\",\"idx\":35,\"docstatus\":0,\"label\":\"Specialization\",\"fieldtype\":\"Link\",\"fieldname\":\"specialization\",\"reqd\":0,\"unique\":0,\"in_list_view\":0,\"in_standard_filter\":0,\"in_global_search\":0,\"bold\":0,\"allow_in_quick_entry\":0,\"translatable\":0,\"precision\":\"\",\"length\":0,\"options\":\"Specialization\",\"fetch_if_empty\":0,\"permlevel\":0,\"hidden\":0,\"read_only\":0,\"collapsible\":0,\"allow_bulk_edit\":0,\"ignore_user_permissions\":0,\"allow_on_submit\":0,\"report_hide\":0,\"remember_last_selected_value\":0,\"in_filter\":0,\"print_hide\":0,\"print_hide_if_no_value\":0,\"columns\":0,\"is_custom_field\":0,\"doctype\":\"Customize Form Field\",\"_sortable\":false},{\"name\":\"205928ec4b\",\"parent\":\"Customize Form\",\"parentfield\":\"fields\",\"parenttype\":\"Customize Form\",\"idx\":36,\"docstatus\":0,\"label\":\"Passport Category\",\"fieldtype\":\"Select\",\"fieldname\":\"passport_category\",\"reqd\":0,\"unique\":0,\"in_list_view\":0,\"in_standard_filter\":0,\"in_global_search\":0,\"bold\":0,\"allow_in_quick_entry\":0,\"translatable\":0,\"precision\":\"\",\"length\":0,\"options\":\"\\nECR\\nECNR\\nECR/ECNR\",\"fetch_if_empty\":0,\"permlevel\":0,\"hidden\":0,\"read_only\":0,\"collapsible\":0,\"allow_bulk_edit\":0,\"ignore_user_permissions\":0,\"allow_on_submit\":0,\"report_hide\":0,\"remember_last_selected_value\":0,\"in_filter\":0,\"print_hide\":0,\"print_hide_if_no_value\":0,\"columns\":0,\"is_custom_field\":0,\"doctype\":\"Customize Form Field\",\"_sortable\":false},{\"name\":\"55e766fcb8\",\"parent\":\"Customize Form\",\"parentfield\":\"fields\",\"parenttype\":\"Customize Form\",\"idx\":37,\"docstatus\":0,\"fieldtype\":\"Column Break\",\"fieldname\":\"column_break_36\",\"reqd\":0,\"unique\":0,\"in_list_view\":0,\"in_standard_filter\":0,\"in_global_search\":0,\"bold\":0,\"allow_in_quick_entry\":0,\"translatable\":0,\"precision\":\"\",\"length\":0,\"fetch_if_empty\":0,\"permlevel\":0,\"hidden\":0,\"read_only\":0,\"collapsible\":0,\"allow_bulk_edit\":0,\"ignore_user_permissions\":0,\"allow_on_submit\":0,\"report_hide\":0,\"remember_last_selected_value\":0,\"in_filter\":0,\"print_hide\":0,\"print_hide_if_no_value\":0,\"columns\":0,\"is_custom_field\":0,\"doctype\":\"Customize Form Field\",\"_sortable\":false},{\"name\":\"57212eef40\",\"parent\":\"Customize Form\",\"parentfield\":\"fields\",\"parenttype\":\"Customize Form\",\"idx\":38,\"docstatus\":0,\"label\":\"Minimum Experience\",\"fieldtype\":\"Data\",\"fieldname\":\"minimum_experience\",\"reqd\":0,\"unique\":0,\"in_list_view\":0,\"in_standard_filter\":0,\"in_global_search\":0,\"bold\":0,\"allow_in_quick_entry\":0,\"translatable\":0,\"precision\":\"\",\"length\":0,\"fetch_if_empty\":0,\"permlevel\":0,\"hidden\":0,\"read_only\":0,\"collapsible\":0,\"allow_bulk_edit\":0,\"ignore_user_permissions\":0,\"allow_on_submit\":0,\"report_hide\":0,\"remember_last_selected_value\":0,\"in_filter\":0,\"print_hide\":0,\"print_hide_if_no_value\":0,\"columns\":0,\"is_custom_field\":0,\"doctype\":\"Customize Form Field\",\"_sortable\":false},{\"name\":\"f647235648\",\"parent\":\"Customize Form\",\"parentfield\":\"fields\",\"parenttype\":\"Customize Form\",\"idx\":39,\"docstatus\":0,\"label\":\"Salary Type\",\"fieldtype\":\"Select\",\"fieldname\":\"salary_type\",\"reqd\":0,\"unique\":0,\"in_list_view\":0,\"in_standard_filter\":0,\"in_global_search\":0,\"bold\":0,\"allow_in_quick_entry\":0,\"translatable\":0,\"precision\":\"\",\"length\":0,\"options\":\"\\nFixed\\nRange\\nNegotiable\",\"fetch_if_empty\":0,\"permlevel\":0,\"hidden\":0,\"read_only\":0,\"collapsible\":0,\"allow_bulk_edit\":0,\"ignore_user_permissions\":0,\"allow_on_submit\":0,\"report_hide\":0,\"remember_last_selected_value\":0,\"in_filter\":0,\"print_hide\":0,\"print_hide_if_no_value\":0,\"columns\":0,\"is_custom_field\":0,\"doctype\":\"Customize Form Field\",\"_sortable\":false},{\"name\":\"dfc730821a\",\"parent\":\"Customize Form\",\"parentfield\":\"fields\",\"parenttype\":\"Customize Form\",\"idx\":40,\"docstatus\":0,\"fieldtype\":\"Column Break\",\"fieldname\":\"column_break_39\",\"reqd\":0,\"unique\":0,\"in_list_view\":0,\"in_standard_filter\":0,\"in_global_search\":0,\"bold\":0,\"allow_in_quick_entry\":0,\"translatable\":0,\"precision\":\"\",\"length\":0,\"fetch_if_empty\":0,\"permlevel\":0,\"hidden\":0,\"read_only\":0,\"collapsible\":0,\"allow_bulk_edit\":0,\"ignore_user_permissions\":0,\"allow_on_submit\":0,\"report_hide\":0,\"remember_last_selected_value\":0,\"in_filter\":0,\"print_hide\":0,\"print_hide_if_no_value\":0,\"columns\":0,\"is_custom_field\":0,\"doctype\":\"Customize Form Field\",\"_sortable\":false},{\"name\":\"8c008dd73b\",\"parent\":\"Customize Form\",\"parentfield\":\"fields\",\"parenttype\":\"Customize Form\",\"idx\":41,\"docstatus\":0,\"label\":\"Maximum Experience\",\"fieldtype\":\"Data\",\"fieldname\":\"maximum_experience\",\"reqd\":0,\"unique\":0,\"in_list_view\":0,\"in_standard_filter\":0,\"in_global_search\":0,\"bold\":0,\"allow_in_quick_entry\":0,\"translatable\":0,\"precision\":\"\",\"length\":0,\"fetch_if_empty\":0,\"permlevel\":0,\"hidden\":0,\"read_only\":0,\"collapsible\":0,\"allow_bulk_edit\":0,\"ignore_user_permissions\":0,\"allow_on_submit\":0,\"report_hide\":0,\"remember_last_selected_value\":0,\"in_filter\":0,\"print_hide\":0,\"print_hide_if_no_value\":0,\"columns\":0,\"is_custom_field\":0,\"doctype\":\"Customize Form Field\",\"_sortable\":false},{\"name\":\"ffe4103ef6\",\"parent\":\"Customize Form\",\"parentfield\":\"fields\",\"parenttype\":\"Customize Form\",\"idx\":42,\"docstatus\":0,\"label\":\"Maximum\",\"fieldtype\":\"Data\",\"fieldname\":\"maximum\",\"reqd\":0,\"unique\":0,\"in_list_view\":0,\"in_standard_filter\":0,\"in_global_search\":0,\"bold\":0,\"allow_in_quick_entry\":0,\"translatable\":0,\"precision\":\"\",\"length\":0,\"fetch_if_empty\":0,\"permlevel\":0,\"hidden\":0,\"read_only\":0,\"collapsible\":0,\"allow_bulk_edit\":0,\"ignore_user_permissions\":0,\"allow_on_submit\":0,\"report_hide\":0,\"remember_last_selected_value\":0,\"in_filter\":0,\"print_hide\":0,\"print_hide_if_no_value\":0,\"columns\":0,\"is_custom_field\":0,\"doctype\":\"Customize Form Field\",\"_sortable\":false},{\"name\":\"73333cf0c2\",\"parent\":\"Customize Form\",\"parentfield\":\"fields\",\"parenttype\":\"Customize Form\",\"idx\":43,\"docstatus\":0,\"fieldtype\":\"Column Break\",\"fieldname\":\"column_break_42\",\"reqd\":0,\"unique\":0,\"in_list_view\":0,\"in_standard_filter\":0,\"in_global_search\":0,\"bold\":0,\"allow_in_quick_entry\":0,\"translatable\":0,\"precision\":\"\",\"length\":0,\"fetch_if_empty\":0,\"permlevel\":0,\"hidden\":0,\"read_only\":0,\"collapsible\":0,\"allow_bulk_edit\":0,\"ignore_user_permissions\":0,\"allow_on_submit\":0,\"report_hide\":0,\"remember_last_selected_value\":0,\"in_filter\":0,\"print_hide\":0,\"print_hide_if_no_value\":0,\"columns\":0,\"is_custom_field\":0,\"doctype\":\"Customize Form Field\",\"_sortable\":false},{\"name\":\"b4f17ca1af\",\"parent\":\"Customize Form\",\"parentfield\":\"fields\",\"parenttype\":\"Customize Form\",\"idx\":44,\"docstatus\":0,\"label\":\"Indian Experience\",\"fieldtype\":\"Data\",\"fieldname\":\"indian_experience\",\"reqd\":0,\"unique\":0,\"in_list_view\":0,\"in_standard_filter\":0,\"in_global_search\":0,\"bold\":0,\"allow_in_quick_entry\":0,\"translatable\":0,\"precision\":\"\",\"length\":0,\"fetch_if_empty\":0,\"permlevel\":0,\"hidden\":0,\"read_only\":0,\"collapsible\":0,\"allow_bulk_edit\":0,\"ignore_user_permissions\":0,\"allow_on_submit\":0,\"report_hide\":0,\"remember_last_selected_value\":0,\"in_filter\":0,\"print_hide\":0,\"print_hide_if_no_value\":0,\"columns\":0,\"is_custom_field\":0,\"doctype\":\"Customize Form Field\",\"_sortable\":false},{\"name\":\"7b9f5a68f6\",\"parent\":\"Customize Form\",\"parentfield\":\"fields\",\"parenttype\":\"Customize Form\",\"idx\":45,\"docstatus\":0,\"label\":\"Minimum\",\"fieldtype\":\"Data\",\"fieldname\":\"minimum\",\"reqd\":0,\"unique\":0,\"in_list_view\":0,\"in_standard_filter\":0,\"in_global_search\":0,\"bold\":0,\"allow_in_quick_entry\":0,\"translatable\":0,\"precision\":\"\",\"length\":0,\"fetch_if_empty\":0,\"permlevel\":0,\"hidden\":0,\"read_only\":0,\"collapsible\":0,\"allow_bulk_edit\":0,\"ignore_user_permissions\":0,\"allow_on_submit\":0,\"report_hide\":0,\"remember_last_selected_value\":0,\"in_filter\":0,\"print_hide\":0,\"print_hide_if_no_value\":0,\"columns\":0,\"is_custom_field\":0,\"doctype\":\"Customize Form Field\",\"_sortable\":false},{\"name\":\"833b21bdc8\",\"parent\":\"Customize Form\",\"parentfield\":\"fields\",\"parenttype\":\"Customize Form\",\"idx\":46,\"docstatus\":0,\"fieldtype\":\"Column Break\",\"fieldname\":\"column_break_45\",\"reqd\":0,\"unique\":0,\"in_list_view\":0,\"in_standard_filter\":0,\"in_global_search\":0,\"bold\":0,\"allow_in_quick_entry\":0,\"translatable\":0,\"precision\":\"\",\"length\":0,\"fetch_if_empty\":0,\"permlevel\":0,\"hidden\":0,\"read_only\":0,\"collapsible\":0,\"allow_bulk_edit\":0,\"ignore_user_permissions\":0,\"allow_on_submit\":0,\"report_hide\":0,\"remember_last_selected_value\":0,\"in_filter\":0,\"print_hide\":0,\"print_hide_if_no_value\":0,\"columns\":0,\"is_custom_field\":0,\"doctype\":\"Customize Form Field\",\"_sortable\":false},{\"name\":\"8bb0994ba9\",\"parent\":\"Customize Form\",\"parentfield\":\"fields\",\"parenttype\":\"Customize Form\",\"idx\":47,\"docstatus\":0,\"label\":\"GCC Experience\",\"fieldtype\":\"Data\",\"fieldname\":\"gcc_experience\",\"reqd\":0,\"unique\":0,\"in_list_view\":0,\"in_standard_filter\":0,\"in_global_search\":0,\"bold\":0,\"allow_in_quick_entry\":0,\"translatable\":0,\"precision\":\"\",\"length\":0,\"fetch_if_empty\":0,\"permlevel\":0,\"hidden\":0,\"read_only\":0,\"collapsible\":0,\"allow_bulk_edit\":0,\"ignore_user_permissions\":0,\"allow_on_submit\":0,\"report_hide\":0,\"remember_last_selected_value\":0,\"in_filter\":0,\"print_hide\":0,\"print_hide_if_no_value\":0,\"columns\":0,\"is_custom_field\":0,\"doctype\":\"Customize Form Field\",\"_sortable\":false},{\"name\":\"da3210b0ff\",\"parent\":\"Customize Form\",\"parentfield\":\"fields\",\"parenttype\":\"Customize Form\",\"idx\":48,\"docstatus\":0,\"label\":\"ALLOWANCES/Benefits\",\"fieldtype\":\"Section Break\",\"fieldname\":\"allowancesbenefits_section\",\"reqd\":0,\"unique\":0,\"in_list_view\":0,\"in_standard_filter\":0,\"in_global_search\":0,\"bold\":0,\"allow_in_quick_entry\":0,\"translatable\":0,\"precision\":\"\",\"length\":0,\"fetch_if_empty\":0,\"permlevel\":0,\"hidden\":0,\"read_only\":0,\"collapsible\":0,\"allow_bulk_edit\":0,\"ignore_user_permissions\":0,\"allow_on_submit\":0,\"report_hide\":0,\"remember_last_selected_value\":0,\"in_filter\":0,\"print_hide\":0,\"print_hide_if_no_value\":0,\"columns\":0,\"is_custom_field\":0,\"doctype\":\"Customize Form Field\",\"_sortable\":false},{\"name\":\"2f1de78f73\",\"parent\":\"Customize Form\",\"parentfield\":\"fields\",\"parenttype\":\"Customize Form\",\"idx\":49,\"docstatus\":0,\"label\":\"Working Days/HRS\",\"fieldtype\":\"Select\",\"fieldname\":\"working_days\",\"reqd\":0,\"unique\":0,\"in_list_view\":0,\"in_standard_filter\":0,\"in_global_search\":0,\"bold\":0,\"allow_in_quick_entry\":0,\"translatable\":0,\"precision\":\"\",\"length\":0,\"options\":\"8 hours\\n9 hours\\n10 hours\\n12 hours\\nOthers\",\"fetch_if_empty\":0,\"depends_on\":\"\",\"permlevel\":0,\"hidden\":0,\"read_only\":0,\"collapsible\":0,\"allow_bulk_edit\":0,\"ignore_user_permissions\":0,\"allow_on_submit\":0,\"report_hide\":0,\"remember_last_selected_value\":0,\"in_filter\":0,\"print_hide\":0,\"print_hide_if_no_value\":0,\"columns\":0,\"is_custom_field\":0,\"doctype\":\"Customize Form Field\",\"_sortable\":false},{\"name\":\"8a3100829c\",\"parent\":\"Customize Form\",\"parentfield\":\"fields\",\"parenttype\":\"Customize Form\",\"idx\":50,\"docstatus\":0,\"label\":\"Other Working Hours\",\"fieldtype\":\"Data\",\"fieldname\":\"other_working_hours\",\"reqd\":0,\"unique\":0,\"in_list_view\":0,\"in_standard_filter\":0,\"in_global_search\":0,\"bold\":0,\"allow_in_quick_entry\":0,\"translatable\":0,\"precision\":\"\",\"length\":0,\"fetch_if_empty\":0,\"depends_on\":\"eval:in_list([\\\"Others\\\"], doc.working_days)\",\"permlevel\":0,\"hidden\":0,\"read_only\":0,\"collapsible\":0,\"allow_bulk_edit\":0,\"ignore_user_permissions\":0,\"allow_on_submit\":0,\"report_hide\":0,\"remember_last_selected_value\":0,\"in_filter\":0,\"print_hide\":0,\"print_hide_if_no_value\":0,\"columns\":0,\"is_custom_field\":0,\"doctype\":\"Customize Form Field\",\"_sortable\":false},{\"name\":\"ac8b26d3a9\",\"parent\":\"Customize Form\",\"parentfield\":\"fields\",\"parenttype\":\"Customize Form\",\"idx\":51,\"docstatus\":0,\"label\":\"Food\",\"fieldtype\":\"Select\",\"fieldname\":\"food\",\"reqd\":0,\"unique\":0,\"in_list_view\":0,\"in_standard_filter\":0,\"in_global_search\":0,\"bold\":0,\"allow_in_quick_entry\":0,\"translatable\":0,\"precision\":\"\",\"length\":0,\"options\":\"Free\\nIncluded in Salary\\nAllowance\",\"fetch_from\":\"\",\"fetch_if_empty\":0,\"permlevel\":0,\"hidden\":0,\"read_only\":0,\"collapsible\":0,\"allow_bulk_edit\":0,\"ignore_user_permissions\":0,\"allow_on_submit\":0,\"report_hide\":0,\"remember_last_selected_value\":0,\"in_filter\":0,\"print_hide\":0,\"print_hide_if_no_value\":0,\"columns\":0,\"is_custom_field\":0,\"doctype\":\"Customize Form Field\",\"_sortable\":false},{\"name\":\"11552ac5d2\",\"parent\":\"Customize Form\",\"parentfield\":\"fields\",\"parenttype\":\"Customize Form\",\"idx\":52,\"docstatus\":0,\"label\":\"Food Allowance\",\"fieldtype\":\"Data\",\"fieldname\":\"food_allowance\",\"reqd\":0,\"unique\":0,\"in_list_view\":0,\"in_standard_filter\":0,\"in_global_search\":0,\"bold\":0,\"allow_in_quick_entry\":0,\"translatable\":0,\"precision\":\"\",\"length\":0,\"fetch_if_empty\":0,\"depends_on\":\"eval:in_list([\\\"Allowance\\\"], doc.food)\",\"permlevel\":0,\"hidden\":0,\"read_only\":0,\"collapsible\":0,\"allow_bulk_edit\":0,\"ignore_user_permissions\":0,\"allow_on_submit\":0,\"report_hide\":0,\"remember_last_selected_value\":0,\"in_filter\":0,\"print_hide\":0,\"print_hide_if_no_value\":0,\"columns\":0,\"is_custom_field\":0,\"doctype\":\"Customize Form Field\",\"_sortable\":false},{\"name\":\"c67d138713\",\"parent\":\"Customize Form\",\"parentfield\":\"fields\",\"parenttype\":\"Customize Form\",\"idx\":53,\"docstatus\":0,\"label\":\"Visa Type\",\"fieldtype\":\"Select\",\"fieldname\":\"visa_type\",\"reqd\":0,\"unique\":0,\"in_list_view\":0,\"in_standard_filter\":0,\"in_global_search\":0,\"bold\":0,\"allow_in_quick_entry\":0,\"translatable\":0,\"precision\":\"\",\"length\":0,\"options\":\"Permeant - 2 years\\nProject - 3 Months\\nProject - 9 Months\\nVisit\",\"fetch_if_empty\":0,\"permlevel\":0,\"hidden\":0,\"read_only\":0,\"collapsible\":0,\"allow_bulk_edit\":0,\"ignore_user_permissions\":0,\"allow_on_submit\":0,\"report_hide\":0,\"remember_last_selected_value\":0,\"in_filter\":0,\"print_hide\":0,\"print_hide_if_no_value\":0,\"columns\":0,\"is_custom_field\":0,\"doctype\":\"Customize Form Field\",\"_sortable\":false},{\"name\":\"3792f6fd71\",\"parent\":\"Customize Form\",\"parentfield\":\"fields\",\"parenttype\":\"Customize Form\",\"idx\":54,\"docstatus\":0,\"label\":\"Payment Terms\",\"fieldtype\":\"Small Text\",\"fieldname\":\"payment_terms\",\"reqd\":0,\"unique\":0,\"in_list_view\":0,\"in_standard_filter\":0,\"in_global_search\":0,\"bold\":0,\"allow_in_quick_entry\":0,\"translatable\":0,\"precision\":\"\",\"length\":0,\"fetch_if_empty\":0,\"permlevel\":0,\"hidden\":1,\"read_only\":0,\"collapsible\":0,\"allow_bulk_edit\":0,\"ignore_user_permissions\":0,\"allow_on_submit\":0,\"report_hide\":0,\"remember_last_selected_value\":0,\"in_filter\":0,\"print_hide\":0,\"print_hide_if_no_value\":0,\"columns\":0,\"is_custom_field\":0,\"doctype\":\"Customize Form Field\",\"_sortable\":false},{\"name\":\"09056e976e\",\"parent\":\"Customize Form\",\"parentfield\":\"fields\",\"parenttype\":\"Customize Form\",\"idx\":55,\"docstatus\":0,\"fieldtype\":\"Column Break\",\"fieldname\":\"column_break_55\",\"reqd\":0,\"unique\":0,\"in_list_view\":0,\"in_standard_filter\":0,\"in_global_search\":0,\"bold\":0,\"allow_in_quick_entry\":0,\"translatable\":0,\"precision\":\"\",\"length\":0,\"fetch_if_empty\":0,\"permlevel\":0,\"hidden\":0,\"read_only\":0,\"collapsible\":0,\"allow_bulk_edit\":0,\"ignore_user_permissions\":0,\"allow_on_submit\":0,\"report_hide\":0,\"remember_last_selected_value\":0,\"in_filter\":0,\"print_hide\":0,\"print_hide_if_no_value\":0,\"columns\":0,\"is_custom_field\":0,\"doctype\":\"Customize Form Field\",\"_sortable\":false},{\"name\":\"893b6b27eb\",\"parent\":\"Customize Form\",\"parentfield\":\"fields\",\"parenttype\":\"Customize Form\",\"idx\":56,\"docstatus\":0,\"label\":\"Transportation\",\"fieldtype\":\"Select\",\"fieldname\":\"transportation\",\"reqd\":0,\"unique\":0,\"in_list_view\":0,\"in_standard_filter\":0,\"in_global_search\":0,\"bold\":0,\"allow_in_quick_entry\":0,\"translatable\":0,\"precision\":\"\",\"length\":0,\"options\":\"Free\\nIncluded in Salary\\nAllowance\",\"fetch_if_empty\":0,\"permlevel\":0,\"hidden\":0,\"read_only\":0,\"collapsible\":0,\"allow_bulk_edit\":0,\"ignore_user_permissions\":0,\"allow_on_submit\":0,\"report_hide\":0,\"remember_last_selected_value\":0,\"in_filter\":0,\"print_hide\":0,\"print_hide_if_no_value\":0,\"columns\":0,\"is_custom_field\":0,\"doctype\":\"Customize Form Field\",\"_sortable\":false},{\"name\":\"08653b8b4f\",\"parent\":\"Customize Form\",\"parentfield\":\"fields\",\"parenttype\":\"Customize Form\",\"idx\":57,\"docstatus\":0,\"label\":\"Transportation Allowance\",\"fieldtype\":\"Data\",\"fieldname\":\"travel_allowance\",\"reqd\":0,\"unique\":0,\"in_list_view\":0,\"in_standard_filter\":0,\"in_global_search\":0,\"bold\":0,\"allow_in_quick_entry\":0,\"translatable\":0,\"precision\":\"\",\"length\":0,\"fetch_if_empty\":0,\"depends_on\":\"eval:in_list([\\\"Allowance\\\"], doc.transportation)\",\"permlevel\":0,\"hidden\":0,\"read_only\":0,\"collapsible\":0,\"allow_bulk_edit\":0,\"ignore_user_permissions\":0,\"allow_on_submit\":0,\"report_hide\":0,\"remember_last_selected_value\":0,\"in_filter\":0,\"print_hide\":0,\"print_hide_if_no_value\":0,\"columns\":0,\"is_custom_field\":0,\"doctype\":\"Customize Form Field\",\"_sortable\":false},{\"name\":\"f6a83f00a4\",\"parent\":\"Customize Form\",\"parentfield\":\"fields\",\"parenttype\":\"Customize Form\",\"idx\":58,\"docstatus\":0,\"label\":\"Accommodation\",\"fieldtype\":\"Select\",\"fieldname\":\"accomodation\",\"reqd\":0,\"unique\":0,\"in_list_view\":0,\"in_standard_filter\":0,\"in_global_search\":0,\"bold\":0,\"allow_in_quick_entry\":0,\"translatable\":0,\"precision\":\"\",\"length\":0,\"options\":\"Free\\nIncluded in Salary\\nAllowance\",\"fetch_if_empty\":0,\"permlevel\":0,\"hidden\":0,\"read_only\":0,\"collapsible\":0,\"allow_bulk_edit\":0,\"ignore_user_permissions\":0,\"allow_on_submit\":0,\"report_hide\":0,\"remember_last_selected_value\":0,\"in_filter\":0,\"print_hide\":0,\"print_hide_if_no_value\":0,\"columns\":0,\"is_custom_field\":0,\"doctype\":\"Customize Form Field\",\"_sortable\":false},{\"name\":\"063d2f6cce\",\"parent\":\"Customize Form\",\"parentfield\":\"fields\",\"parenttype\":\"Customize Form\",\"idx\":59,\"docstatus\":0,\"label\":\"Accommodation Allowance\",\"fieldtype\":\"Data\",\"fieldname\":\"accomodation_allowance\",\"reqd\":0,\"unique\":0,\"in_list_view\":0,\"in_standard_filter\":0,\"in_global_search\":0,\"bold\":0,\"allow_in_quick_entry\":0,\"translatable\":0,\"precision\":\"\",\"length\":0,\"fetch_if_empty\":0,\"depends_on\":\"eval:in_list([\\\"Allowance\\\"], doc.accomodation)\",\"permlevel\":0,\"hidden\":0,\"read_only\":0,\"collapsible\":0,\"allow_bulk_edit\":0,\"ignore_user_permissions\":0,\"allow_on_submit\":0,\"report_hide\":0,\"remember_last_selected_value\":0,\"in_filter\":0,\"print_hide\":0,\"print_hide_if_no_value\":0,\"columns\":0,\"is_custom_field\":0,\"doctype\":\"Customize Form Field\",\"_sortable\":false},{\"name\":\"f1a2b97e8b\",\"parent\":\"Customize Form\",\"parentfield\":\"fields\",\"parenttype\":\"Customize Form\",\"idx\":60,\"docstatus\":0,\"label\":\"Nationality\",\"fieldtype\":\"Data\",\"fieldname\":\"nationality\",\"reqd\":0,\"unique\":0,\"in_list_view\":0,\"in_standard_filter\":0,\"in_global_search\":0,\"bold\":0,\"allow_in_quick_entry\":0,\"translatable\":0,\"precision\":\"\",\"length\":0,\"fetch_if_empty\":0,\"permlevel\":0,\"hidden\":0,\"read_only\":0,\"collapsible\":0,\"allow_bulk_edit\":0,\"ignore_user_permissions\":0,\"allow_on_submit\":0,\"report_hide\":0,\"remember_last_selected_value\":0,\"in_filter\":0,\"print_hide\":0,\"print_hide_if_no_value\":0,\"columns\":0,\"is_custom_field\":0,\"doctype\":\"Customize Form Field\",\"_sortable\":false},{\"name\":\"b4f9d3ed7b\",\"parent\":\"Customize Form\",\"parentfield\":\"fields\",\"parenttype\":\"Customize Form\",\"idx\":61,\"docstatus\":0,\"label\":\"Mode of Interview\",\"fieldtype\":\"Data\",\"fieldname\":\"mode_of_interview\",\"reqd\":0,\"unique\":0,\"in_list_view\":0,\"in_standard_filter\":0,\"in_global_search\":0,\"bold\":0,\"allow_in_quick_entry\":0,\"translatable\":0,\"precision\":\"\",\"length\":0,\"fetch_if_empty\":0,\"permlevel\":0,\"hidden\":1,\"read_only\":0,\"collapsible\":0,\"allow_bulk_edit\":0,\"ignore_user_permissions\":0,\"allow_on_submit\":0,\"report_hide\":0,\"remember_last_selected_value\":0,\"in_filter\":0,\"print_hide\":0,\"print_hide_if_no_value\":0,\"columns\":0,\"is_custom_field\":0,\"doctype\":\"Customize Form Field\",\"_sortable\":false},{\"name\":\"13d5f4514d\",\"parent\":\"Customize Form\",\"parentfield\":\"fields\",\"parenttype\":\"Customize Form\",\"idx\":62,\"docstatus\":0,\"fieldtype\":\"Column Break\",\"fieldname\":\"column_break_61\",\"reqd\":0,\"unique\":0,\"in_list_view\":0,\"in_standard_filter\":0,\"in_global_search\":0,\"bold\":0,\"allow_in_quick_entry\":0,\"translatable\":0,\"precision\":\"\",\"length\":0,\"fetch_if_empty\":0,\"permlevel\":0,\"hidden\":0,\"read_only\":0,\"collapsible\":0,\"allow_bulk_edit\":0,\"ignore_user_permissions\":0,\"allow_on_submit\":0,\"report_hide\":0,\"remember_last_selected_value\":0,\"in_filter\":0,\"print_hide\":0,\"print_hide_if_no_value\":0,\"columns\":0,\"is_custom_field\":0,\"doctype\":\"Customize Form Field\",\"_sortable\":false},{\"name\":\"25a8f02354\",\"parent\":\"Customize Form\",\"parentfield\":\"fields\",\"parenttype\":\"Customize Form\",\"idx\":63,\"docstatus\":0,\"label\":\"Contract Period Year\",\"fieldtype\":\"Select\",\"fieldname\":\"contract_period_probation\",\"reqd\":0,\"unique\":0,\"in_list_view\":0,\"in_standard_filter\":0,\"in_global_search\":0,\"bold\":0,\"allow_in_quick_entry\":0,\"translatable\":0,\"precision\":\"\",\"length\":0,\"options\":\"00\\n01\\n02\\n03\\n04\\n05\\n06\\n07\\n08\\n09\\n10\",\"fetch_if_empty\":0,\"permlevel\":0,\"hidden\":0,\"read_only\":0,\"collapsible\":0,\"allow_bulk_edit\":0,\"ignore_user_permissions\":0,\"allow_on_submit\":0,\"report_hide\":0,\"remember_last_selected_value\":0,\"in_filter\":0,\"print_hide\":0,\"print_hide_if_no_value\":0,\"columns\":0,\"is_custom_field\":0,\"doctype\":\"Customize Form Field\",\"_sortable\":false},{\"name\":\"c1b3d4720c\",\"parent\":\"Customize Form\",\"parentfield\":\"fields\",\"parenttype\":\"Customize Form\",\"idx\":64,\"docstatus\":0,\"label\":\"Contract Period  Month\",\"fieldtype\":\"Select\",\"fieldname\":\"contract_period__month\",\"reqd\":0,\"unique\":0,\"in_list_view\":0,\"in_standard_filter\":0,\"in_global_search\":0,\"bold\":0,\"allow_in_quick_entry\":0,\"translatable\":0,\"precision\":\"\",\"length\":0,\"options\":\"00\\n01\\n02\\n03\\n04\\n05\\n06\\n07\\n08\\n09\\n10\\n11\",\"fetch_if_empty\":0,\"permlevel\":0,\"hidden\":0,\"read_only\":0,\"collapsible\":0,\"allow_bulk_edit\":0,\"ignore_user_permissions\":0,\"allow_on_submit\":0,\"report_hide\":0,\"remember_last_selected_value\":0,\"in_filter\":0,\"print_hide\":0,\"print_hide_if_no_value\":0,\"columns\":0,\"is_custom_field\":0,\"doctype\":\"Customize Form Field\",\"_sortable\":false},{\"name\":\"13f8e24dfd\",\"parent\":\"Customize Form\",\"parentfield\":\"fields\",\"parenttype\":\"Customize Form\",\"idx\":65,\"docstatus\":0,\"label\":\"Over time\",\"fieldtype\":\"Select\",\"fieldname\":\"overtime\",\"reqd\":0,\"unique\":0,\"in_list_view\":0,\"in_standard_filter\":0,\"in_global_search\":0,\"bold\":0,\"allow_in_quick_entry\":0,\"translatable\":0,\"precision\":\"\",\"length\":0,\"options\":\"Applicable\\nNot Applicable\",\"fetch_if_empty\":0,\"permlevel\":0,\"hidden\":0,\"read_only\":0,\"collapsible\":0,\"allow_bulk_edit\":0,\"ignore_user_permissions\":0,\"allow_on_submit\":0,\"report_hide\":0,\"remember_last_selected_value\":0,\"in_filter\":0,\"print_hide\":0,\"print_hide_if_no_value\":0,\"columns\":0,\"is_custom_field\":0,\"doctype\":\"Customize Form Field\",\"_sortable\":false},{\"name\":\"1ed733f89f\",\"parent\":\"Customize Form\",\"parentfield\":\"fields\",\"parenttype\":\"Customize Form\",\"idx\":66,\"docstatus\":0,\"label\":\"Over Time Applicable\",\"fieldtype\":\"Data\",\"fieldname\":\"over_time_applicable\",\"reqd\":0,\"unique\":0,\"in_list_view\":0,\"in_standard_filter\":0,\"in_global_search\":0,\"bold\":0,\"allow_in_quick_entry\":0,\"translatable\":0,\"precision\":\"\",\"length\":0,\"fetch_if_empty\":0,\"depends_on\":\"eval:in_list([\\\"Applicable\\\"], doc.overtime)\",\"permlevel\":0,\"hidden\":0,\"read_only\":0,\"collapsible\":0,\"allow_bulk_edit\":0,\"ignore_user_permissions\":0,\"allow_on_submit\":0,\"report_hide\":0,\"remember_last_selected_value\":0,\"in_filter\":0,\"print_hide\":0,\"print_hide_if_no_value\":0,\"columns\":0,\"is_custom_field\":0,\"doctype\":\"Customize Form Field\",\"_sortable\":false},{\"name\":\"cb18f2fcd7\",\"parent\":\"Customize Form\",\"parentfield\":\"fields\",\"parenttype\":\"Customize Form\",\"idx\":67,\"docstatus\":0,\"fieldtype\":\"Column Break\",\"fieldname\":\"column_break_66\",\"reqd\":0,\"unique\":0,\"in_list_view\":0,\"in_standard_filter\":0,\"in_global_search\":0,\"bold\":0,\"allow_in_quick_entry\":0,\"translatable\":0,\"precision\":\"\",\"length\":0,\"fetch_if_empty\":0,\"permlevel\":0,\"hidden\":0,\"read_only\":0,\"collapsible\":0,\"allow_bulk_edit\":0,\"ignore_user_permissions\":0,\"allow_on_submit\":0,\"report_hide\":0,\"remember_last_selected_value\":0,\"in_filter\":0,\"print_hide\":0,\"print_hide_if_no_value\":0,\"columns\":0,\"is_custom_field\":0,\"doctype\":\"Customize Form Field\",\"_sortable\":false},{\"name\":\"968930b304\",\"parent\":\"Customize Form\",\"parentfield\":\"fields\",\"parenttype\":\"Customize Form\",\"idx\":68,\"docstatus\":0,\"label\":\"Joining Ticket\",\"fieldtype\":\"Select\",\"fieldname\":\"joining_ticket\",\"reqd\":0,\"unique\":0,\"in_list_view\":0,\"in_standard_filter\":0,\"in_global_search\":0,\"bold\":0,\"allow_in_quick_entry\":0,\"translatable\":0,\"precision\":\"\",\"length\":0,\"options\":\"Company\\nCandidate\\nReimbursable\",\"fetch_if_empty\":0,\"permlevel\":0,\"hidden\":0,\"read_only\":0,\"collapsible\":0,\"allow_bulk_edit\":0,\"ignore_user_permissions\":0,\"allow_on_submit\":0,\"report_hide\":0,\"remember_last_selected_value\":0,\"in_filter\":0,\"print_hide\":0,\"print_hide_if_no_value\":0,\"columns\":0,\"is_custom_field\":0,\"doctype\":\"Customize Form Field\",\"_sortable\":false},{\"name\":\"6449998c25\",\"parent\":\"Customize Form\",\"parentfield\":\"fields\",\"parenttype\":\"Customize Form\",\"idx\":69,\"docstatus\":0,\"label\":\"Leave \",\"fieldtype\":\"Select\",\"fieldname\":\"leave_policy\",\"reqd\":0,\"unique\":0,\"in_list_view\":0,\"in_standard_filter\":0,\"in_global_search\":0,\"bold\":0,\"allow_in_quick_entry\":0,\"translatable\":0,\"precision\":\"\",\"length\":0,\"options\":\"Yearly\\n2 Years\\nOthers\",\"fetch_if_empty\":0,\"permlevel\":0,\"hidden\":0,\"read_only\":0,\"collapsible\":0,\"allow_bulk_edit\":0,\"ignore_user_permissions\":0,\"allow_on_submit\":0,\"report_hide\":0,\"remember_last_selected_value\":0,\"in_filter\":0,\"print_hide\":0,\"print_hide_if_no_value\":0,\"columns\":0,\"is_custom_field\":0,\"doctype\":\"Customize Form Field\",\"_sortable\":false},{\"name\":\"4fb226127e\",\"parent\":\"Customize Form\",\"parentfield\":\"fields\",\"parenttype\":\"Customize Form\",\"idx\":70,\"docstatus\":0,\"label\":\"Other Leave\",\"fieldtype\":\"Data\",\"fieldname\":\"other_leave\",\"reqd\":0,\"unique\":0,\"in_list_view\":0,\"in_standard_filter\":0,\"in_global_search\":0,\"bold\":0,\"allow_in_quick_entry\":0,\"translatable\":0,\"precision\":\"\",\"length\":0,\"fetch_if_empty\":0,\"depends_on\":\"eval:in_list([\\\"Others\\\"], doc.leave_policy)\",\"permlevel\":0,\"hidden\":0,\"read_only\":0,\"collapsible\":0,\"allow_bulk_edit\":0,\"ignore_user_permissions\":0,\"allow_on_submit\":0,\"report_hide\":0,\"remember_last_selected_value\":0,\"in_filter\":0,\"print_hide\":0,\"print_hide_if_no_value\":0,\"columns\":0,\"is_custom_field\":0,\"doctype\":\"Customize Form Field\",\"_sortable\":false},{\"name\":\"e60a569408\",\"parent\":\"Customize Form\",\"parentfield\":\"fields\",\"parenttype\":\"Customize Form\",\"idx\":71,\"docstatus\":0,\"label\":\"Any Other Allowance\",\"fieldtype\":\"Data\",\"fieldname\":\"any_other_allowance\",\"reqd\":0,\"unique\":0,\"in_list_view\":0,\"in_standard_filter\":0,\"in_global_search\":0,\"bold\":0,\"allow_in_quick_entry\":0,\"translatable\":0,\"precision\":\"\",\"length\":0,\"fetch_if_empty\":0,\"permlevel\":0,\"hidden\":0,\"read_only\":0,\"collapsible\":0,\"allow_bulk_edit\":0,\"ignore_user_permissions\":0,\"allow_on_submit\":0,\"report_hide\":0,\"remember_last_selected_value\":0,\"in_filter\":0,\"print_hide\":0,\"print_hide_if_no_value\":0,\"columns\":0,\"is_custom_field\":0,\"doctype\":\"Customize Form Field\",\"_sortable\":false},{\"name\":\"178050250e\",\"parent\":\"Customize Form\",\"parentfield\":\"fields\",\"parenttype\":\"Customize Form\",\"idx\":72,\"docstatus\":0,\"label\":\"Interview Details\",\"fieldtype\":\"Table\",\"fieldname\":\"interview_details\",\"reqd\":0,\"unique\":0,\"in_list_view\":0,\"in_standard_filter\":0,\"in_global_search\":0,\"bold\":0,\"allow_in_quick_entry\":0,\"translatable\":0,\"precision\":\"\",\"length\":0,\"options\":\"Direct Interview Details\",\"fetch_if_empty\":0,\"permlevel\":0,\"hidden\":1,\"read_only\":1,\"collapsible\":0,\"allow_bulk_edit\":0,\"ignore_user_permissions\":0,\"allow_on_submit\":0,\"report_hide\":0,\"remember_last_selected_value\":0,\"in_filter\":0,\"print_hide\":0,\"print_hide_if_no_value\":0,\"columns\":0,\"is_custom_field\":0,\"doctype\":\"Customize Form Field\",\"_sortable\":false},{\"name\":\"6ba0f9017e\",\"parent\":\"Customize Form\",\"parentfield\":\"fields\",\"parenttype\":\"Customize Form\",\"idx\":73,\"docstatus\":0,\"label\":\"\",\"fieldtype\":\"Section Break\",\"fieldname\":\"candidates_details_section\",\"reqd\":0,\"unique\":0,\"in_list_view\":0,\"in_standard_filter\":0,\"in_global_search\":0,\"bold\":0,\"allow_in_quick_entry\":0,\"translatable\":0,\"precision\":\"\",\"length\":0,\"fetch_if_empty\":0,\"permlevel\":0,\"hidden\":0,\"read_only\":0,\"collapsible\":0,\"allow_bulk_edit\":0,\"ignore_user_permissions\":0,\"allow_on_submit\":0,\"report_hide\":0,\"remember_last_selected_value\":0,\"in_filter\":0,\"print_hide\":0,\"print_hide_if_no_value\":0,\"columns\":0,\"is_custom_field\":0,\"doctype\":\"Customize Form Field\",\"_sortable\":false},{\"name\":\"fd3c03f830\",\"parent\":\"Customize Form\",\"parentfield\":\"fields\",\"parenttype\":\"Customize Form\",\"idx\":74,\"docstatus\":0,\"label\":\"Candidates Details\",\"fieldtype\":\"Table\",\"fieldname\":\"position_candidate\",\"reqd\":0,\"unique\":0,\"in_list_view\":0,\"in_standard_filter\":0,\"in_global_search\":0,\"bold\":0,\"allow_in_quick_entry\":0,\"translatable\":0,\"precision\":\"\",\"length\":0,\"options\":\"Job Description Candidate\",\"fetch_if_empty\":0,\"permlevel\":0,\"hidden\":0,\"read_only\":0,\"collapsible\":0,\"allow_bulk_edit\":0,\"ignore_user_permissions\":0,\"allow_on_submit\":0,\"report_hide\":0,\"remember_last_selected_value\":0,\"in_filter\":0,\"print_hide\":0,\"print_hide_if_no_value\":0,\"columns\":0,\"is_custom_field\":0,\"doctype\":\"Customize Form Field\",\"_sortable\":false},{\"name\":\"791fc73e79\",\"parent\":\"Customize Form\",\"parentfield\":\"fields\",\"parenttype\":\"Customize Form\",\"idx\":75,\"docstatus\":0,\"fieldtype\":\"Section Break\",\"fieldname\":\"section_break_65\",\"reqd\":0,\"unique\":0,\"in_list_view\":0,\"in_standard_filter\":0,\"in_global_search\":0,\"bold\":0,\"allow_in_quick_entry\":0,\"translatable\":0,\"precision\":\"\",\"length\":0,\"fetch_if_empty\":0,\"permlevel\":0,\"hidden\":0,\"read_only\":0,\"collapsible\":0,\"allow_bulk_edit\":0,\"ignore_user_permissions\":0,\"allow_on_submit\":0,\"report_hide\":0,\"remember_last_selected_value\":0,\"in_filter\":0,\"print_hide\":0,\"print_hide_if_no_value\":0,\"columns\":0,\"is_custom_field\":0,\"doctype\":\"Customize Form Field\",\"_sortable\":false},{\"name\":\"6baf99c34a\",\"parent\":\"Customize Form\",\"parentfield\":\"fields\",\"parenttype\":\"Customize Form\",\"idx\":76,\"docstatus\":0,\"label\":\"SA Candidate Summary\",\"fieldtype\":\"Table\",\"fieldname\":\"sa_candidate_summary\",\"reqd\":0,\"unique\":0,\"in_list_view\":0,\"in_standard_filter\":0,\"in_global_search\":0,\"bold\":0,\"allow_in_quick_entry\":0,\"translatable\":0,\"precision\":\"\",\"length\":0,\"options\":\"SA Candidate Summary\",\"fetch_if_empty\":0,\"permlevel\":0,\"hidden\":0,\"read_only\":0,\"collapsible\":0,\"allow_bulk_edit\":0,\"ignore_user_permissions\":0,\"allow_on_submit\":0,\"report_hide\":0,\"remember_last_selected_value\":0,\"in_filter\":0,\"print_hide\":0,\"print_hide_if_no_value\":0,\"columns\":0,\"is_custom_field\":0,\"doctype\":\"Customize Form Field\",\"_sortable\":false}],\"doc_type\":\"Position\",\"label\":\"\",\"title_field\":\"subject\",\"search_fields\":\"subject\",\"sort_field\":\"modified\",\"__unsaved\":1}",
- "method": "save_customization"
-}
-Request Error
-Traceback (most recent call last):
-  File "/home/sharmila/frappe-bench/apps/frappe/frappe/app.py", line 62, in application
-    response = frappe.api.handle()
-  File "/home/sharmila/frappe-bench/apps/frappe/frappe/api.py", line 55, in handle
-    return frappe.handler.handle()
-  File "/home/sharmila/frappe-bench/apps/frappe/frappe/handler.py", line 22, in handle
-    data = execute_cmd(cmd)
-  File "/home/sharmila/frappe-bench/apps/frappe/frappe/handler.py", line 61, in execute_cmd
-    return frappe.call(method, **frappe.form_dict)
-  File "/home/sharmila/frappe-bench/apps/frappe/frappe/__init__.py", line 1054, in call
-    return fn(*args, **newargs)
-  File "/home/sharmila/frappe-bench/apps/frappe/frappe/handler.py", line 89, in runserverobj
-    frappe.desk.form.run_method.runserverobj(method, docs=docs, dt=dt, dn=dn, arg=arg, args=args)
-  File "/home/sharmila/frappe-bench/apps/frappe/frappe/desk/form/run_method.py", line 43, in runserverobj
-    r = doc.run_method(method)
-  File "/home/sharmila/frappe-bench/apps/frappe/frappe/model/document.py", line 794, in run_method
-    out = Document.hook(fn)(self, *args, **kwargs)
-  File "/home/sharmila/frappe-bench/apps/frappe/frappe/model/document.py", line 1065, in composer
-    return composed(self, method, *args, **kwargs)
-  File "/home/sharmila/frappe-bench/apps/frappe/frappe/model/document.py", line 1048, in runner
-    add_to_return_value(self, fn(self, *args, **kwargs))
-  File "/home/sharmila/frappe-bench/apps/frappe/frappe/model/document.py", line 788, in <lambda>
-    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
-  File "/home/sharmila/frappe-bench/apps/frappe/frappe/custom/doctype/customize_form/customize_form.py", line 174, in save_customization
-    frappe.db.updatedb(self.doc_type)
-  File "/home/sharmila/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 291, in updatedb
-    db_table.sync()
-  File "/home/sharmila/frappe-bench/apps/frappe/frappe/database/schema.py", line 37, in sync
-    self.alter()
-  File "/home/sharmila/frappe-bench/apps/frappe/frappe/database/mariadb/schema.py", line 86, in alter
-    raise e
-  File "/home/sharmila/frappe-bench/apps/frappe/frappe/database/mariadb/schema.py", line 75, in alter
-    frappe.db.sql(query)
-  File "/home/sharmila/frappe-bench/apps/frappe/frappe/database/database.py", line 171, in sql
-    self._cursor.execute(query)
-  File "/home/sharmila/frappe-bench/env/lib/python3.6/site-packages/pymysql/cursors.py", line 170, in execute
-    result = self._query(query)
-  File "/home/sharmila/frappe-bench/env/lib/python3.6/site-packages/pymysql/cursors.py", line 328, in _query
-    conn.query(q)
-  File "/home/sharmila/frappe-bench/env/lib/python3.6/site-packages/pymysql/connections.py", line 517, in query
-    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
-  File "/home/sharmila/frappe-bench/env/lib/python3.6/site-packages/pymysql/connections.py", line 732, in _read_query_result
-    result.read()
-  File "/home/sharmila/frappe-bench/env/lib/python3.6/site-packages/pymysql/connections.py", line 1075, in read
-    first_packet = self.connection._read_packet()
-  File "/home/sharmila/frappe-bench/env/lib/python3.6/site-packages/pymysql/connections.py", line 684, in _read_packet
-    packet.check_error()
-  File "/home/sharmila/frappe-bench/env/lib/python3.6/site-packages/pymysql/protocol.py", line 220, in check_error
-    err.raise_mysql_exception(self._data)
-  File "/home/sharmila/frappe-bench/env/lib/python3.6/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
-    raise errorclass(errno, errval)
-pymysql.err.DataError: (1265, "Data truncated for column 'sl' at row 1")
-[ERROR] 2020-04-27 13:57:21,461 | /home/sharmila/frappe-bench/apps/frappe/frappe/app.py:
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 17:22:14,203 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 17:23:14,402 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 17:24:14,625 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 17:25:14,887 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 17:26:15,087 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 17:27:15,301 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 17:28:15,522 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 17:29:15,722 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 17:30:15,922 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 17:31:16,130 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 17:32:16,353 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 17:33:16,549 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 17:34:16,788 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 17:35:16,998 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 17:36:17,228 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 17:37:17,432 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 17:38:17,635 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 17:39:17,839 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 17:40:18,061 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 17:41:18,312 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 17:42:18,513 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 17:43:18,704 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 17:44:18,928 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 17:45:19,152 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 17:46:19,374 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 17:47:19,619 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 17:48:19,850 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 17:49:20,042 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 17:50:20,250 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 17:51:20,439 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 17:52:20,668 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 17:53:20,944 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 17:54:21,158 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 17:55:21,408 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 17:56:21,928 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 17:57:22,120 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 17:58:22,323 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 17:59:23,973 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 18:00:24,618 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 18:01:24,834 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 18:02:25,097 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 18:03:25,303 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 18:04:25,597 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 18:05:25,784 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 18:06:25,992 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 18:07:26,203 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 18:08:26,426 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 18:09:26,650 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 18:10:27,028 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 18:11:27,226 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 18:12:27,441 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 18:13:27,634 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 18:14:27,831 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 18:15:28,037 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 18:16:28,276 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 18:17:28,482 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 18:18:28,688 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 18:19:28,899 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 18:20:29,120 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 18:21:29,327 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 18:22:29,527 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 18:23:29,962 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 18:24:30,190 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 18:25:30,398 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 18:26:30,661 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 18:27:30,852 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 18:28:31,096 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 18:29:31,332 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 18:30:31,526 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 18:31:31,728 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 18:32:31,953 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 18:33:32,167 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 18:34:32,371 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 18:35:32,652 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 18:36:32,871 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 18:37:33,074 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 18:38:33,275 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 18:39:33,475 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 18:40:33,709 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 18:41:33,901 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 18:42:34,093 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 18:43:34,351 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 18:44:34,636 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 18:45:34,840 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 18:46:35,056 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 18:47:35,261 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 18:48:35,544 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 18:49:35,810 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 18:50:36,010 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 18:51:36,201 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 18:52:36,424 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 18:53:36,622 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 18:54:36,814 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 18:55:37,023 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 18:56:37,280 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 18:57:37,470 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 18:58:37,676 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 18:59:37,865 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 19:00:38,113 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 19:01:38,322 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 19:02:38,674 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 19:03:38,874 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 19:04:39,178 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 19:05:39,385 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 19:06:39,605 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 19:07:39,808 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 19:08:40,029 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 19:09:40,235 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 19:10:40,436 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 19:11:40,713 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 19:12:40,941 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 19:13:41,143 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 19:14:41,389 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 19:15:41,599 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 19:16:41,835 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 19:17:42,055 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 19:18:42,268 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 19:19:42,474 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 19:20:42,953 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 19:21:43,143 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 19:22:43,353 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 19:23:43,557 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 19:24:43,793 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 19:25:44,062 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 19:26:44,267 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 19:27:44,480 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 19:28:46,320 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 19:29:46,635 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 19:30:46,985 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 19:31:47,184 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 19:32:47,634 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 19:33:47,854 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 19:34:48,181 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 19:35:48,381 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 19:36:48,622 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 19:37:48,814 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 19:38:49,017 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 19:39:49,235 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 19:40:49,498 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 19:41:49,691 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[ERROR] 2020-04-27 19:42:23,222 | /home/sharmila/frappe-bench/apps/frappe/frappe/app.py:
 Site: recruitpro.local
 Form Dict: {
  "cmd": "frappe.realtime.get_user_info"
@@ -76,7 +439,7 @@ Traceback (most recent call last):
   File "/home/sharmila/frappe-bench/apps/frappe/frappe/__init__.py", line 1054, in call
     return fn(*args, **newargs)
 TypeError: get_user_info() missing 1 required positional argument: 'sid'
-[ERROR] 2020-04-27 13:57:21,555 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/error.py:
+[ERROR] 2020-04-27 19:42:23,317 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/error.py:
 Could not take error snapshot: invalid syntax (<string>, line 1)
 Traceback (most recent call last):
   File "/home/sharmila/frappe-bench/apps/frappe/frappe/app.py", line 62, in application
@@ -102,609 +465,1395 @@ Traceback (most recent call last):
     <built-in method with_traceback of TypeError object>
     ^
 SyntaxError: invalid syntax
-[DEBUG] 2020-04-27 13:58:18,703 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-27 19:43:22,271 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 13:59:19,001 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-27 19:44:22,548 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 14:00:19,413 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-27 19:45:22,765 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 14:01:19,630 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-27 19:46:22,983 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 14:02:19,884 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-27 19:47:23,182 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 14:03:20,143 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-27 19:48:23,409 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 14:04:20,372 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[ERROR] 2020-04-27 19:49:14,568 | /home/sharmila/frappe-bench/apps/frappe/frappe/app.py:
 Site: recruitpro.local
+Form Dict: {
+ "cmd": "frappe.realtime.get_user_info"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/sharmila/frappe-bench/apps/frappe/frappe/app.py", line 62, in application
+    response = frappe.api.handle()
+  File "/home/sharmila/frappe-bench/apps/frappe/frappe/api.py", line 55, in handle
+    return frappe.handler.handle()
+  File "/home/sharmila/frappe-bench/apps/frappe/frappe/handler.py", line 22, in handle
+    data = execute_cmd(cmd)
+  File "/home/sharmila/frappe-bench/apps/frappe/frappe/handler.py", line 61, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/sharmila/frappe-bench/apps/frappe/frappe/__init__.py", line 1054, in call
+    return fn(*args, **newargs)
+TypeError: get_user_info() missing 1 required positional argument: 'sid'
+[ERROR] 2020-04-27 19:49:14,659 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/error.py:
+Could not take error snapshot: invalid syntax (<string>, line 1)
+Traceback (most recent call last):
+  File "/home/sharmila/frappe-bench/apps/frappe/frappe/app.py", line 62, in application
+    response = frappe.api.handle()
+  File "/home/sharmila/frappe-bench/apps/frappe/frappe/api.py", line 55, in handle
+    return frappe.handler.handle()
+  File "/home/sharmila/frappe-bench/apps/frappe/frappe/handler.py", line 22, in handle
+    data = execute_cmd(cmd)
+  File "/home/sharmila/frappe-bench/apps/frappe/frappe/handler.py", line 61, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/sharmila/frappe-bench/apps/frappe/frappe/__init__.py", line 1054, in call
+    return fn(*args, **newargs)
+TypeError: get_user_info() missing 1 required positional argument: 'sid'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/sharmila/frappe-bench/apps/frappe/frappe/utils/error.py", line 36, in make_error_snapshot
+    snapshot = get_snapshot(exception)
+  File "/home/sharmila/frappe-bench/apps/frappe/frappe/utils/error.py", line 132, in get_snapshot
+    value = eval(value)
+  File "<string>", line 1
+    <built-in method with_traceback of TypeError object>
+    ^
+SyntaxError: invalid syntax
+[DEBUG] 2020-04-27 19:50:11,688 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 19:51:11,901 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 19:52:12,116 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 19:53:12,384 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 19:54:12,692 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-27 19:55:13,821 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-28 09:46:16,447 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-28 09:47:16,905 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-28 09:48:17,106 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-28 09:49:17,398 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-28 09:50:17,591 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-28 09:51:17,837 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-28 09:52:18,067 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-28 09:53:18,265 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-28 09:54:18,446 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-28 09:55:18,657 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-28 09:56:18,897 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-28 09:57:19,102 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-28 09:58:19,283 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-28 09:59:19,465 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-28 10:00:19,694 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-28 10:01:21,122 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-28 10:02:21,443 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-28 10:03:21,649 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-28 10:04:21,879 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-28 10:05:22,084 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-28 10:06:22,304 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-28 10:07:22,665 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-28 10:08:22,999 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-28 10:09:23,189 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-28 10:10:23,368 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-28 10:11:23,555 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-28 10:12:23,777 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-28 10:13:23,970 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-28 10:14:24,163 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-28 10:15:24,826 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-28 10:16:26,039 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-28 10:17:26,591 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-28 10:18:26,820 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-28 10:19:27,045 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-28 10:20:27,291 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-28 10:21:27,499 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-28 10:22:27,708 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-28 10:23:27,914 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-28 10:24:28,142 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-28 10:25:28,346 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-28 10:26:28,544 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-28 10:27:28,764 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-28 10:28:28,997 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-28 10:29:29,300 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-28 10:30:29,500 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-28 10:31:29,772 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-28 10:32:30,013 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-28 10:33:30,223 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-28 10:34:30,432 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-28 10:35:30,638 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-28 10:36:30,886 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-28 10:37:31,107 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-28 10:38:31,358 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-28 10:39:31,578 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-28 10:40:31,825 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-28 10:41:32,034 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-28 10:42:32,245 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-28 10:43:32,462 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-28 10:44:33,061 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-28 10:45:33,271 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-28 10:46:33,487 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-28 10:47:33,681 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-28 10:48:33,903 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-28 10:49:34,398 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-28 10:50:34,659 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-28 10:51:34,870 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-28 10:52:35,086 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-28 10:53:35,293 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-28 10:54:35,568 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[ERROR] 2020-04-28 11:10:45,882 | /home/sharmila/frappe-bench/apps/frappe/frappe/app.py:
+Site: recruitpro.local
+Form Dict: {
+ "cmd": "frappe.client.get_hooks"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/sharmila/frappe-bench/apps/frappe/frappe/app.py", line 62, in application
+    response = frappe.api.handle()
+  File "/home/sharmila/frappe-bench/apps/frappe/frappe/api.py", line 55, in handle
+    return frappe.handler.handle()
+  File "/home/sharmila/frappe-bench/apps/frappe/frappe/handler.py", line 22, in handle
+    data = execute_cmd(cmd)
+  File "/home/sharmila/frappe-bench/apps/frappe/frappe/handler.py", line 61, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/sharmila/frappe-bench/apps/frappe/frappe/__init__.py", line 1054, in call
+    return fn(*args, **newargs)
+TypeError: get_hooks() missing 1 required positional argument: 'hook'
+[ERROR] 2020-04-28 11:10:45,882 | /home/sharmila/frappe-bench/apps/frappe/frappe/app.py:
+Site: recruitpro.local
+Form Dict: {
+ "cmd": "frappe.client.get_hooks"
+}
+Site: recruitpro.local
+Form Dict: {
+ "cmd": "frappe.client.get_hooks"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/sharmila/frappe-bench/apps/frappe/frappe/app.py", line 62, in application
+    response = frappe.api.handle()
+  File "/home/sharmila/frappe-bench/apps/frappe/frappe/api.py", line 55, in handle
+    return frappe.handler.handle()
+  File "/home/sharmila/frappe-bench/apps/frappe/frappe/handler.py", line 22, in handle
+    data = execute_cmd(cmd)
+  File "/home/sharmila/frappe-bench/apps/frappe/frappe/handler.py", line 61, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/sharmila/frappe-bench/apps/frappe/frappe/__init__.py", line 1054, in call
+    return fn(*args, **newargs)
+TypeError: get_hooks() missing 1 required positional argument: 'hook'
+[ERROR] 2020-04-28 11:10:45,882 | /home/sharmila/frappe-bench/apps/frappe/frappe/app.py:
+Site: recruitpro.local
+Form Dict: {
+ "cmd": "frappe.desk.form.load.getdoctype"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/sharmila/frappe-bench/apps/frappe/frappe/app.py", line 62, in application
+    response = frappe.api.handle()
+  File "/home/sharmila/frappe-bench/apps/frappe/frappe/api.py", line 55, in handle
+    return frappe.handler.handle()
+  File "/home/sharmila/frappe-bench/apps/frappe/frappe/handler.py", line 22, in handle
+    data = execute_cmd(cmd)
+  File "/home/sharmila/frappe-bench/apps/frappe/frappe/handler.py", line 61, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/sharmila/frappe-bench/apps/frappe/frappe/__init__.py", line 1054, in call
+    return fn(*args, **newargs)
+TypeError: getdoctype() missing 1 required positional argument: 'doctype'
+[ERROR] 2020-04-28 11:10:45,882 | /home/sharmila/frappe-bench/apps/frappe/frappe/app.py:
+Site: recruitpro.local
+Form Dict: {
+ "cmd": "frappe.desk.form.load.getdoctype"
+}
+Site: recruitpro.local
+Form Dict: {
+ "cmd": "frappe.desk.form.load.getdoctype"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/sharmila/frappe-bench/apps/frappe/frappe/app.py", line 62, in application
+    response = frappe.api.handle()
+  File "/home/sharmila/frappe-bench/apps/frappe/frappe/api.py", line 55, in handle
+    return frappe.handler.handle()
+  File "/home/sharmila/frappe-bench/apps/frappe/frappe/handler.py", line 22, in handle
+    data = execute_cmd(cmd)
+  File "/home/sharmila/frappe-bench/apps/frappe/frappe/handler.py", line 61, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/sharmila/frappe-bench/apps/frappe/frappe/__init__.py", line 1054, in call
+    return fn(*args, **newargs)
+TypeError: getdoctype() missing 1 required positional argument: 'doctype'
+[ERROR] 2020-04-28 11:10:46,097 | /home/sharmila/frappe-bench/apps/frappe/frappe/app.py:
+Site: recruitpro.local
+Form Dict: {
+ "cmd": "frappe.realtime.get_user_info"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/sharmila/frappe-bench/apps/frappe/frappe/app.py", line 62, in application
+    response = frappe.api.handle()
+  File "/home/sharmila/frappe-bench/apps/frappe/frappe/api.py", line 55, in handle
+    return frappe.handler.handle()
+  File "/home/sharmila/frappe-bench/apps/frappe/frappe/handler.py", line 22, in handle
+    data = execute_cmd(cmd)
+  File "/home/sharmila/frappe-bench/apps/frappe/frappe/handler.py", line 61, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/sharmila/frappe-bench/apps/frappe/frappe/__init__.py", line 1054, in call
+    return fn(*args, **newargs)
+TypeError: get_user_info() missing 1 required positional argument: 'sid'
+[ERROR] 2020-04-28 11:10:46,097 | /home/sharmila/frappe-bench/apps/frappe/frappe/app.py:
+Site: recruitpro.local
+Form Dict: {
+ "cmd": "frappe.realtime.get_user_info"
+}
+Site: recruitpro.local
+Form Dict: {
+ "cmd": "frappe.realtime.get_user_info"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/sharmila/frappe-bench/apps/frappe/frappe/app.py", line 62, in application
+    response = frappe.api.handle()
+  File "/home/sharmila/frappe-bench/apps/frappe/frappe/api.py", line 55, in handle
+    return frappe.handler.handle()
+  File "/home/sharmila/frappe-bench/apps/frappe/frappe/handler.py", line 22, in handle
+    data = execute_cmd(cmd)
+  File "/home/sharmila/frappe-bench/apps/frappe/frappe/handler.py", line 61, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/sharmila/frappe-bench/apps/frappe/frappe/__init__.py", line 1054, in call
+    return fn(*args, **newargs)
+TypeError: get_user_info() missing 1 required positional argument: 'sid'
+[ERROR] 2020-04-28 11:10:46,415 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/error.py:
+Could not take error snapshot: invalid syntax (<string>, line 1)
+Traceback (most recent call last):
+  File "/home/sharmila/frappe-bench/apps/frappe/frappe/app.py", line 62, in application
+    response = frappe.api.handle()
+  File "/home/sharmila/frappe-bench/apps/frappe/frappe/api.py", line 55, in handle
+    return frappe.handler.handle()
+  File "/home/sharmila/frappe-bench/apps/frappe/frappe/handler.py", line 22, in handle
+    data = execute_cmd(cmd)
+  File "/home/sharmila/frappe-bench/apps/frappe/frappe/handler.py", line 61, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/sharmila/frappe-bench/apps/frappe/frappe/__init__.py", line 1054, in call
+    return fn(*args, **newargs)
+TypeError: getdoctype() missing 1 required positional argument: 'doctype'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/sharmila/frappe-bench/apps/frappe/frappe/utils/error.py", line 36, in make_error_snapshot
+    snapshot = get_snapshot(exception)
+  File "/home/sharmila/frappe-bench/apps/frappe/frappe/utils/error.py", line 132, in get_snapshot
+    value = eval(value)
+  File "<string>", line 1
+    <built-in method with_traceback of TypeError object>
+    ^
+SyntaxError: invalid syntax
+[ERROR] 2020-04-28 11:10:46,417 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/error.py:
+Could not take error snapshot: invalid syntax (<string>, line 1)
+Traceback (most recent call last):
+  File "/home/sharmila/frappe-bench/apps/frappe/frappe/app.py", line 62, in application
+    response = frappe.api.handle()
+  File "/home/sharmila/frappe-bench/apps/frappe/frappe/api.py", line 55, in handle
+    return frappe.handler.handle()
+  File "/home/sharmila/frappe-bench/apps/frappe/frappe/handler.py", line 22, in handle
+    data = execute_cmd(cmd)
+  File "/home/sharmila/frappe-bench/apps/frappe/frappe/handler.py", line 61, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/sharmila/frappe-bench/apps/frappe/frappe/__init__.py", line 1054, in call
+    return fn(*args, **newargs)
+TypeError: get_hooks() missing 1 required positional argument: 'hook'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/sharmila/frappe-bench/apps/frappe/frappe/utils/error.py", line 36, in make_error_snapshot
+    snapshot = get_snapshot(exception)
+  File "/home/sharmila/frappe-bench/apps/frappe/frappe/utils/error.py", line 132, in get_snapshot
+    value = eval(value)
+  File "<string>", line 1
+    <built-in method with_traceback of TypeError object>
+    ^
+SyntaxError: invalid syntax
+[ERROR] 2020-04-28 11:10:46,431 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/error.py:
+Could not take error snapshot: invalid syntax (<string>, line 1)
+Traceback (most recent call last):
+  File "/home/sharmila/frappe-bench/apps/frappe/frappe/app.py", line 62, in application
+    response = frappe.api.handle()
+  File "/home/sharmila/frappe-bench/apps/frappe/frappe/api.py", line 55, in handle
+    return frappe.handler.handle()
+  File "/home/sharmila/frappe-bench/apps/frappe/frappe/handler.py", line 22, in handle
+    data = execute_cmd(cmd)
+  File "/home/sharmila/frappe-bench/apps/frappe/frappe/handler.py", line 61, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/sharmila/frappe-bench/apps/frappe/frappe/__init__.py", line 1054, in call
+    return fn(*args, **newargs)
+TypeError: get_user_info() missing 1 required positional argument: 'sid'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/sharmila/frappe-bench/apps/frappe/frappe/utils/error.py", line 36, in make_error_snapshot
+    snapshot = get_snapshot(exception)
+  File "/home/sharmila/frappe-bench/apps/frappe/frappe/utils/error.py", line 132, in get_snapshot
+    value = eval(value)
+  File "<string>", line 1
+    <built-in method with_traceback of TypeError object>
+    ^
+SyntaxError: invalid syntax
+[ERROR] 2020-04-28 11:10:46,941 | /home/sharmila/frappe-bench/apps/frappe/frappe/app.py:
+Site: recruitpro.local
+Form Dict: {
+ "cmd": "frappe.chat.doctype.chat_profile.chat_profile.create"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/sharmila/frappe-bench/apps/frappe/frappe/app.py", line 62, in application
+    response = frappe.api.handle()
+  File "/home/sharmila/frappe-bench/apps/frappe/frappe/api.py", line 55, in handle
+    return frappe.handler.handle()
+  File "/home/sharmila/frappe-bench/apps/frappe/frappe/handler.py", line 22, in handle
+    data = execute_cmd(cmd)
+  File "/home/sharmila/frappe-bench/apps/frappe/frappe/handler.py", line 61, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/sharmila/frappe-bench/apps/frappe/frappe/__init__.py", line 1054, in call
+    return fn(*args, **newargs)
+TypeError: create() missing 1 required positional argument: 'user'
+[ERROR] 2020-04-28 11:10:46,941 | /home/sharmila/frappe-bench/apps/frappe/frappe/app.py:
+Site: recruitpro.local
+Form Dict: {
+ "cmd": "frappe.chat.doctype.chat_profile.chat_profile.create"
+}
+Site: recruitpro.local
+Form Dict: {
+ "cmd": "frappe.chat.doctype.chat_profile.chat_profile.create"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/sharmila/frappe-bench/apps/frappe/frappe/app.py", line 62, in application
+    response = frappe.api.handle()
+  File "/home/sharmila/frappe-bench/apps/frappe/frappe/api.py", line 55, in handle
+    return frappe.handler.handle()
+  File "/home/sharmila/frappe-bench/apps/frappe/frappe/handler.py", line 22, in handle
+    data = execute_cmd(cmd)
+  File "/home/sharmila/frappe-bench/apps/frappe/frappe/handler.py", line 61, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/sharmila/frappe-bench/apps/frappe/frappe/__init__.py", line 1054, in call
+    return fn(*args, **newargs)
+TypeError: create() missing 1 required positional argument: 'user'
+[ERROR] 2020-04-28 11:10:46,944 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/error.py:
+Could not take error snapshot: invalid syntax (<string>, line 1)
+Traceback (most recent call last):
+  File "/home/sharmila/frappe-bench/apps/frappe/frappe/app.py", line 62, in application
+    response = frappe.api.handle()
+  File "/home/sharmila/frappe-bench/apps/frappe/frappe/api.py", line 55, in handle
+    return frappe.handler.handle()
+  File "/home/sharmila/frappe-bench/apps/frappe/frappe/handler.py", line 22, in handle
+    data = execute_cmd(cmd)
+  File "/home/sharmila/frappe-bench/apps/frappe/frappe/handler.py", line 61, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/sharmila/frappe-bench/apps/frappe/frappe/__init__.py", line 1054, in call
+    return fn(*args, **newargs)
+TypeError: create() missing 1 required positional argument: 'user'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/sharmila/frappe-bench/apps/frappe/frappe/utils/error.py", line 36, in make_error_snapshot
+    snapshot = get_snapshot(exception)
+  File "/home/sharmila/frappe-bench/apps/frappe/frappe/utils/error.py", line 132, in get_snapshot
+    value = eval(value)
+  File "<string>", line 1
+    <built-in method with_traceback of TypeError object>
+    ^
+SyntaxError: invalid syntax
+[DEBUG] 2020-04-28 11:10:47,372 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-28 11:11:47,584 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-28 11:12:47,853 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-28 11:13:48,055 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-28 11:14:48,256 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-28 11:15:48,848 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-28 11:16:49,110 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-28 11:17:49,339 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-28 11:18:49,524 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-28 11:21:03,690 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-28 11:22:03,925 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-28 11:23:05,002 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-28 11:24:05,267 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-28 11:25:05,485 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-28 11:26:05,690 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-28 11:27:05,868 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-28 11:28:06,127 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-28 11:29:06,319 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-28 11:30:06,527 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-28 11:31:06,741 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-28 11:32:07,004 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-28 11:33:07,221 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-28 11:34:07,433 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-28 11:35:07,635 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-28 11:36:07,872 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-28 11:37:08,072 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-28 11:38:08,280 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-28 11:39:08,482 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-28 11:40:08,748 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-28 11:41:08,954 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-28 11:42:09,165 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-28 11:43:09,404 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-28 11:44:09,630 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-28 11:45:09,829 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-28 11:46:10,026 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 14:05:20,642 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 11:47:10,231 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 14:06:20,872 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 11:48:10,478 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 14:07:21,083 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 11:49:10,681 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 14:08:21,327 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 11:50:10,904 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 14:09:21,523 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 11:51:11,103 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 14:10:21,737 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 11:52:11,336 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 14:11:21,916 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 11:53:11,553 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 14:12:22,198 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 11:54:11,771 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 14:13:22,404 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 11:55:12,055 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 14:14:22,612 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 11:56:12,412 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 14:15:22,814 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 11:57:12,675 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 14:16:23,091 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 11:58:12,903 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 14:17:23,341 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 11:59:13,105 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 14:18:23,616 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 12:00:13,348 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 14:19:23,827 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 12:01:13,565 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 14:20:24,072 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 12:02:13,779 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 14:21:24,335 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 12:03:13,976 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 14:22:24,540 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 12:04:14,211 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 14:23:24,745 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 12:05:14,417 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 14:24:24,976 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 12:06:14,628 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 14:25:25,289 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 12:07:14,862 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 14:26:25,557 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 12:08:15,103 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 14:27:25,765 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 12:09:15,317 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 14:28:25,981 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 12:10:15,516 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 14:29:26,180 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 12:11:15,717 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 14:30:26,382 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 12:12:15,937 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 14:31:26,581 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 12:13:16,293 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 14:32:26,870 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[ERROR] 2020-04-28 12:13:40,586 | /home/sharmila/frappe-bench/apps/frappe/frappe/app.py:
 Site: recruitpro.local
+Form Dict: {
+ "cmd": "frappe.realtime.get_user_info"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/sharmila/frappe-bench/apps/frappe/frappe/app.py", line 62, in application
+    response = frappe.api.handle()
+  File "/home/sharmila/frappe-bench/apps/frappe/frappe/api.py", line 55, in handle
+    return frappe.handler.handle()
+  File "/home/sharmila/frappe-bench/apps/frappe/frappe/handler.py", line 22, in handle
+    data = execute_cmd(cmd)
+  File "/home/sharmila/frappe-bench/apps/frappe/frappe/handler.py", line 61, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/sharmila/frappe-bench/apps/frappe/frappe/__init__.py", line 1054, in call
+    return fn(*args, **newargs)
+TypeError: get_user_info() missing 1 required positional argument: 'sid'
+[ERROR] 2020-04-28 12:13:40,896 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/error.py:
+Could not take error snapshot: invalid syntax (<string>, line 1)
+Traceback (most recent call last):
+  File "/home/sharmila/frappe-bench/apps/frappe/frappe/app.py", line 62, in application
+    response = frappe.api.handle()
+  File "/home/sharmila/frappe-bench/apps/frappe/frappe/api.py", line 55, in handle
+    return frappe.handler.handle()
+  File "/home/sharmila/frappe-bench/apps/frappe/frappe/handler.py", line 22, in handle
+    data = execute_cmd(cmd)
+  File "/home/sharmila/frappe-bench/apps/frappe/frappe/handler.py", line 61, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/sharmila/frappe-bench/apps/frappe/frappe/__init__.py", line 1054, in call
+    return fn(*args, **newargs)
+TypeError: get_user_info() missing 1 required positional argument: 'sid'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/sharmila/frappe-bench/apps/frappe/frappe/utils/error.py", line 36, in make_error_snapshot
+    snapshot = get_snapshot(exception)
+  File "/home/sharmila/frappe-bench/apps/frappe/frappe/utils/error.py", line 132, in get_snapshot
+    value = eval(value)
+  File "<string>", line 1
+    <built-in method with_traceback of TypeError object>
+    ^
+SyntaxError: invalid syntax
+[DEBUG] 2020-04-28 12:14:39,881 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-28 12:15:40,116 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-28 12:16:40,358 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-28 12:17:40,566 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-28 12:18:40,772 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-28 12:19:40,966 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-28 12:20:41,202 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-28 12:21:41,405 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-28 12:22:41,609 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-28 12:23:41,826 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-28 12:24:42,050 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-28 12:25:42,259 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-28 12:26:42,544 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-28 12:27:42,744 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[DEBUG] 2020-04-28 12:28:42,978 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
+Queued events for site recruitpro.local
+[ERROR] 2020-04-28 12:29:46,172 | /home/sharmila/frappe-bench/apps/frappe/frappe/app.py:
+Site: recruitpro.local
+Form Dict: {
+ "cmd": "frappe.realtime.get_user_info"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/sharmila/frappe-bench/apps/frappe/frappe/app.py", line 62, in application
+    response = frappe.api.handle()
+  File "/home/sharmila/frappe-bench/apps/frappe/frappe/api.py", line 55, in handle
+    return frappe.handler.handle()
+  File "/home/sharmila/frappe-bench/apps/frappe/frappe/handler.py", line 22, in handle
+    data = execute_cmd(cmd)
+  File "/home/sharmila/frappe-bench/apps/frappe/frappe/handler.py", line 61, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/sharmila/frappe-bench/apps/frappe/frappe/__init__.py", line 1054, in call
+    return fn(*args, **newargs)
+TypeError: get_user_info() missing 1 required positional argument: 'sid'
+[ERROR] 2020-04-28 12:29:46,450 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/error.py:
+Could not take error snapshot: invalid syntax (<string>, line 1)
+Traceback (most recent call last):
+  File "/home/sharmila/frappe-bench/apps/frappe/frappe/app.py", line 62, in application
+    response = frappe.api.handle()
+  File "/home/sharmila/frappe-bench/apps/frappe/frappe/api.py", line 55, in handle
+    return frappe.handler.handle()
+  File "/home/sharmila/frappe-bench/apps/frappe/frappe/handler.py", line 22, in handle
+    data = execute_cmd(cmd)
+  File "/home/sharmila/frappe-bench/apps/frappe/frappe/handler.py", line 61, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/sharmila/frappe-bench/apps/frappe/frappe/__init__.py", line 1054, in call
+    return fn(*args, **newargs)
+TypeError: get_user_info() missing 1 required positional argument: 'sid'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/sharmila/frappe-bench/apps/frappe/frappe/utils/error.py", line 36, in make_error_snapshot
+    snapshot = get_snapshot(exception)
+  File "/home/sharmila/frappe-bench/apps/frappe/frappe/utils/error.py", line 132, in get_snapshot
+    value = eval(value)
+  File "<string>", line 1
+    <built-in method with_traceback of TypeError object>
+    ^
+SyntaxError: invalid syntax
+[DEBUG] 2020-04-28 12:30:45,690 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 14:33:27,076 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 12:31:45,946 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 14:34:27,270 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 12:32:46,173 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 14:35:27,476 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 12:33:46,381 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 14:36:27,693 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 12:34:46,774 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 14:37:27,897 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 12:35:46,999 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 14:38:28,104 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 12:36:47,242 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 14:39:28,314 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 12:37:47,452 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 14:40:28,604 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 12:38:47,684 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 14:41:28,913 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 12:39:47,891 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 14:42:29,125 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 12:40:48,121 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 14:43:29,323 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 12:41:48,333 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 14:44:29,650 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 12:42:48,530 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 14:45:29,935 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 12:43:48,804 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 14:46:31,326 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 12:44:49,026 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 14:47:31,535 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 12:45:49,243 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 14:48:31,781 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 12:46:49,459 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 14:49:32,007 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 12:47:49,678 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 14:50:32,253 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 12:48:49,896 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 14:51:32,487 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 12:49:50,102 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 14:52:32,716 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 12:50:50,305 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 14:53:32,913 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 12:51:50,562 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 14:54:33,228 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 12:52:50,836 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 14:55:33,438 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 12:53:51,047 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 14:56:33,655 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 12:54:51,249 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 14:57:33,851 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 12:55:51,464 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 14:58:34,050 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 12:56:51,680 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 14:59:34,279 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 12:57:51,896 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 15:00:34,522 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 12:58:52,091 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 15:01:34,707 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 12:59:52,310 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 15:02:34,897 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 13:00:52,637 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 15:03:35,267 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 13:01:52,860 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 15:04:35,564 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 13:02:53,083 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 15:05:35,774 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 13:03:53,292 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 15:06:35,969 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 13:04:53,534 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 15:07:36,169 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 13:05:53,808 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 15:08:36,402 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 13:06:54,014 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 15:09:36,602 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 13:07:54,220 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 15:10:36,867 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 13:08:54,443 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 15:11:37,071 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 13:09:54,642 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 15:12:37,281 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 13:10:54,850 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 15:13:37,491 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 13:11:55,051 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 15:14:37,775 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 13:12:55,293 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 15:15:37,986 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 13:13:55,507 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 15:16:38,211 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 13:14:55,714 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 15:17:38,429 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 13:15:55,946 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 15:18:38,656 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 13:16:56,176 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 15:19:38,856 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 13:17:56,385 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 15:20:39,075 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 13:18:56,582 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 15:21:39,292 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 13:19:56,790 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 15:22:39,497 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 13:20:57,023 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 15:23:39,700 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 13:21:57,229 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 15:24:39,929 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 13:22:57,437 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 15:25:40,193 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 13:23:57,660 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 15:26:40,411 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 13:24:57,896 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 15:27:40,614 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 13:25:58,116 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 15:28:40,857 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 13:26:58,426 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 15:29:41,123 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 13:27:58,627 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 15:30:41,329 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 13:28:58,978 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 15:31:41,599 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 13:29:59,192 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 15:32:42,049 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 13:30:59,392 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 15:33:42,282 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 13:31:59,600 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 15:34:42,495 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 13:32:59,823 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 15:35:42,684 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 13:34:00,036 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 15:36:42,904 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 13:35:00,261 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 15:37:43,108 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 13:36:00,530 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 15:38:43,418 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 13:37:00,726 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 15:39:43,655 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 13:38:00,932 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 15:40:44,326 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 13:39:01,142 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 15:41:44,929 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 13:40:01,371 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 15:42:45,811 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 13:41:01,587 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 15:43:46,315 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 13:42:01,794 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 15:44:46,583 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 13:43:02,000 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 15:45:46,874 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 13:44:02,228 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 15:46:47,095 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 13:45:02,440 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 15:47:47,326 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 13:46:02,658 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 15:48:47,707 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 13:47:02,867 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 15:49:47,989 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 13:48:03,093 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 15:50:48,299 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 13:49:03,292 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 15:51:48,590 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 13:50:03,500 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 15:52:48,854 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 13:51:03,773 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 15:53:49,272 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 13:52:03,998 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 15:54:50,306 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 13:53:04,219 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 15:55:50,568 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 13:54:04,419 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 15:56:50,805 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 13:55:04,625 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 15:57:51,076 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 13:56:04,853 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 15:58:51,578 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 13:57:05,067 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 15:59:51,805 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 13:58:05,280 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 16:00:52,085 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 13:59:05,679 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 16:01:52,305 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 14:00:05,921 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 16:02:52,742 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 14:01:06,143 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 16:03:53,126 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 14:02:06,366 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 16:04:53,364 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 14:03:06,571 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 16:05:53,602 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 14:04:06,796 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 16:06:54,198 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 14:05:07,003 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 16:07:54,427 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 14:06:07,237 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 16:08:54,730 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 14:07:07,451 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 16:09:55,141 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 14:08:07,670 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 16:10:55,462 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 14:09:07,909 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 16:11:55,725 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 14:10:08,123 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 16:12:55,964 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 14:11:08,374 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 16:13:56,184 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 14:12:08,591 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 16:14:56,602 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 14:13:08,807 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 16:15:56,884 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 14:14:09,072 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 16:16:57,451 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 14:15:09,275 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 16:17:57,668 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 14:16:09,534 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 16:18:57,898 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 14:17:09,734 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 16:19:58,129 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 14:18:09,953 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 16:20:58,386 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 14:19:10,154 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 16:21:58,612 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 14:20:10,390 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 16:22:58,831 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 14:21:10,630 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 16:23:59,057 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 14:22:10,839 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 16:24:59,294 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 14:23:11,038 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 16:25:59,526 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 14:24:11,266 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 16:26:59,748 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 14:25:11,475 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 16:28:00,126 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 14:26:11,681 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 16:29:00,454 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 14:27:11,943 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 16:30:00,685 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 14:28:12,171 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 16:31:00,895 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 14:29:12,378 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 16:32:01,153 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 14:30:12,593 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 16:33:01,386 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 14:31:12,801 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 16:34:01,687 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 14:32:13,036 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 16:35:01,922 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 14:33:13,319 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 16:36:02,195 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 14:34:13,562 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 16:37:02,437 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 14:35:13,777 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 16:38:02,674 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 14:36:14,065 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 16:39:02,907 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 14:37:14,280 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 16:40:03,435 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 14:38:14,489 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 16:41:03,712 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 14:39:14,698 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 16:42:03,982 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 14:40:14,922 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 16:43:04,225 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 14:41:15,149 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 16:44:04,491 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 14:42:15,360 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 16:45:04,751 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 14:43:15,555 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 16:46:05,228 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 14:44:15,790 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 16:47:05,576 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 14:45:16,032 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 16:48:05,808 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 14:46:16,260 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 16:49:06,003 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 14:47:16,474 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 16:50:06,235 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 14:48:16,694 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 16:51:06,740 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 14:49:16,905 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 16:52:06,966 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 14:50:17,134 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 16:53:07,167 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 14:51:17,328 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 16:54:07,434 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 14:52:17,571 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 16:55:07,622 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 14:53:17,949 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 16:56:07,952 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 14:54:18,158 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 16:57:08,168 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 14:55:18,369 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 16:58:08,424 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 14:56:18,585 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 16:59:08,628 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 14:57:18,801 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 17:00:08,854 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 14:58:19,011 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 17:01:09,059 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 14:59:19,279 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 17:02:09,322 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 15:00:19,592 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 17:03:09,530 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 15:01:19,832 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 17:04:09,802 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 15:02:20,040 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 17:05:10,011 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 15:03:20,238 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 17:06:10,199 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 15:04:20,479 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 17:07:10,456 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 15:05:20,694 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 17:08:10,677 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 15:06:20,920 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 17:09:10,883 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 15:07:21,131 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 17:10:11,126 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 15:08:21,375 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 17:11:11,343 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 15:09:21,584 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 17:12:11,572 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 15:10:21,791 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 17:13:11,974 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 15:11:22,229 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 17:14:12,202 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 15:12:22,458 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 17:15:12,453 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 15:13:22,664 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 17:16:12,787 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 15:14:22,874 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 17:17:13,013 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 15:15:23,066 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 17:18:13,216 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 15:16:23,320 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 17:19:13,536 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 15:17:23,534 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
-[DEBUG] 2020-04-27 17:20:13,758 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2020-04-28 15:18:23,775 | /home/sharmila/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
 Site: recruitpro.local
 Queued events for site recruitpro.local
+[ERROR] 2020-04-28 15:44:26,525 | /home/sharmila/frappe-bench/apps/frappe/frappe/app.py:
+Site: recruitpro.local
+Form Dict: {
+ "cmd": "frappe.realtime.get_user_info"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/sharmila/frappe-bench/apps/frappe/frappe/app.py", line 62, in application
+    response = frappe.api.handle()
+  File "/home/sharmila/frappe-bench/apps/frappe/frappe/api.py", line 55, in handle
+    return frappe.handler.handle()
+  File "/home/sharmila/frappe-bench/apps/frappe/frappe/handler.py", line 22, in handle
+    data = execute_cmd(cmd)
+  File "/home/sharmila/frappe-bench/apps/frappe/frappe/handler.py", line 61, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/sharmila/frappe-bench/apps/frappe/frappe/__init__.py", line 1054, in call
+    return fn(*args, **newargs)
+TypeError: get_user_info() missing 1 required positional argument: 'sid'

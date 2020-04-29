@@ -26,7 +26,7 @@ class Project(Document):
 #         (SELECT COUNT(pending_for) as count6 FROM `tabCandidate` tsa WHERE tsa.project= '%s' AND tsa.pending_for IN ('Submitted','Interviewed','Linedup','Shortlisted','IDB','Proposed PSL','Sourced') AND 
 #         tsa.sa_agent = sa.name) as tsa
 #         FROM `tabCandidate` c 
-#         JOIN `tabSAMS` sa ON  sa.name = c.sa_agent 
+#         JOIN `tabSub Agent` sa ON  sa.name = c.sa_agent 
 #         WHERE c.project='%s'AND c.sa_agent IS NOT NULL AND c.project IS NOT NULL GROUP BY sa.name
 #         """ %(project,project,project,project,project,project,project),as_dict=1)
 #     return(allocated) 

@@ -90,7 +90,17 @@ app_license = "MIT"
 # 		"on_trash": "method"
 #	}
 # }
-
+doc_events = {
+    "Candidate": {
+        "on_update": "recruitpro.api.create_mobilization"
+    }
+    "Position Candidate": {
+        "on_update": "recruitpro.api.create_mobilization"
+    },
+    # "Project": {
+    #    "on_update": "recruitment.utils.apply_perm"
+    # }
+}
 # Scheduled Tasks
 # ---------------
 

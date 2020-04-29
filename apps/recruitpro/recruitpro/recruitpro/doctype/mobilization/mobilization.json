@@ -79,7 +79,7 @@
   "column_break_52",
   "advance_paid_candidate",
   "write_off_candidate",
-  "pending_payment_candidate",
+  "candidate_pending",
   "section_break_73",
   "customer_relation_executive",
   "source_executive",
@@ -238,7 +238,6 @@
   {
    "fieldname": "naming_series",
    "fieldtype": "Data",
-   "hidden": 1,
    "label": "Naming Series"
   },
   {
@@ -430,11 +429,6 @@
    "fieldname": "write_off_candidate",
    "fieldtype": "Currency",
    "label": "Write Off (Candidate)"
-  },
-  {
-   "fieldname": "pending_payment_candidate",
-   "fieldtype": "Currency",
-   "label": "Pending Payment (Candidate)"
   },
   {
    "fieldname": "customer_relation_executive",
@@ -1078,9 +1072,15 @@
    "fieldname": "culture",
    "fieldtype": "Check",
    "label": "Culture"
+  },
+  {
+   "fieldname": "candidate_pending",
+   "fieldtype": "Currency",
+   "label": "Pending Payment (Candidate)"
   }
  ],
- "modified": "2020-04-27 19:07:14.385112",
+ "image_field": "photo",
+ "modified": "2020-04-29 13:50:54.010275",
  "modified_by": "Administrator",
  "module": "RecruitPRO",
  "name": "Mobilization",
@@ -1102,5 +1102,6 @@
  "quick_entry": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
+ "title_field": "name1",
  "track_changes": 1
 }
